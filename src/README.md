@@ -57,8 +57,8 @@ Source code analysis
 2. Anything between %(the percent sing) and the end of the line are treated as
    comments, except below two:
 
-   - `%PDF-n.m` : descript pdf parser version, implicitly imply the start of file
-   - `%%EOF`    : descript fire structure, End Of File
+- `%PDF-n.m` : descript pdf parser version, implicitly imply the start of file
+- `%%EOF`    : descript fire structure, End Of File
 
 ### Objects
 

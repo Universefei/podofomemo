@@ -6,7 +6,7 @@ Source code analysis
 * /podofo/src/base (fundation lib)
 * /podofo/src/doc (high level lib)
 
-![podofo architecture](https://raw.github.com/Universefei/podofomemo/src/feifigure/podofo_architecture.png)
+![podofo architecture](https://raw.github.com/Universefei/podofomemo/master/src/feifigure/podofo_architecture.png)
 
 
 ## tips

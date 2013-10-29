@@ -38,6 +38,40 @@ Source code analysis
  * PdfVariant
 
 
-## memos
+## Syntax
+
+### White-space
+
+**NOTE**:
+
+- White-space characters separate syntactic constructs.
+- All white-space characters are equivalent, except in comments/strings/streams.
+- PDF treats any sequence of consecutive white-space characters as one.
+
+![White-space table](https://raw.github.com/Universefei/podofomemo/master/src/feifigure/whitespace.png)
+
+### Comments
+
+1. Comments will be parsed as White-space characters.
+ 
+2. Anything between %(the percent sing) and the end of the line are treated as
+   comments, except below two:
+
+   - `%PDF-n.m` : descript pdf parser version, implicitly imply the start of file
+   - `%%EOF`    : descript fire structure, End Of File
+
+### Objects
+
+PDF support **8** basic types of objects:
+
+- Boolean values
+- Interger and real numbers
+- Strings
+- Names
+- Arrays
+- Dictionaries
+- Streams
+- The null object
+
 
 

@@ -164,7 +164,7 @@ class PODOFO_API PdfErrorInfo {
     PdfErrorInfo();
     PdfErrorInfo( int line, const char* pszFile, const char* pszInfo );
     PdfErrorInfo( int line, const char* pszFile, const wchar_t* pszInfo );
-	PdfErrorInfo( const PdfErrorInfo & rhs );
+		PdfErrorInfo( const PdfErrorInfo & rhs );
 
     const PdfErrorInfo & operator=( const PdfErrorInfo & rhs );
 
@@ -180,7 +180,7 @@ class PODOFO_API PdfErrorInfo {
     int          m_nLine;
     std::string  m_sFile;
     std::string  m_sInfo;
-	std::wstring m_swInfo;
+		std::wstring m_swInfo;
 };
 
 

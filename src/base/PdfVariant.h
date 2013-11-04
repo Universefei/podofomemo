@@ -39,6 +39,12 @@ class PdfOutputDevice;
 class PdfString;
 class PdfReference;
 
+/******************************************************************************
+ *============================================================================*
+ *                      Class PdfVariant definition                           *
+ *                                                                            *
+ *****************************************************************************/
+
 /**
  * A variant data type which supports all data types supported by the PDF standard.
  * The data can be parsed directly from a string or set by one of the members.
@@ -50,13 +56,23 @@ class PdfReference;
  *
  * TODO: domseichter: Make this class implicitly shared
  */
+
+/* variant means 变形体,highly abstract class! */
 class PODOFO_API PdfVariant {
+
+		/* friend is a single direction relationship */
     friend class PdfArray;
     friend class PdfDictionary;
 
  public:
 
     static PdfVariant NullValue;
+
+/*---------------------------------------------------------------------------*/
+/*                                                                           */
+/*                     Constructors and Destructors                          */
+/*                                                                           */
+/*---------------------------------------------------------------------------*/
 
     /** Construct an empty variant type
      *  IsNull() will return true.
@@ -123,11 +139,21 @@ class PODOFO_API PdfVariant {
      */
     PdfVariant( const PdfVariant & rhs );
 
+/*---------------------------------------------------------------------------*/
+/*----- Destructors ---------------------------------------------------------*/
+
     virtual ~PdfVariant();
+
+/*---------------------------------------------------------------------------*/
+/*                                                                           */
+/*                            Other Member Functions                         */
+/*                                                                           */
+/*---------------------------------------------------------------------------*/
     
     /** \returns true if this PdfVariant is empty.
      *           i.e. m_eDataType == ePdfDataType_Null
      */
+
     inline bool IsEmpty() const;
 
     /** Clear all internal member variables and free the memory
@@ -148,6 +174,9 @@ class PODOFO_API PdfVariant {
      *  The returned string must not be free'd.
      */
     const char * GetDataTypeString() const;
+
+/*---------------------------------------------------------------------------*/
+/*----- judge type ----------------------------------------------------------*/
 
     /** \returns true if this variant is a bool (i.e. GetDataType() == ePdfDataType_Bool)
      */
@@ -221,6 +250,9 @@ class PODOFO_API PdfVariant {
      *  \param eWriteMode additional options for writing to a string
      */
     void ToString( std::string & rsData, EPdfWriteMode eWriteMode = ePdfWriteMode_Clean ) const;
+
+/*---------------------------------------------------------------------------*/
+/*----- set/get functions ---------------------------------------------------*/
 
     /** Set the value of this object as bool
      *  \param b the value as bool.
@@ -304,6 +336,9 @@ class PODOFO_API PdfVariant {
      */
     inline PdfData & GetRawData();
 
+/*---------------------------------------------------------------------------*/
+/*----- operator overloading ------------------------------------------------*/
+
     /** Assign the values of another PdfVariant to this one.
      *  \param rhs an existing variant which is copied.
      *
@@ -322,6 +357,9 @@ class PODOFO_API PdfVariant {
      * \see operator==
      */
     inline bool operator!=( const PdfVariant & rhs) const;
+
+/*---------------------------------------------------------------------------*/
+/*----- MISC ----------------------------------------------------------------*/
 
     /** The dirty flag is set if this variant
      *  has been modified after construction.
@@ -446,6 +484,12 @@ class PODOFO_API PdfVariant {
      */
     inline PdfArray & GetArray_NoDL();
 
+/*---------------------------------------------------------------------------*/
+/*                                                                           */
+/*                           Data Memvers                                    */
+/*                                                                           */
+/*---------------------------------------------------------------------------*/
+
  private:
     /**
      * It's an easy mistake to pass a pointer to a PdfVariant when trying to
@@ -515,6 +559,12 @@ private:
 #endif
 };
 
+
+/******************************************************************************
+ *                                                                            *
+ *                     Class Variant functions implement                      *
+ *                                                                            *
+ *****************************************************************************/
 
 // -----------------------------------------------------
 // 

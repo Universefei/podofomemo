@@ -36,6 +36,12 @@ class PdfOutputDevice;
 class PdfStream;
 class PdfVecObjects;
 
+/******************************************************************************
+ *                                                                            *
+ *                        class PdfObject definition                          *
+ *                                                                            *
+ *****************************************************************************/
+
 /**
  * This class represents a PDF indirect Object in memory
  * 
@@ -52,6 +58,12 @@ class PODOFO_API PdfObject : public PdfVariant {
     friend class PdfVecObjects;
 
  public:
+
+/*---------------------------------------------------------------------------*/
+/*                                                                           */
+/*                      Constructors and Destructors                         */
+/*                                                                           */
+/*---------------------------------------------------------------------------*/
 
     /** Create a PDF object with object and generation number -1
      *  and the value of being an empty PdfDictionary.
@@ -142,6 +154,12 @@ class PODOFO_API PdfObject : public PdfVariant {
     PdfObject( const PdfObject & rhs );
 
     virtual ~PdfObject();
+
+/*---------------------------------------------------------------------------*/
+/*                                                                           */
+/*                           Other Member functions                          */
+/*                                                                           */
+/*---------------------------------------------------------------------------*/
 
     /** Get the keys value out of the dictionary. If the key is a reference, 
      *  the reference is resolved and the object pointed to by the reference is returned.

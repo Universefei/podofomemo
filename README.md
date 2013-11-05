@@ -25,10 +25,13 @@ PoDoFo SRC Analysis
 **need to install prerequisite**
 
 1. From ./podofo/README.html:
-`sudo aptitude install build-essential g++ cmake libz-dev libtiff-dev libjpeg-dev libfreetype6-dev libfontconfig-dev`
+```
+sudo aptitude install build-essential g++ cmake libz-dev libtiff-dev libjpeg-dev libfreetype6-dev libfontconfig-dev
+```
 
 2. Before that you need :
 `sudo apt-get install appitude`
+`sudo apt-get install libcppunit-dev`
 
 3. Then other packages:
 from compile infoes,note that libcrypto have some problems:
@@ -43,8 +46,7 @@ install neccesory packages
 `sudo apt-cache search libpng` find matched packages and install ...
 
 
-
-## tips
+### Tips
 
 ```
  Using PoDoFo in Your Application
@@ -58,10 +60,10 @@ install neccesory packages
  
  Read following documents first maybe useful:
  
- * PdfMemDocument
- * PdfStreamdDocument
- * PdfObject
- * PdfVariant
+ * [PdfMemDocument](http://podofo.sourceforge.net/doc/html/classPoDoFo_1_1PdfMemDocument.html)
+ * [PdfStreamedDocument](http://podofo.sourceforge.net/doc/html/classPoDoFo_1_1PdfStreamedDocument.html)
+ * [PdfObject](http://podofo.sourceforge.net/doc/html/classPoDoFo_1_1PdfObject.html)
+ * [PdfVariant](http://podofo.sourceforge.net/doc/html/classPoDoFo_1_1PdfVariant.html)
 
 
 ## Syntax

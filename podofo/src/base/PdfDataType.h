@@ -45,6 +45,9 @@ class PODOFO_API PdfDataType {
  public:
     virtual ~PdfDataType();
 
+/*---------------------------------------------------------------------------*/
+/*----- ? --------------------------------------------------------------*/
+
     /** Write the complete datatype to a file.
      *  \param pDevice write the object to this device
      *  \param eWriteMode additional options for writing this object
@@ -52,6 +55,12 @@ class PODOFO_API PdfDataType {
      *                  or NULL to not encrypt this object
      */
     virtual void Write( PdfOutputDevice* pDevice, EPdfWriteMode eWriteMode, const PdfEncrypt* pEncrypt = NULL ) const = 0;
+
+/*---------------------------------------------------------------------------*/
+/*                                                                           */
+/*                     Where is dirty flag?                                  */
+/*                                                                           */
+/*---------------------------------------------------------------------------*/
 
     /** The dirty flag is set if this variant
      *  has been modified after construction.

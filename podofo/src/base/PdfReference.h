@@ -67,7 +67,8 @@ class PODOFO_API PdfReference : public PdfDataType {
     {
     }
 
-    /**
+    /**Copy constructor
+	 * ================
      * Create a copy of an existing PdfReference.
      * 
      * \param rhs the object to copy

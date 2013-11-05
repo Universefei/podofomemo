@@ -47,6 +47,12 @@ class PdfPagesTree;
 class PdfRect;
 class PdfXObject;
 
+/******************************************************************************
+ *============================================================================*
+ *                               PdfDocument                                  *
+ *                                                                            *
+ *****************************************************************************/
+
 /** PdfDocument is the core interface for working with PDF documents.
  *
  *  PdfDocument provides easy access to the individual pages

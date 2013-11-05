@@ -15,7 +15,7 @@ PoDoFo SRC Analysis
 
 ### Structure of the library
 
-![podofo architecture](https://raw.github.com/Universefei/podofomemo/master/src/feifigure/podofo_architecture.png)
+![podofo architecture](https://raw.github.com/Universefei/podofomemo/master/feifigure/podofo_architecture.png)
 
 * /podofo/src/base (fundation lib)
 * /podofo/src/doc (high level lib)
@@ -74,7 +74,7 @@ install neccesory packages
 - All white-space characters are equivalent, except in comments/strings/streams.
 - PDF treats any sequence of consecutive white-space characters as one.
 
-![White-space table](https://raw.github.com/Universefei/podofomemo/master/src/feifigure/whitespace.png)
+![White-space table](https://raw.github.com/Universefei/podofomemo/master/feifigure/whitespace.png)
 
 ### Comments
 

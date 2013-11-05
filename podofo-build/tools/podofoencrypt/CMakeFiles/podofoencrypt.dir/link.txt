@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o  -o podofoencrypt -rdynamic -L/home/univ/projects/podofomemo/podofo-build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/podofo-build/src: 

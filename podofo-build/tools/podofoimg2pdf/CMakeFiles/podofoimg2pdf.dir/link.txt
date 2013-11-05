@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/podofoimg2pdf.dir/podofoimg2pdf.cpp.o CMakeFiles/podofoimg2pdf.dir/ImageConverter.cpp.o  -o podofoimg2pdf -rdynamic -L/home/univ/projects/podofomemo/podofo-build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/podofo-build/src: 

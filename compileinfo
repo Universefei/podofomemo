@@ -1,0 +1,89 @@
+-- The C compiler identification is GNU
+-- The CXX compiler identification is GNU
+-- Check for working C compiler: /usr/bin/gcc
+-- Check for working C compiler: /usr/bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+WANT_LIB64 unset; assuming normal library directory names
+Will install libraries to /home/univ/podofo/lib
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for arpa/inet.h
+-- Looking for arpa/inet.h - found
+-- Looking for winsock2.h
+-- Looking for winsock2.h - not found
+-- Looking for mem.h
+-- Looking for mem.h - not found
+-- Looking for ctype.h
+-- Looking for ctype.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for BaseTsd.h
+-- Looking for BaseTsd.h - not found
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+Using gcc specific compiler options
+-- Found ZLIB: /usr/lib/i386-linux-gnu/libz.so 
+Found zlib headers in /usr/include, library at /usr/lib/i386-linux-gnu/libz.so
+-- Found LIBCRYPTO: /usr/lib/i386-linux-gnu/libcrypto.so 
+Found OpenSSL's libCrypto headers in /usr/include, library at /usr/lib/i386-linux-gnu/libcrypto.so
+-- Could NOT find LIBIDN (missing:  LIBIDN_LIBRARY LIBIDN_INCLUDE_DIR) 
+Libidn not found. AES-256 Encryption support will be disabled
+-- Found LIBJPEG: /usr/lib/i386-linux-gnu/libjpeg.so 
+Found libjpeg headers in /usr/include, library at /usr/lib/i386-linux-gnu/libjpeg.so
+-- Found TIFF: /usr/lib/i386-linux-gnu/libtiff.so 
+Found libtiff headers in /usr/include, library at /usr/lib/i386-linux-gnu/libtiff.so
+CMake Warning (dev) at /usr/share/cmake-2.8/Modules/FindPNG.cmake:33 (find_package):
+  File /usr/share/cmake-2.8/Modules/FindPNG.cmake includes
+  /home/univ/projects/podofomemo/podofo/cmake/modules/FindZLIB.cmake (found
+  via CMAKE_MODULE_PATH) which shadows
+  /usr/share/cmake-2.8/Modules/FindZLIB.cmake.  This may cause errors later
+  on .
+
+  Policy CMP0017 is not set: Prefer files from the CMake module directory
+  when including from there.  Run "cmake --help-policy CMP0017" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+Call Stack (most recent call first):
+  CMakeLists.txt:349 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find PNG (missing:  PNG_LIBRARY PNG_PNG_INCLUDE_DIR) 
+LibPng not found. PNG support will be disabled
+-- Found cppunit: -lcppunit -ldl
+Found cppunit. Unit tests will be built.
+-- Found OpenSSL: /usr/lib/i386-linux-gnu/libssl.so
+Found freetype library at /usr/lib/i386-linux-gnu/libfreetype.so, headers /usr/include/freetype2;/usr/include
+-- Found Fontconfig: /usr/lib/i386-linux-gnu/libfontconfig.so 
+Found fontconfig headers in /usr/include, library at /usr/lib/i386-linux-gnu/libfontconfig.so
+-- Could NOT find Lua50 (missing:  LUA_LIBRARIES LUA_INCLUDE_DIR) 
+-- Could NOT find Lua (missing:  LUA_LIBRARIES LUA_INCLUDE_DIR) 
+Lua not found - PoDoFoImpose and PoDoFoColor will be built without Lua support
+Building multithreaded version of PoDoFo.
+-- Looking for include files CMAKE_HAVE_PTHREAD_H
+-- Looking for include files CMAKE_HAVE_PTHREAD_H - found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE 
+Building static PoDoFo library
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/univ/projects/podofomemo/podofo-build

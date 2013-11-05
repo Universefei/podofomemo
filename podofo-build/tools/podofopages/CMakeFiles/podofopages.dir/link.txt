@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/podofopages.dir/podofopages.cpp.o CMakeFiles/podofopages.dir/DeleteOperation.cpp.o CMakeFiles/podofopages.dir/MoveOperation.cpp.o  -o podofopages -rdynamic -L/home/univ/projects/podofomemo/podofo-build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/podofo-build/src: 

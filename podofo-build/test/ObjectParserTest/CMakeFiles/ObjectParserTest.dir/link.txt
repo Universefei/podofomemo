@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.o  -o ObjectParserTest -rdynamic -L/home/univ/projects/podofomemo/podofo-build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -ltiff -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/podofo-build/src 

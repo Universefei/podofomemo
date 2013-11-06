@@ -53,12 +53,13 @@ void print_help()
 
 int main( int argc, char* argv[] )
 {
-  char*    pszOutput;
+  char*    pszOutput; /* pointer to string, zero-terminated */
 
+  /* argc include executable application name, as argv[0] */
   if( argc < 3 )
   {
     print_help();
-    exit( -1 );
+    exit( -1 ); /* as set -e in shell */
   }
 
   pszOutput = argv[1];
@@ -66,9 +67,13 @@ int main( int argc, char* argv[] )
   
   ImageConverter converter;
   converter.SetOutputFilename( pszOutput );
+  
+  /* check every command line param */
   for( int i=2;i<argc;i++ ) 
   {
       std::string sOption = argv[i];
+
+	  /* ? why not strcmp ? */
       if( sOption == "-useimgsize" ) 
       {
           converter.SetUseImageSize( true );

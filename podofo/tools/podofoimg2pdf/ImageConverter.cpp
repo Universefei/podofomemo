@@ -22,6 +22,9 @@
 
 #include <podofo.h>
 
+/*---------------------------------------------------------------------------*/
+/*                  constructor (with list construct param)                  */
+/*---------------------------------------------------------------------------*/
 ImageConverter::ImageConverter() 
     : m_bUseImageSize( false )
 {
@@ -42,9 +45,11 @@ void ImageConverter::Work()
     double dScaleY = 1.0;
     double dScale  = 1.0;
 
+	/* traverse all items in vector m_vecImages */
     while( it != m_vecImages.end() ) 
     {
         PoDoFo::PdfPage* pPage;
+		/* load a image per time frome external storage */
         PoDoFo::PdfImage image( &document );
         image.LoadFromFile( (*it).c_str() );
 
@@ -53,7 +58,7 @@ void ImageConverter::Work()
             size = PoDoFo::PdfRect( 0.0, 0.0, image.GetWidth(), image.GetHeight() );
         }
 
-        pPage = document.CreatePage( size );
+        pPage = document.CreatePage( size ); /* allocate space and return a pointer */
         dScaleX = size.GetWidth() / image.GetWidth();
         dScaleY = size.GetHeight() / image.GetHeight();
         dScale  = PoDoFo::PDF_MIN( dScaleX, dScaleY );
@@ -61,21 +66,25 @@ void ImageConverter::Work()
         painter.SetPage( pPage );
         if( dScale < 1.0 ) 
         {
+			/* Draw */
             painter.DrawImage( 0.0, 0.0, &image, dScale, dScale );
         }
         else
         {
-            // Center Image
+            // Center Image (set position)
             double dX = (size.GetWidth() - image.GetWidth())/2.0;
             double dY = (size.GetHeight() - image.GetHeight())/2.0;
+			/* Draw */
             painter.DrawImage( dX, dY, &image );
         }
 
+		/* one pic per page? */
         painter.FinishPage();
 
         ++it;
     }
 
+	/* output file to external storage */
     document.Write( m_sOutputFilename.c_str() );
 }
 

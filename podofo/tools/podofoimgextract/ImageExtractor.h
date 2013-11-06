@@ -50,7 +50,8 @@ class ImageExtractor {
      */
     inline int GetNumImagesExtracted() const;
 
- private:
+ private:/* why those functions are designed to be private? think about it! */
+
     /** Extracts the image form the given PdfObject
      *  which has to be an XObject with Subtype "Image"
      *  \param pObject a handle to a PDF object
@@ -66,6 +67,7 @@ class ImageExtractor {
     bool    FileExists( const char* pszFilename );
 
  private:
+	/* no pszInputFilename as a class data member? think about it! why? */
     char*        m_pszOutputDirectory;
     unsigned int m_nSuccess;
     unsigned int m_nCount;

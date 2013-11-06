@@ -49,6 +49,7 @@ void print_help()
   printf("Usage: podofopages [inputfile] [outputfile]\n");
   printf("Options:\n");
   printf("\t--delete NUMBER\n");
+  /* 0-based means the first page is page 0, start with 0 */
   printf("\tDeletes the page NUMBER (number is 0-based)\n"); 
   printf("\tThe page will not really be deleted from the PDF.\n");
   printf("\tIt is only removed from the so called pagestree and\n");

@@ -45,8 +45,35 @@ install neccesory packages
 5. install libpng
 `sudo apt-cache search libpng` find matched packages and install ...
 
+### Interface TIPS
 
-### Tips
+```
+./tools/
+├── CMakeLists.txt
+├── podofobox/
+├── podofocolor/
+├── podofocountpages/          (count PDF file pages)
+├── podofocrop/
+├── podofoencrypt/
+├── podofogc/
+├── podofoimg2pdf/             (input image generate correspongding PDF file)
+├── podofoimgextract/          (extract all images from a PDF file)
+├── podofoimpose/
+├── podofoincrementalupdates/
+├── podofomerge/
+├── podofopages/               (delete Page, and move Page position)
+├── podofopdfinfo/
+├── podofotxt2pdf/
+├── podofotxtextract/
+├── podofouncompress/
+├── podofoxmp/
+└── tools
+
+17 directories, 2 files
+```
+
+
+### Source code TIPS
 
 ```
  Using PoDoFo in Your Application
@@ -107,5 +134,4 @@ PDF support **8** basic types of objects:(COS)
 - The null object
 
 The first 5 are single value types, and the next 3 are container types!
-
 

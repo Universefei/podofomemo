@@ -38,6 +38,8 @@ ImageExtractor::~ImageExtractor()
 {
 }
 
+/* pointer pnNum point to a number indicate the amount of pic to be stored */
+/* you can set it to NULL if you do not need this infomation */
 void ImageExtractor::Init( const char* pszInput, const char* pszOutput, int* pnNum )
 {
     PdfObject*  pObj  = NULL;
@@ -48,6 +50,7 @@ void ImageExtractor::Init( const char* pszInput, const char* pszOutput, int* pnN
     }
 
 
+	/* load file? */
     PdfMemDocument document( pszInput );
 
     m_pszOutputDirectory = const_cast<char*>(pszOutput);
@@ -144,6 +147,7 @@ bool ImageExtractor::FileExists( const char* pszFilename )
     
     // if there is an error, it's probably because the file doesn't yet exist
     struct stat	stBuf;
+	/* stat need not io */
     if ( stat( pszFilename, &stBuf ) == -1 )	result = false;
 
     return result;

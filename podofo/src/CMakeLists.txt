@@ -8,6 +8,10 @@ SET(PODOFO_BASE_DEPEND_TARGET CACHE INTERNAL
 SET(PODOFO_DEPEND_TARGET CACHE INTERNAL
     "Which PoDoFo library target to depend on when building tools and tests")
 
+# =============================================================================
+# Name archive
+# =============================================================================
+
 SET(PODOFO_BASE_SOURCES
   base/PdfArray.cpp
   base/PdfCanvas.cpp
@@ -244,6 +248,10 @@ INSTALL(FILES ${PODOFO_BASE_HEADERS2}
 INSTALL(FILES ${PODOFO_DOC_HEADERS}
     DESTINATION "include/podofo/doc"
     )
+
+# =============================================================================
+# How to build? static or shared? .a/.so .lib/.dll
+# =============================================================================
 
 IF(NOT PODOFO_BUILD_SHARED AND NOT PODOFO_BUILD_STATIC)
     MESSAGE(FATAL_ERROR "At least one of PODOFO_BUILD_SHARED and PODOF_BUILD_STATIC must be set")

@@ -209,9 +209,12 @@ CONFIGURE_FILE(
 ADD_CUSTOM_TARGET(uninstall "${CMAKE_COMMAND}"
     -P "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake")
 
-# Check if we are big endian
+# Check if we are big endian===================================================
 TEST_BIG_ENDIAN(TEST_BIG)
 
+# =============================================================================
+# OS detect
+# =============================================================================
 IF(WIN32)
     # On win32 we support EITHER shared OR static builds.
     # If both are enabled (default), turn off generation of the
@@ -306,12 +309,19 @@ IF(CMAKE_COMPILER_IS_GNUCXX)
     ENDIF(PODOFO_USE_VISIBILITY)
 ENDIF(CMAKE_COMPILER_IS_GNUCXX)
 
+# ==============================================================================
+# packages
+# ==============================================================================
+
+# ZLIB
 FIND_PACKAGE(ZLIB REQUIRED)
 MESSAGE("Found zlib headers in ${ZLIB_INCLUDE_DIR}, library at ${ZLIB_LIBRARIES}")
 
+# LIBCRYPTO
 FIND_PACKAGE(LIBCRYPTO REQUIRED)
 MESSAGE("Found OpenSSL's libCrypto headers in ${LIBCRYPTO_INCLUDE_DIR}, library at ${LIBCRYPTO_LIBRARIES}")
 
+# LIBIDN
 FIND_PACKAGE(LIBIDN)
 
 IF(LIBIDN_FOUND)
@@ -326,6 +336,7 @@ ELSE(LIBIDN_FOUND)
 	MESSAGE("Libidn not found. AES-256 Encryption support will be disabled")
 ENDIF(LIBIDN_FOUND)
 
+# LIBJPEG
 FIND_PACKAGE(LIBJPEG)
 
 IF(LIBJPEG_FOUND)
@@ -336,6 +347,7 @@ ELSE(LIBJPEG_FOUND)
   MESSAGE("Libjpeg not found. JPEG support will be disabled")
 ENDIF(LIBJPEG_FOUND)
 
+# TIFF
 FIND_PACKAGE(TIFF)
 
 IF(TIFF_FOUND)
@@ -346,6 +358,7 @@ ELSE(TIFF_FOUND)
   MESSAGE("Libtiff not found. TIFF support will be disabled")
 ENDIF(TIFF_FOUND)
 
+# PNG
 FIND_PACKAGE(PNG)
 
 IF(PNG_FOUND)
@@ -357,6 +370,7 @@ ELSE(PNG_FOUND)
 ENDIF(PNG_FOUND)
 
 
+# CppUnit
 FIND_PACKAGE(CppUnit)
 
 IF(CppUnit_FOUND)
@@ -367,11 +381,14 @@ ELSE(CppUnit_FOUND)
   MESSAGE("Cppunit not found. No unit tests will be built.")
 ENDIF(CppUnit_FOUND)
 
+# OpenSSL
 FIND_PACKAGE(OpenSSL)
 
+# FREETYPE
 FIND_PACKAGE(FREETYPE REQUIRED)
 MESSAGE("Found freetype library at ${FREETYPE_LIBRARIES}, headers ${FREETYPE_INCLUDE_DIR}")
 
+# LIBSTLPORT
 FIND_PACKAGE(LIBSTLPORT)
 SET(stlport_libraries_if_use_stlport)
 IF(USE_STLPORT)
@@ -425,6 +442,7 @@ ELSE(DEFINED JPEG_RUNTIME_COMPATIBLE)
 	ENDIF(NOT WIN32)
 ENDIF(DEFINED JPEG_RUNTIME_COMPATIBLE)
 
+# LUA
 FIND_PACKAGE(LUA)
 IF(LUA_FOUND)
 	# If we have lua, we can build podofoimpose.
@@ -519,6 +537,9 @@ FILE(APPEND
      "SET(PODOFO_INCLUDES ${PoDoFo_SOURCE_DIR}/src)\n"
      )
 
+# =============================================================================
+# Add subdirectories
+# =============================================================================
 ADD_SUBDIRECTORY(src)
 IF(NOT PODOFO_BUILD_LIB_ONLY)
 ADD_SUBDIRECTORY(test)
@@ -527,7 +548,9 @@ ADD_SUBDIRECTORY(examples)
 ADD_SUBDIRECTORY(debian)
 ENDIF(NOT PODOFO_BUILD_LIB_ONLY)
 
+# =============================================================================
 # Generate our configure file
+# =============================================================================
 CONFIGURE_FILE(${PoDoFo_SOURCE_DIR}/podofo_config.h.in ${PoDoFo_BINARY_DIR}/podofo_config.h)
 
 # Export some variables into the config file so it's easier for others

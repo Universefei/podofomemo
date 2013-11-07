@@ -5,8 +5,28 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 # and the other wiki entries before you add anything. You might not need to.
 #****************************************************************************
 
+# ===========================================================================
+# What to do in the root CMakeLists.txt file?
+# ===========================================================================
+
+#     1) CMAKE_MINIMUM_REQUIRED()
+#     2) Project configuration
+#     3) Load CMake modules
+#     4) Compile requirements
+#     5) Platform detect
+#     6) Prerequisit packages detect
+#     7) Add Subdirectories
+#     8) Generate config files
+#     *) Set various variables
+
+
+
+# ============================================================================
+# Project Configuration
+# ============================================================================
 #
 # Project name and version
+# NB: Cmake is not case-sensitive
 #
 PROJECT(PoDoFo)
 
@@ -17,8 +37,15 @@ SET(PODOFO_SOVERSION "${PODOFO_VERSION_MAJOR}.${PODOFO_VERSION_MINOR}.${PODOFO_V
 SET(PODOFO_LIBVERSION "${PODOFO_SOVERSION}")
 
 
-#
+# =============================================================================
+# Load CMake built-in *.cmake and user self-implement *.cmake MODULES
+# =============================================================================
+
+# CMake built-in *.cmake-------------------------------------------------------
 # Main includes
+# Q: Where are those includes?
+# A: Default cmake path: /usr/share/cmake-2.8/Modules/
+# You can consider build-in cmake as something like standard libs to C
 #
 INCLUDE(CheckIncludeFile)
 INCLUDE(CheckLibraryExists)
@@ -26,6 +53,7 @@ INCLUDE(UsePkgConfig)
 INCLUDE(TestBigEndian)
 INCLUDE(CheckTypeSize)
 
+# User-implemented *.cmake-----------------------------------------------------
 # Load modules from our source tree too
 SET(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
 
@@ -35,6 +63,10 @@ SET(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
 # variable here that we require to be set elsewhere, otherwise we'll complain.
 SET(PODOFO_MAIN_CMAKELISTS_READ TRUE)
 
+
+# =============================================================================
+# Compile output requirement
+# =============================================================================
 
 # If the user hasn't told use specifically what they want, build only
 # a static library.
@@ -64,6 +96,20 @@ ELSE(WANT_LIB64)
 ENDIF(WANT_LIB64)
 MESSAGE("Will install libraries to ${CMAKE_INSTALL_PREFIX}/${LIBDIRNAME}")
 
+###############################################################################
+#=============================================================================#
+#               Platform detect                                               #
+#                                                                             #
+#     1) C standard implement liborary interface                              #
+#     2) Compiler                                                             #
+#     3) Operating system                                                     #
+#     4) Hardware                                                             #
+#                                                                             #
+###############################################################################
+
+# =============================================================================
+# Various C standard implements detect
+# =============================================================================
 # Some headers that tend to vary a bit
 CHECK_INCLUDE_FILE("strings.h" PODOFO_HAVE_STRINGS_H) 
 CHECK_INCLUDE_FILE("arpa/inet.h" PODOFO_HAVE_ARPA_INET_H) 
@@ -80,6 +126,8 @@ CHECK_INCLUDE_FILE("stdint.h" PODOFO_HAVE_STDINT_H)
 # See: http://msdn.microsoft.com/en-us/library/aa384264(VS.85).aspx
 CHECK_INCLUDE_FILE("BaseTsd.h" PODOFO_HAVE_BASETSD_H) 
 
+# -----------------------------------------------------------------------------
+# In source code customize
 # We cache integer type detection results, and don't repeat them
 # (and overwrite the user's manual changes) if they've been done already.
 IF(NOT PDF_INT64_TYPENAME)
@@ -209,12 +257,27 @@ CONFIGURE_FILE(
 ADD_CUSTOM_TARGET(uninstall "${CMAKE_COMMAND}"
     -P "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake")
 
-# Check if we are big endian===================================================
+# =============================================================================
+# Hardware related detect
+# =============================================================================
+
+# Check if we are big endian---------------------------------------------------
+# Endianess is related with CPU actually, have noting to do with OS
 TEST_BIG_ENDIAN(TEST_BIG)
 
+
 # =============================================================================
-# OS detect
+# OS detect (POSIX)
 # =============================================================================
+
+# 4,CMAKE_SYSTEM，系统名称，比如Linux-2.6.22
+# 5,CMAKE_SYSTEM_NAME，不包含版本的系统名，比如Linux
+# 6,CMAKE_SYSTEM_VERSION，系统版本，比如2.6.22
+# 7,CMAKE_SYSTEM_PROCESSOR，处理器名称，比如i686.
+# 8,UNIX，在所有的类UNIX平台为TRUE，包括OS X和cygwin
+# 9,WIN32，在所有的win32平台为TRUE，包括cygwin
+
+# Win32/cygwin-----------------------------------------------------------------
 IF(WIN32)
     # On win32 we support EITHER shared OR static builds.
     # If both are enabled (default), turn off generation of the
@@ -240,6 +303,7 @@ ELSE(WIN32)
     SET(EXTRA_INCLUDES)
 ENDIF(WIN32)
 
+# UNIX/OS X/cygwin-------------------------------------------------------------
 IF(UNIX)
     SET(WANT_FONTCONFIG TRUE CACHE INTERNAL
         "True if PoDoFo should be built with fontconfig support")
@@ -248,6 +312,10 @@ ELSE(UNIX)
         "True if PoDoFo should be built with fontconfig support")
 ENDIF(UNIX)
 
+
+# =============================================================================
+# Compiler detect
+# =============================================================================
 
 IF(CMAKE_COMPILER_IS_GNUCXX)
     MESSAGE("Using gcc specific compiler options")
@@ -310,18 +378,18 @@ IF(CMAKE_COMPILER_IS_GNUCXX)
 ENDIF(CMAKE_COMPILER_IS_GNUCXX)
 
 # ==============================================================================
-# packages
+# Find prequisit packages
 # ==============================================================================
 
-# ZLIB
+# ZLIB-------------------------------------------------------------------------
 FIND_PACKAGE(ZLIB REQUIRED)
 MESSAGE("Found zlib headers in ${ZLIB_INCLUDE_DIR}, library at ${ZLIB_LIBRARIES}")
 
-# LIBCRYPTO
+# LIBCRYPTO--------------------------------------------------------------------
 FIND_PACKAGE(LIBCRYPTO REQUIRED)
 MESSAGE("Found OpenSSL's libCrypto headers in ${LIBCRYPTO_INCLUDE_DIR}, library at ${LIBCRYPTO_LIBRARIES}")
 
-# LIBIDN
+# LIBIDN-----------------------------------------------------------------------
 FIND_PACKAGE(LIBIDN)
 
 IF(LIBIDN_FOUND)
@@ -336,7 +404,7 @@ ELSE(LIBIDN_FOUND)
 	MESSAGE("Libidn not found. AES-256 Encryption support will be disabled")
 ENDIF(LIBIDN_FOUND)
 
-# LIBJPEG
+# LIBJPEG----------------------------------------------------------------------
 FIND_PACKAGE(LIBJPEG)
 
 IF(LIBJPEG_FOUND)
@@ -347,7 +415,7 @@ ELSE(LIBJPEG_FOUND)
   MESSAGE("Libjpeg not found. JPEG support will be disabled")
 ENDIF(LIBJPEG_FOUND)
 
-# TIFF
+# TIFF-------------------------------------------------------------------------
 FIND_PACKAGE(TIFF)
 
 IF(TIFF_FOUND)
@@ -358,7 +426,7 @@ ELSE(TIFF_FOUND)
   MESSAGE("Libtiff not found. TIFF support will be disabled")
 ENDIF(TIFF_FOUND)
 
-# PNG
+# PNG--------------------------------------------------------------------------
 FIND_PACKAGE(PNG)
 
 IF(PNG_FOUND)
@@ -370,7 +438,7 @@ ELSE(PNG_FOUND)
 ENDIF(PNG_FOUND)
 
 
-# CppUnit
+# CppUnit----------------------------------------------------------------------
 FIND_PACKAGE(CppUnit)
 
 IF(CppUnit_FOUND)
@@ -381,14 +449,14 @@ ELSE(CppUnit_FOUND)
   MESSAGE("Cppunit not found. No unit tests will be built.")
 ENDIF(CppUnit_FOUND)
 
-# OpenSSL
+# OpenSSL----------------------------------------------------------------------
 FIND_PACKAGE(OpenSSL)
 
-# FREETYPE
+# FREETYPE---------------------------------------------------------------------
 FIND_PACKAGE(FREETYPE REQUIRED)
 MESSAGE("Found freetype library at ${FREETYPE_LIBRARIES}, headers ${FREETYPE_INCLUDE_DIR}")
 
-# LIBSTLPORT
+# LIBSTLPORT-------------------------------------------------------------------
 FIND_PACKAGE(LIBSTLPORT)
 SET(stlport_libraries_if_use_stlport)
 IF(USE_STLPORT)
@@ -404,6 +472,7 @@ IF(USE_STLPORT)
 	ENDIF(LIBSTLPORT_FOUND)
 ENDIF(USE_STLPORT)
 
+# FONTCONFIG-------------------------------------------------------------------
 IF(WANT_FONTCONFIG)
 	FIND_PACKAGE(FONTCONFIG REQUIRED)
 	SET(PODOFO_HAVE_FONTCONFIG TRUE)
@@ -442,7 +511,7 @@ ELSE(DEFINED JPEG_RUNTIME_COMPATIBLE)
 	ENDIF(NOT WIN32)
 ENDIF(DEFINED JPEG_RUNTIME_COMPATIBLE)
 
-# LUA
+# LUA--------------------------------------------------------------------------
 FIND_PACKAGE(LUA)
 IF(LUA_FOUND)
 	# If we have lua, we can build podofoimpose.
@@ -456,6 +525,7 @@ ELSE(LUA_FOUND)
 ENDIF(LUA_FOUND)
 
 
+# Threads----------------------------------------------------------------------
 # Check if we should build a multithreaded version of PoDoFo
 IF(DEFINED PODOFO_NO_MULTITHREAD)
   MESSAGE("Building non multithreaded version of PoDoFo.")
@@ -467,6 +537,7 @@ ELSE(DEFINED PODOFO_NO_MULTITHREAD)
   SET(PLATFORM_SYSTEM_LIBRARIES ${CMAKE_THREAD_LIBS_INIT} ${PLATFORM_SYSTEM_LIBRARIES})
 ENDIF(DEFINED PODOFO_NO_MULTITHREAD)
 
+# Boost------------------------------------------------------------------------
 IF(WANT_BOOST)
     MESSAGE("Looking optional for Boost.")
     MESSAGE("Boost is optional, so don't worry if it is not found.")
@@ -480,6 +551,11 @@ IF(WANT_BOOST)
     ENDIF(BOOST_FOUND)
 ENDIF(WANT_BOOST)
 
+# =============================================================================
+# Directory Path configuration
+# =============================================================================
+
+# Those are needed when compiling podofo---------------------------------------
 INCLUDE_DIRECTORIES(
     ${PoDoFo_BINARY_DIR}
     ${PoDoFo_SOURCE_DIR}
@@ -488,6 +564,7 @@ INCLUDE_DIRECTORIES(
     ${ZLIB_INCLUDE_DIR}
     ${EXTRA_INCLUDES}
      )
+# Those are needed when install (when using this lib for developing )----------
 LINK_DIRECTORIES(
     ${PoDoFo_BINARY_DIR}/src/
     )
@@ -521,7 +598,7 @@ SET(PODOFO_LIB
     )
 
 #
-# Setup directories we will need
+# Setup directories we will need-----------------------------------------------
 #
 SET(MANDIR "share/man/")
 

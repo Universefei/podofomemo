@@ -253,10 +253,12 @@ INSTALL(FILES ${PODOFO_DOC_HEADERS}
 # How to build? static or shared? .a/.so .lib/.dll
 # =============================================================================
 
+# Not specify static/shared----------------------------------------------------
 IF(NOT PODOFO_BUILD_SHARED AND NOT PODOFO_BUILD_STATIC)
     MESSAGE(FATAL_ERROR "At least one of PODOFO_BUILD_SHARED and PODOF_BUILD_STATIC must be set")
 ENDIF(NOT PODOFO_BUILD_SHARED AND NOT PODOFO_BUILD_STATIC)
 
+# Specify static build---------------------------------------------------------
 IF(PODOFO_BUILD_STATIC)
     MESSAGE("Building static PoDoFo library")
     ADD_LIBRARY(podofo_static STATIC ${PODOFO_BASE_SOURCES} ${PODOFO_DOC_SOURCES})
@@ -278,6 +280,7 @@ IF(PODOFO_BUILD_STATIC)
         )
 ENDIF(PODOFO_BUILD_STATIC)
 
+# Specify shared build---------------------------------------------------------
 IF(PODOFO_BUILD_SHARED)
     MESSAGE("Building shared PoDoFo library")
     ADD_LIBRARY(podofo_shared SHARED ${PODOFO_BASE_SOURCES} ${PODOFO_DOC_SOURCES})

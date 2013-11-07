@@ -9,15 +9,18 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 # What to do in the root CMakeLists.txt file?
 # ===========================================================================
 
+# Almost all configuration is set Variables
+
 #     1) CMAKE_MINIMUM_REQUIRED()
 #     2) Project configuration
 #     3) Load CMake modules
 #     4) Compile requirements
 #     5) Platform detect
 #     6) Prerequisit packages detect
-#     7) Add Subdirectories
-#     8) Generate config files
-#     *) Set various variables
+#     7) Directories PATH
+#     8) Add Subdirectories
+#     9) Generate config files
+
 
 
 
@@ -110,6 +113,9 @@ MESSAGE("Will install libraries to ${CMAKE_INSTALL_PREFIX}/${LIBDIRNAME}")
 # =============================================================================
 # Various C standard implements detect
 # =============================================================================
+
+# Having load corresponding cmake module via command:
+# INCLUDE(CheckIncludeFile)
 # Some headers that tend to vary a bit
 CHECK_INCLUDE_FILE("strings.h" PODOFO_HAVE_STRINGS_H) 
 CHECK_INCLUDE_FILE("arpa/inet.h" PODOFO_HAVE_ARPA_INET_H) 
@@ -160,6 +166,7 @@ IF(NOT PDF_INT64_TYPENAME)
        # First, though, make sure sizeof(int) = 4 and if not, scream, because
        # hopefully this case will never be hit and we'll never have to write
        # the horrible code check for
+       # before those make sure load buildin module :INCLUDE(CheckTypeSize)
        CHECK_TYPE_SIZE("signed char"        SZ_TINY_INT)
        CHECK_TYPE_SIZE("unsigned char"      SZ_TINY_UINT)
        CHECK_TYPE_SIZE("short int"          SZ_SHORT_INT)
@@ -523,7 +530,6 @@ IF(LUA_FOUND)
 ELSE(LUA_FOUND)
 	MESSAGE("Lua not found - PoDoFoImpose and PoDoFoColor will be built without Lua support")
 ENDIF(LUA_FOUND)
-
 
 # Threads----------------------------------------------------------------------
 # Check if we should build a multithreaded version of PoDoFo

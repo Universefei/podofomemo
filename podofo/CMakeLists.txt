@@ -77,9 +77,14 @@ IF(NOT DEFINED PODOFO_BUILD_SHARED AND NOT DEFINED PODOFO_BUILD_STATIC)
     SET(PODOFO_BUILD_STATIC TRUE)
     SET(PODOFO_BUILD_SHARED FALSE)
 ENDIF(NOT DEFINED PODOFO_BUILD_SHARED AND NOT DEFINED PODOFO_BUILD_STATIC)
+
 IF(DEFINED PODOFO_BUILD_SHARED AND NOT DEFINED PODOFO_BUILD_STATIC)
-    SET(PODOFO_BUILD_SHARED NOT ${PODOFO_BUILD_SHARED})
+	# here is a bug
+	# See my stack overflow ask questions records
+	#SET(PODOFO_BUILD_SHARED NOT ${PODOFO_BUILD_SHARED})
+	SET(PODOFO_BUILD_STATIC NOT ${PODOFO_BUILD_SHARED})
 ENDIF(DEFINED PODOFO_BUILD_SHARED AND NOT DEFINED PODOFO_BUILD_STATIC)
+
 IF(NOT DEFINED PODOFO_BUILD_SHARED AND DEFINED PODOFO_BUILD_STATIC)
     SET(PODOFO_BUILD_SHARED NOT ${PODOFO_BUILD_STATIC})
 ENDIF(NOT DEFINED PODOFO_BUILD_SHARED AND DEFINED PODOFO_BUILD_STATIC)
@@ -388,6 +393,12 @@ ENDIF(CMAKE_COMPILER_IS_GNUCXX)
 # Find prequisit packages
 # ==============================================================================
 
+# Some Cmake kept build-in variable
+
+# 1] pkgname_FOUND          bool, if pkgname found in current platform
+# 2] pkgname_INCLUDE_DIR    string, pkgname's header directory path
+# 3] pkgname_LIBRARIES      string, pkgname's library directory path
+
 # ZLIB-------------------------------------------------------------------------
 FIND_PACKAGE(ZLIB REQUIRED)
 MESSAGE("Found zlib headers in ${ZLIB_INCLUDE_DIR}, library at ${ZLIB_LIBRARIES}")
@@ -625,11 +636,12 @@ FILE(APPEND
 # Add subdirectories
 # =============================================================================
 ADD_SUBDIRECTORY(src)
+# if jsut build lib, exclude other tools
 IF(NOT PODOFO_BUILD_LIB_ONLY)
-ADD_SUBDIRECTORY(test)
-ADD_SUBDIRECTORY(tools)
-ADD_SUBDIRECTORY(examples)
-ADD_SUBDIRECTORY(debian)
+	ADD_SUBDIRECTORY(test)
+	ADD_SUBDIRECTORY(tools)
+	ADD_SUBDIRECTORY(examples)
+	ADD_SUBDIRECTORY(debian)
 ENDIF(NOT PODOFO_BUILD_LIB_ONLY)
 
 # =============================================================================

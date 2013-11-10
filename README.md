@@ -26,7 +26,8 @@ PoDoFo SRC Analysis
 
 1. From ./podofo/README.html:
 ```
-sudo aptitude install build-essential g++ cmake libz-dev libtiff-dev libjpeg-dev libfreetype6-dev libfontconfig-dev
+sudo aptitude install build-essential g++ cmake libz-dev libtiff-dev \
+		 libjpeg-dev libfreetype6-dev libfontconfig-dev
 ```
 
 2. Before that you need :

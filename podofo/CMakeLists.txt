@@ -101,7 +101,7 @@ MESSAGE("Will install libraries to ${CMAKE_INSTALL_PREFIX}/${LIBDIRNAME}")
 
 ###############################################################################
 #=============================================================================#
-#               Platform detect                                               #
+#               Platform inspection                                           #
 #                                                                             #
 #     1) C standard implement liborary interface                              #
 #     2) Compiler                                                             #
@@ -473,6 +473,7 @@ IF(USE_STLPORT)
 		LINK_DIRECTORIES(${LIBSTLPORT_LIB})
 		SET(stlport_libraries_if_use_stlport stlport)
 		# Use the threaded STLPort
+		# STLPort is a common-used STL implemention by a Russian
 		ADD_DEFINITIONS(-D_PTHREADS)
 	ELSE(LIBSTLPORT_FOUND)
 		MESSAGE(FATAL_ERROR "STLPort use requested, but STLPort not found.")

@@ -33,3 +33,4 @@ FUTURE:
       Known trouble areas:
          + Small strings on heap in PdfString. Use an in-object buffer for
            small PdfStrings/PdfRefCountedBuffers since these are the most common type.
+

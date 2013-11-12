@@ -359,6 +359,7 @@ IF(CMAKE_COMPILER_IS_GNUCXX)
         ADD_DEFINITIONS(-std=c++98)
     ENDIF(NOT WIN32)
 
+	# What does command ADD_DEFINITIONS means?
     ADD_DEFINITIONS(
         -Wall
         -Woverloaded-virtual
@@ -393,7 +394,7 @@ ENDIF(CMAKE_COMPILER_IS_GNUCXX)
 # Find prequisit packages
 # ==============================================================================
 
-# Some Cmake kept build-in variable
+# Some Cmake kept build-in variable:
 
 # 1] pkgname_FOUND          bool, if pkgname found in current platform
 # 2] pkgname_INCLUDE_DIR    string, pkgname's header directory path
@@ -401,10 +402,13 @@ ENDIF(CMAKE_COMPILER_IS_GNUCXX)
 
 # ZLIB-------------------------------------------------------------------------
 FIND_PACKAGE(ZLIB REQUIRED)
-MESSAGE("Found zlib headers in ${ZLIB_INCLUDE_DIR}, library at ${ZLIB_LIBRARIES}")
+# IF(ZLIB_FOUND) # no need for if statement 'cause of REQUIRED keyword
+	MESSAGE("Found zlib headers in ${ZLIB_INCLUDE_DIR}, library at ${ZLIB_LIBRARIES}")
+# ENDIF()
 
 # LIBCRYPTO--------------------------------------------------------------------
 FIND_PACKAGE(LIBCRYPTO REQUIRED)
+# No need for if statement, cause of REQUIRED keyword
 MESSAGE("Found OpenSSL's libCrypto headers in ${LIBCRYPTO_INCLUDE_DIR}, library at ${LIBCRYPTO_LIBRARIES}")
 
 # LIBIDN-----------------------------------------------------------------------
@@ -582,7 +586,7 @@ INCLUDE_DIRECTORIES(
     ${ZLIB_INCLUDE_DIR}
     ${EXTRA_INCLUDES}
      )
-# Those are needed when install (when using this lib for developing )----------
+# Those are needed when install? (when using this lib for developing)----------
 LINK_DIRECTORIES(
     ${PoDoFo_BINARY_DIR}/src/
     )
@@ -621,8 +625,7 @@ SET(PODOFO_LIB
 SET(MANDIR "share/man/")
 
 # Create the config file. It'll be appended to as the subdirs run though
-# then dependency information will be written to it at the end of the
-# build.
+# then dependency information will be written to it at the end of the build.
 FILE(WRITE
      "${PoDoFo_BINARY_DIR}/PoDoFoConfig.cmake"
      "# CMake module for PoDoFo\n"

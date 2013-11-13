@@ -42,6 +42,34 @@ class PdfVecObjects;
  *                                                                            *
  *****************************************************************************/
 
+/* Members in PdfObject
+ * ====================
+ * [properties]
+ *      1.PdfReference   m_reference;
+ *      2.PdfStream*     m_pStream;
+ *      3.PdfVecObjects* m_pOwner;
+ *      4.mutable bool m_bDelayedStreamLoadDone;
+ *      5.mutable bool m_bDelayedStreamLoadInProgress;
+ * 
+ * [operations]
+ *      1.constructors X13
+ *      2.destructors
+ *      3.operators overloading
+ *
+ *      4.GetIndirectKey()
+ *      5.MustGetIndirectKey()
+ *      6.WriteObject()
+ *      7.GetObjectLength()
+ *      8.Reference()
+ *      9.GetStream()
+ *      10.HasStream()
+ *      11.SetOwner()
+ *      12.GetOwner()
+ *      13.FlateCompressStream()
+ *      14.GetByteOffset()
+ *      15.DelayedStreamLoad()
+ */
+
 /**
  * This class represents a PDF indirect Object in memory
  * 

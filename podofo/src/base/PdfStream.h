@@ -36,6 +36,41 @@ class PdfName;
 class PdfObject;
 class PdfOutputStream;
 
+/******************************************************************************
+ *                                                                            *
+ *                              Class PdfStream                               *
+ *                                                                            *
+ *****************************************************************************/
+
+/* Members in PdfStream
+ * ====================
+ * [properties]
+ *     PdfObject*          m_pParent;
+ *     bool                m_bAppend;
+ * 
+ * [operations]
+ *     1.constructor
+ *     2.destructor
+ *     3.operator overloading
+ *
+ *     4.Write()
+ *     5.Set() X5
+ *     6.SetRawData()
+ *     7.BeginAppend() X2
+ *     8.Append() X3
+ *     9.EndAppend()
+ *     10.IsAppending()
+ *     11.GetLength()
+ *     12.GetCopy() X2
+ *     13.GetFilteredCopy() X2
+ *     14.GetInternalBuffer()
+ *     15.GetInternalBufferSize()
+ *     16.BeginAppendImpl()
+ *     17.AppendImpl()
+ *     18.EndAppendImpl()
+ */
+
+
 /** A PDF stream can be appended to any PdfObject
  *  and can contain arbitrary data.
  *
@@ -287,6 +322,10 @@ class PODOFO_API PdfStream {
     virtual void EndAppendImpl() = 0;
 
  protected:
+	/* This is point to its parent object or another entity that contain 
+	 * stream content?
+	 */
+	/* object can contain multiple other objects! */
     PdfObject*          m_pParent;
 
     bool                m_bAppend;

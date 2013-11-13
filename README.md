@@ -93,6 +93,19 @@ install neccesory packages
  * [PdfObject](http://podofo.sourceforge.net/doc/html/classPoDoFo_1_1PdfObject.html)
  * [PdfVariant](http://podofo.sourceforge.net/doc/html/classPoDoFo_1_1PdfVariant.html)
 
+#### Done list
+
+ 1. 11.13:
+
+```
+ class PdfDocument;
+ class PdfVariant;
+ class PdfObject;
+ Class PdfStream;
+ class PdfVecObjects;
+```
+
+
 
 ## Syntax
 

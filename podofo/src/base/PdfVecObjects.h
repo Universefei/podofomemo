@@ -63,6 +63,12 @@ typedef TVecObjects::iterator        TIVecObjects;
 typedef TVecObjects::const_iterator  TCIVecObjects;
 
 
+/******************************************************************************
+ *                                                                            *
+ *                            Class PdfVecObjects                             *
+ *                                                                            *
+ *****************************************************************************/
+
 
 /** A STL vector of PdfObjects. I.e. a list of PdfObject classes.
  *  The PdfParser will read the PdfFile into memory and create 

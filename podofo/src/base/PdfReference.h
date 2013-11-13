@@ -38,6 +38,55 @@ typedef pdf_uint16 pdf_gennum;
 
 class PdfOutputDevice;
 
+/******************************************************************************
+ *                                                                            *
+ *                          Class PdfReference                                *
+ *                                                                            *
+ *****************************************************************************/
+
+/* Members in PdfReference
+ * =======================
+ *
+ * [Data Members]
+ *     1.pdf_objnum    m_nObjectNo;
+ *     2.pdf_gennum    m_nGenerationNo;
+ *
+ * [Constructor]
+ *     1.PdfReference() : m_nObjectNo( 0 ), m_nGenerationNo( 0 )
+ *     2.PdfReference( const pdf_objnum nObjectNo, const pdf_gennum nGenerationNo )
+ *                     : m_nObjectNo( nObjectNo ), m_nGenerationNo( nGenerationNo ) 
+ *     3.Copy constructor
+ *
+ * [Destructor]
+ *     1.~PdfReference()
+ *
+ * [Operator overloading]
+ *     =
+ *     ==
+ *     !=
+ *     <
+ *
+ * [Other member functions]
+ *     1.ToString()
+ *     2.Write()
+ *     3.SetObjectNumber
+ *     4.ObjectNumber
+ *     5.SetGenerationNumber
+ *     6.GenerationNumber
+ *     7.IsIndirect
+ */
+
+/* FQA
+ * ===
+ * 1] Why are some functions designed inline, when to definite a function inline?
+ * 2] What does PODOFO_NOTHROW mean?
+ * 3] How to write operator overloading functions?
+ * 4] How to write constructor with initial list?
+ * 5] When to use const?
+ * 
+ */
+
+
 /**
  * A reference is a pointer to a object in the PDF file of the form
  * "4 0 R", where 4 is the object number and 0 is the generation number.
@@ -152,6 +201,10 @@ class PODOFO_API PdfReference : public PdfDataType {
      *           an indirect object.
      */
     PODOFO_NOTHROW inline bool IsIndirect() const;
+
+/*---------------------------------------------------------------------------*/
+/*                             Data Members                                  */
+/*---------------------------------------------------------------------------*/
 
  private:
     pdf_objnum    m_nObjectNo;

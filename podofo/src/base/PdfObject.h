@@ -65,6 +65,25 @@ class PODOFO_API PdfObject : public PdfVariant {
 /*                                                                           */
 /*---------------------------------------------------------------------------*/
 
+/* as to different object types, provide different corresponding constructors
+ * ==========================================================================
+ * 0] Default constructor
+ * 1] const PdfReference & rRef, const char* pszType
+ * 2] const PdfReference & rRef, const PdfVariant & rVariant
+ * 3] PdfVariant & var
+ * 4] bool
+ * 5] pdf_int64
+ * 6] double
+ * 7] PdfString & rsString
+ * 8] PdfName & rName
+ * 9] PdfReference & rRef
+ * 10] PdfArray & tList
+ * 11] PdfDictionary & rDict
+ * 12] PdfObject & rhs
+ * 
+ */
+
+
     /** Create a PDF object with object and generation number -1
      *  and the value of being an empty PdfDictionary.
      */
@@ -322,6 +341,10 @@ class PODOFO_API PdfObject : public PdfVariant {
      *  \see IsDirty
      */
     PdfStream* GetStream_NoDL();
+
+/*---------------------------------------------------------------------------*/
+/*                           Data Members                                    */
+/*---------------------------------------------------------------------------*/
 
  protected:
     PdfReference   m_reference;

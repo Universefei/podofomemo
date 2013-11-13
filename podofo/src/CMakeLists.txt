@@ -254,11 +254,12 @@ INSTALL(FILES ${PODOFO_DOC_HEADERS}
 # =============================================================================
 
 # Not specify static/shared----------------------------------------------------
+# Both variables are Boolean type
 IF(NOT PODOFO_BUILD_SHARED AND NOT PODOFO_BUILD_STATIC)
     MESSAGE(FATAL_ERROR "At least one of PODOFO_BUILD_SHARED and PODOF_BUILD_STATIC must be set")
 ENDIF(NOT PODOFO_BUILD_SHARED AND NOT PODOFO_BUILD_STATIC)
 
-# Specify static build---------------------------------------------------------
+# Specify static build (boolean type)------------------------------------------
 IF(PODOFO_BUILD_STATIC)
     MESSAGE("Building static PoDoFo library")
     ADD_LIBRARY(podofo_static STATIC ${PODOFO_BASE_SOURCES} ${PODOFO_DOC_SOURCES})

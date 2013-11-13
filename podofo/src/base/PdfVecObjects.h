@@ -93,6 +93,10 @@ class PODOFO_API PdfVecObjects {
 
     /** Every observer of PdfVecObjects has to implement this interface.
      */
+/*---------------------------------------------------------------------------*/
+/*                           innerClass Observer                             */
+/*---------------------------------------------------------------------------*/
+
     class PODOFO_API Observer {
         friend class PdfVecObjects;
 
@@ -123,6 +127,11 @@ class PODOFO_API PdfVecObjects {
 
         virtual void Finish() = 0;
     };
+/*---------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------*/
+/*                           innerClass StreamFactory                        */
+/*---------------------------------------------------------------------------*/
 
     /** This class is used to implement stream factories in PoDoFo.
      */
@@ -141,6 +150,7 @@ class PODOFO_API PdfVecObjects {
         virtual PdfStream* CreateStream( PdfObject* pParent ) = 0;
     };
 
+/*---------------------------------------------------------------------------*/
  private:
     typedef std::vector<Observer*>        TVecObservers;
     typedef TVecObservers::iterator       TIVecObservers;
@@ -442,18 +452,28 @@ class PODOFO_API PdfVecObjects {
      */
     void SetObjectCount( const PdfReference & rRef );
 
+/*---------------------------------------------------------------------------*/
+/*                                                                           */
+/*                               Data members                                */
+/*                                                                           */
+/*---------------------------------------------------------------------------*/
  private:
     bool                m_bAutoDelete;
     size_t              m_nObjectCount;
     bool                m_bSorted;
+	/* objects vector that can store multiple content objects */
     TVecObjects         m_vector;
 
 
+	/* class without data members */
     TVecObservers       m_vecObservers;
+	/* std::deque<PdfReference> */
     TPdfReferenceList   m_lstFreeObjects;
 
+	/* point to parent document */
     PdfDocument*        m_pDocument;
 
+	/* a inner class just with a destructor and a pure virtual function */
     StreamFactory*      m_pStreamFactory;
 
 	std::string			m_sSubsetPrefix;		 ///< Prefix for BaseFont and FontName of subsetted font

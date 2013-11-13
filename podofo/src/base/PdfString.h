@@ -38,6 +38,12 @@ enum EPdfStringConversion {
 };
 
 
+/******************************************************************************
+ *============================================================================*
+ *                      class PdfString : public PdfDataType                  *
+ *                                                                            *
+ *****************************************************************************/
+
 /** A string that can be written to a PDF document.
  *  If it contains binary data it is automatically 
  *  converted into a hex string, otherwise a normal PDF 

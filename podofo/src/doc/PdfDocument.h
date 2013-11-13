@@ -636,14 +636,17 @@ class PODOFO_DOC_API PdfDocument {
     explicit PdfDocument(const PdfDocument&);
     PdfDocument& operator=(const PdfDocument&);
 
+	/* other content objects */
     PdfVecObjects   m_vecObjects;
 
+	/* Two important object in Pdf file */
     PdfObject*      m_pTrailer;
     PdfObject*      m_pCatalog;
 
     PdfInfo*        m_pInfo;
     PdfOutlines*    m_pOutlines;
     PdfNamesTree*   m_pNamesTree;
+
     PdfPagesTree*   m_pPagesTree;
     PdfAcroForm*    m_pAcroForms;
 

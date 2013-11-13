@@ -103,6 +103,11 @@ install neccesory packages
  class PdfObject;
  Class PdfStream;
  class PdfVecObjects;
+
+ class PdfDataType
+ class PdfData
+ class PdfName
+ class PdfString
 ```
 
 

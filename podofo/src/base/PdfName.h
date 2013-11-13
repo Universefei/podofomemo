@@ -32,6 +32,37 @@ class PdfName;
 //std::size_t hash_value(PdfName const& name);
 
 
+/******************************************************************************
+ *============================================================================*
+ *                      class PdfName : public PdfDataType                    *
+ *                                                                            *
+ *****************************************************************************/
+
+/* Members in PdfName
+ * ==================
+ * [properties]
+ *      1.static const PdfName KeyContents;
+ *      2.static const PdfName KeyFlags;
+ *      3.static const PdfName KeyLength;
+ *      4.static const PdfName KeyNull;
+ *      5.static const PdfName KeyRect;
+ *      6.static const PdfName KeySize;
+ *      7.static const PdfName KeySubtype;
+ *      8.static const PdfName KeyType;
+ *      9.static const PdfName KeyFilter;
+ *      10.std::string	m_Data;
+ * [Operations] 
+ *      1.constructors   X5
+ *      2.destructors    X1
+ *      3.operator overloading  ( = /  == / != / < )
+ *      4.FromEscaped()  X2
+ *      5.GetEscapedName()
+ *      6.Write()
+ *      7.GetLength()
+ *      8.GetName()
+ */
+
+
 /** This class represents a PdfName.
  *  Whenever a key is required you have to use a PdfName object.
  *  

@@ -29,6 +29,24 @@ namespace PoDoFo {
 
 class PdfOutputDevice;
 
+/******************************************************************************
+ *============================================================================*
+ *                    class PdfData : public PdfDataType                      *
+ *                                                                            *
+ *****************************************************************************/
+
+/* Members in PdfData
+ * ==================
+ * [properties]
+ *     std::string m_sData;
+ * [operations]
+ *     1.constructor  X3
+ *     2.destructor   X0
+ *     3.operation overloading  (=)
+ *     4.Write()
+ *     5.data()
+ */
+
 /** A datatype that allows to write abitrary data
  *  to a PDF file. 
  *  The user of this class has to ensure that the data
@@ -94,9 +112,10 @@ class PODOFO_API PdfData : public PdfDataType {
      * Access the data as a std::string
      * \returns a const reference to the contained data
      */
-     inline const std::string & data() const;
+    inline const std::string & data() const;
 
  private:
+	/* data? */
     std::string m_sData;
 };
 

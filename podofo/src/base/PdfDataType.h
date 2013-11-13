@@ -21,12 +21,19 @@
 #ifndef _PDF_DATATYPE_H_
 #define _PDF_DATATYPE_H_
 
+/* PdfDefines.h defines some macro and enum */
 #include "PdfDefines.h"
 
 namespace PoDoFo {
 
 class PdfEncrypt;
 class PdfOutputDevice;
+
+/******************************************************************************
+ *                                                                            *
+ *                            class PdfDataType                               *
+ *                                                                            *
+ *****************************************************************************/
 
 /** An interface for all PDF datatype classes.
  *
@@ -57,9 +64,7 @@ class PODOFO_API PdfDataType {
     virtual void Write( PdfOutputDevice* pDevice, EPdfWriteMode eWriteMode, const PdfEncrypt* pEncrypt = NULL ) const = 0;
 
 /*---------------------------------------------------------------------------*/
-/*                                                                           */
 /*                     Where is dirty flag?                                  */
-/*                                                                           */
 /*---------------------------------------------------------------------------*/
 
     /** The dirty flag is set if this variant
@@ -115,6 +120,7 @@ protected:
     inline void AssertMutable() const;
 
 private:
+	/* if its object is immutable */
     bool m_bImmutable;
 };
 

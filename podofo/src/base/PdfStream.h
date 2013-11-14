@@ -325,6 +325,7 @@ class PODOFO_API PdfStream {
 	/* This is point to its parent object or another entity that contain 
 	 * stream content?
 	 */
+
 	/* object can contain multiple other objects! */
     PdfObject*          m_pParent;
 

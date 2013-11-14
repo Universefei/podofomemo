@@ -95,8 +95,6 @@ install neccesory packages
 
 #### Done list
 
- 1. 11.13:
-
 ```
  class PdfDocument;
  class PdfVariant;

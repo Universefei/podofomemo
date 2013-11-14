@@ -400,7 +400,7 @@ class PODOFO_API PdfObject : public PdfVariant {
 #if defined(PODOFO_EXTRA_CHECKS)
  protected:
     PODOFO_NOTHROW bool DelayedStreamLoadInProgress() const { return m_bDelayedStreamLoadInProgress; }
-private:
+ private:
     mutable bool m_bDelayedStreamLoadInProgress;
 #endif
 };

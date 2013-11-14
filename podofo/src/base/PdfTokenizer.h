@@ -46,6 +46,12 @@ typedef TTokenizerQueque::iterator           TITokenizerQueque;
 typedef TTokenizerQueque::const_iterator     TCITokenizerQueque;
 
 
+/******************************************************************************
+ *                                                                            *
+ *                           class PdfTokenizer                               *
+ *                                                                            *
+ *****************************************************************************/
+
 /**
  * A simple tokenizer for PDF files and PDF content streams
  */

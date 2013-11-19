@@ -54,6 +54,12 @@ struct TLineElement
 	pdf_long        lLen;
 };
 
+/******************************************************************************
+ *============================================================================*
+ *                            class PdfPainter                                *
+ *                                                                            *
+ *****************************************************************************/
+
 /**
  * This class provides an easy to use painter object which allows you to draw on a PDF page
  * object.
@@ -760,6 +766,10 @@ class PODOFO_DOC_API PdfPainter {
     template<typename C>
         PdfString ExpandTabsPrivate( const C* pszText, pdf_long lStringLen, int nTabCnt, const C cTab, const C cSpace ) const;
 #endif
+
+/*---------------------------------------------------------------------------*/
+/*                                   properties                              */
+/*---------------------------------------------------------------------------*/
 
  protected:
     /** All drawing operations work on this stream.

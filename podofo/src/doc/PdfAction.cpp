@@ -87,6 +87,8 @@ PdfAction::PdfAction( const PdfAction & rhs )
     m_eType = static_cast<EPdfAction>(TypeNameToIndex( this->GetObject()->GetDictionary().GetKeyAsName( "S" ).GetName().c_str(), s_names, s_lNumActions, ePdfAction_Unknown ));
 }
 
+/*----- URI ---------------------------------------------------------------*/
+
 void PdfAction::SetURI( const PdfString & sUri )
 {
     this->GetObject()->GetDictionary().AddKey( "URI", sUri );
@@ -102,6 +104,8 @@ bool PdfAction::HasURI() const
     return (this->GetObject()->GetIndirectKey( "URI" ) != NULL);
 }
 
+/*----- Script -------------------------------------------------------------*/
+
 void PdfAction::SetScript( const PdfString & sScript )
 {
     this->GetObject()->GetDictionary().AddKey( "JS", sScript );
@@ -110,6 +114,7 @@ void PdfAction::SetScript( const PdfString & sScript )
 
 PdfString PdfAction::GetScript() const
 {
+	/* those function in class PdfAction are inheret from PdfElement? */
     return this->GetObject()->GetDictionary().GetKey( "JS" )->GetString();
 
 }
@@ -118,6 +123,8 @@ bool PdfAction::HasScript() const
 {
     return this->GetObject()->GetDictionary().HasKey( "JS" );
 }
+
+/*----- -----------------------------------------------------------------*/
 
 void PdfAction::AddToDictionary( PdfDictionary & dictionary ) const
 {

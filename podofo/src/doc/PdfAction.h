@@ -36,6 +36,7 @@ class PdfVecObjects;
  *  them has different keys and propeties.
  *  
  *  Not all action types listed here are supported yet.
+ *  ===================================================
  *
  *  Please make also sure that the action type you use is
  *  supported by the PDF version you are using.
@@ -64,6 +65,12 @@ enum EPdfAction {
     ePdfAction_Unknown = 0xff
 };
 
+/******************************************************************************
+ *                                                                            *
+ *                              class PdfAction                               *
+ *                                                                            *
+ *****************************************************************************/
+
 /** An action that can be performed in a PDF document
  */
 class PODOFO_DOC_API PdfAction : public PdfElement {
@@ -90,6 +97,13 @@ class PODOFO_DOC_API PdfAction : public PdfElement {
      */
     PdfAction( PdfObject* pObject );
 
+/*---------------------------------------------------------------------------*/
+/*                                operations                                 */
+/*---------------------------------------------------------------------------*/
+
+
+	/*----- URI -------------------------------------------------------------*/
+
     /** Set the URI of an ePdfAction_URI
      *  \param sUri must be a correct URI as PdfString
      */
@@ -105,12 +119,19 @@ class PODOFO_DOC_API PdfAction : public PdfElement {
      */
     bool HasURI() const;
 
+
+	/*----- Script ----------------------------------------------------------*/
+
     void SetScript( const PdfString & sScript );
 
     PdfString GetScript() const;
 
     bool HasScript() const;
     
+
+
+	/*----- Other operations ------------------------------------------------*/
+
     /** Get the type of this action
      *  \returns the type of this action
      */
@@ -125,11 +146,20 @@ class PODOFO_DOC_API PdfAction : public PdfElement {
      */
     void AddToDictionary( PdfDictionary & dictionary ) const;
 
+
  private:
     PdfAction( const PdfAction & rhs );
 
+/*---------------------------------------------------------------------------*/
+/*                                properties                                 */
+/*---------------------------------------------------------------------------*/
  private:
 
+	/**
+	 * static specify variable's lifetime and visibleness
+	 *
+	 * const specify that variable can not be motified! ( not constant )
+	 */
     static const long  s_lNumActions;
     static const char* s_names[];
 

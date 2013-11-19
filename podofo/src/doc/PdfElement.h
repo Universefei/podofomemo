@@ -29,10 +29,22 @@ namespace PoDoFo {
 class PdfStreamedDocument;
 class PdfVecObjects;
 
+/******************************************************************************
+ *============================================================================*
+ *                            class PdfElement                                *
+ *----------------------------------------------------------------------------*
+ *                                                                            *
+ *                                                                            *
+ *                                                                            *
+ *                                                                            *
+ *                                                                            *
+ *****************************************************************************/
+
 /** PdfElement is a common base class for all elements
  *  in a PDF file. For example pages, action and annotations.
  *
  *  Every PDF element has one PdfObject and provides an easier
+ *  ------------------------------------
  *  interface to modify the contents of the dictionary. 
  *  
  *  A PdfElement base class can be created from an existing PdfObject

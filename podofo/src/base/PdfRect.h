@@ -30,7 +30,13 @@ class PdfArray;
 class PdfPage;
 class PdfVariant;
    
-/** A rectangle as defined by the PDF reference
+/******************************************************************************
+ *                                                                            *
+ *                                class PdfRect                               *
+ *                                                                            *
+ *****************************************************************************/
+
+/** A rectangle as defined by the PDF reference (over 1000 pages)
  */
 class PODOFO_API PdfRect {
  public:

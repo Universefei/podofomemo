@@ -72,6 +72,7 @@ class PdfVecObjects;
 
 /**
  * This class represents a PDF indirect Object in memory
+ * =====================================================
  * 
  * It is possible to manipulate the stream which can be appended to the object
  * (if the object is of underlying type dictionary).  A PdfObject is uniquely
@@ -79,6 +80,7 @@ class PdfVecObjects;
  * passed to the constructor.
  *
  * The object can be written to a file easily using the WriteObject() function.
+ * ---------------------------------------------------------------------------
  *
  * \see WriteObject()
  */
@@ -92,6 +94,8 @@ class PODOFO_API PdfObject : public PdfVariant {
 /*                      Constructors and Destructors                         */
 /*                                                                           */
 /*---------------------------------------------------------------------------*/
+
+/* Every thing in PDF file is a object */
 
 /* as to different object types, provide different corresponding constructors
  * ==========================================================================

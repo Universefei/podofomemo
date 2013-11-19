@@ -69,24 +69,28 @@ int main( int argc, char* argv[] )
   converter.SetOutputFilename( pszOutput );
   
   /* check every command line param */
+  /* is there any limit on arguments amount? */
   for( int i=2;i<argc;i++ ) 
   {
       std::string sOption = argv[i];
 
 	  /* ? why not strcmp ? */
-      if( sOption == "-useimgsize" ) 
+	  /* c++ string != c psz */
+	  /* psz == char *  */
+
+      if( sOption == "-useimgsize" ) /* option */
       {
           converter.SetUseImageSize( true );
       }
       else 
       {
           printf("Adding image: %s\n", argv[i]);
-          converter.AddImage( argv[i] );
+          converter.AddImage( argv[i] ); /* how this function implement? */
       }
   }
   
   try {
-      converter.Work();
+      converter.Work(); /* start */
   } catch( PoDoFo::PdfError & e ) {
       fprintf( stderr, "Error: An error %i ocurred during processing the pdf file.\n", e.GetError() );
       e.PrintErrorMsg();

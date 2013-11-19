@@ -94,11 +94,18 @@ enum EPdfAnnotationFlags {
     ePdfAnnotationFlags_Unknow       = 0xffff
 };
 
+/******************************************************************************
+ *============================================================================*
+ *                            class Annotation                                *
+ *                                                                            *
+ *****************************************************************************/
+
 /** An annotation to a PdfPage 
  *  To create an annotation use PdfPage::CreateAnnotation
  * 
  *  \see PdfPage::CreateAnnotation
  */
+
 class PODOFO_DOC_API PdfAnnotation : public PdfElement {
  public:
     /** Create a new annotation object
@@ -364,19 +371,29 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
      */
     inline PdfPage* GetPage() const;
 
+/*---------------------------------------------------------------------------*/
+/*                                 properties                                */
+/*---------------------------------------------------------------------------*/
+
  private:
+
     /** Convert an annotation enum to its string representation
      *  which can be written to the PDF file.
      *  \returns the string representation or NULL for unsupported annotation types
      */
 
     static const long  s_lNumActions;
-    static const char* s_names[];
+    static const char* s_names[]; /* C-style string : psz */
 
  private:
+
+	/* Annotation type */
     EPdfAnnotation m_eAnnotation;
 
+	/* action when Annot activate  coorespond to /A in PDF reference */
     PdfAction*     m_pAction;
+
+	/* file specification */
     PdfFileSpec*   m_pFileSpec;
 
     PdfPage*       m_pPage;

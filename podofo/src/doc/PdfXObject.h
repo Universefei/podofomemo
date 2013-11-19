@@ -34,6 +34,15 @@ class PdfDictionary;
 class PdfObject;
 class PdfMemDocument;
 
+/******************************************************************************
+ *============================================================================*
+ *                            class PdfXObject                                *
+ *----------------------------------------------------------------------------*
+ *                                                                            *
+ *                                                                            *
+ *                                                                            *
+ *****************************************************************************/
+
 /** A XObject is a content stream with several drawing commands and data
  *  which can be used throughout a PDF document.
  *
@@ -42,8 +51,10 @@ class PdfMemDocument;
  * 
  *  \see PdfPainter
  */
+
 class PODOFO_DOC_API PdfXObject : public PdfElement, public PdfCanvas {
  public:
+/*----- constructors -----------------------------------------------------------------*/
     /** Create a new XObject with a specified dimension
      *  in a given document
      * 
@@ -80,8 +91,11 @@ class PODOFO_DOC_API PdfXObject : public PdfElement, public PdfCanvas {
      */
     PdfXObject( PdfObject* pObject );
 
+/*----- destructor -----------------------------------------------------------------*/
     virtual ~PdfXObject() { }
 
+
+/*----- member functions -----------------------------------------------------------------*/
     /** Get access to the contents object of this page.
      *  If you want to draw onto the page, you have to add 
      *  drawing commands to the stream of the Contents object.

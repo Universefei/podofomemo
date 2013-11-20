@@ -90,10 +90,10 @@ void ImageConverter::Work()
 			/* optimized layout */
 			if( dScale == dScaleX ) {
 				dX = 0.0;
-				dY = ( size.GetHeight() - image.getHeight() * dScale )/2.0;
+				dY = ( size.GetHeight() - image.GetHeight() * dScale )/2.0;
 			}
 			else if ( dScale == dScaleY ) {
-				dX = ( size.GetWidth() - image.getWidth() * dScale )/2.0;
+				dX = ( size.GetWidth() - image.GetWidth() * dScale )/2.0;
 				dY = 0.0;
 			}
             painter.DrawImage( dX, dY, &image, dScale, dScale );

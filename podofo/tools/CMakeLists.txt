@@ -16,4 +16,5 @@ SUBDIRS(
 	podofoimpose
 	podofoincrementalupdates
 	podofoxmp
+	task
 	)

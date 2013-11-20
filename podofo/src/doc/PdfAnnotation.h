@@ -106,6 +106,8 @@ enum EPdfAnnotationFlags {
  *  \see PdfPage::CreateAnnotation
  */
 
+/* correspond to a obj in pdf file formated as '23 0 obj ... endob' */
+
 class PODOFO_DOC_API PdfAnnotation : public PdfElement {
  public:
     /** Create a new annotation object
@@ -144,6 +146,8 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
      */
     PdfRect GetRect() const;
 
+/*----- Flags -----------------------------------------------------------------*/
+
     /** Set the flags of this annotation.
      *  \param uiFlags is an unsigned 32bit integer with different 
      *                 EPdfAnnotationFlags OR'ed together.
@@ -158,6 +162,8 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
      *  \see SetFlags
      */
     pdf_uint32 GetFlags() const;
+
+/*----- BorderStyle -----------------------------------------------------------------*/
 
     /** Set the annotations border style.
      *  \param dHCorner horitzontal corner radius 
@@ -174,12 +180,14 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
      */
     void SetBorderStyle( double dHCorner, double dVCorner, double dWidth, const PdfArray & rStrokeStyle );
 
+/*----- Title -----------------------------------------------------------------*/
+
     /** Set the title of this annotation.
      *  \param sTitle title of the annoation as string in PDF format
      *
      *  \see GetTitle
      */
-    void SetTitle( const PdfString & sTitle );
+    void SetTitle( const PdfString & sTitle ); /* addkey("T", sTitle) */
 
     /** Get the title of this annotation
      *
@@ -187,7 +195,9 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
      *
      *  \see SetTitle
      */
-    PdfString GetTitle() const;
+    PdfString GetTitle() const; /* getkey("T") */
+
+/*----- Contents -----------------------------------------------------------------*/
 
     /** Set the text of this annotation.
      *
@@ -195,7 +205,7 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
      *
      *  \see GetContents
      */
-    void SetContents( const PdfString & sContents );
+    void SetContents( const PdfString & sContents ); /* addkey("Contents", sContents) */
 
     /** Get the text of this annotation
      *
@@ -204,6 +214,8 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
      *  \see SetContents
      */
     PdfString GetContents() const;
+
+/*----- Destination -----------------------------------------------------------------*/
 
     /** Set the destination for link annotations
      *  \param rDestination target of the link
@@ -226,6 +238,8 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
      */
     bool HasDestination() const;
 
+/*----- Action -----------------------------------------------------------------*/
+
     /** Set the action that is executed for this annotation
      *  \param rAction an action object
      *
@@ -246,6 +260,8 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
      */
     bool HasAction() const;
 
+/*----- Open -----------------------------------------------------------------*/
+
     /** Sets wether this annotation is initialy open.
      *  You should always set this true for popup annotations.
      *  \param b if true open it
@@ -258,6 +274,8 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
      */
     bool GetOpen() const;
     
+/*----- fileAttachment -----------------------------------------------------------------*/
+
     /**
      * \returns true if this annotation has a file attachement
      */
@@ -281,6 +299,8 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
     PdfFileSpec* GetFileAttachement() const;
 
  
+/*----- QuadPoints -----------------------------------------------------------------*/
+
     /** Get the quad points associated with the annotation (if appropriate).
      *  This array is used in text markup annotations to describe the
      *  regions affected by the markup (i.e. the hilighted words, one
@@ -318,6 +338,8 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
      *           depending on the colorspace in which the color
      *           is specified
      */
+
+/*----- Color -----------------------------------------------------------------*/
 
     PdfArray GetColor() const;
 
@@ -360,10 +382,14 @@ class PODOFO_DOC_API PdfAnnotation : public PdfElement {
 
     void SetColor();
 
+/*----- Annot Type-----------------------------------------------------------------*/
+
     /** Get the type of this annotation
      *  \returns the annotation type
      */
     inline EPdfAnnotation GetType() const;
+
+/*----- belong to which page -----------------------------------------------------------------*/
 
     /** Get the page of this PdfField
      *

@@ -29,6 +29,10 @@ using namespace PoDoFo;
 
 const char* pszLoremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia sollicitudin viverra. Praesent augue tellus, feugiat vel tempus ac, semper in tellus. Maecenas et vehicula urna. Suspendisse ullamcorper molestie leo id aliquet. Mauris ultricies porttitor lectus vel facilisis. Integer euismod libero ut lectus mattis sed venenatis metus molestie. Aliquam feugiat, dolor a adipiscing ullamcorper, sapien orci ultrices erat, eget porttitor ipsum purus id magna. Morbi malesuada malesuada sagittis. Curabitur viverra posuere sem, quis condimentum eros viverra et. Pellentesque tristique aliquam orci a aliquam.\n\nIn hac habitasse platea dictumst. Maecenas vitae lorem velit. Donec at ultrices arcu. Phasellus et justo in quam fermentum volutpat. Nam vestibulum tempus lorem nec lacinia. Cras ac dignissim tortor. Morbi pellentesque, nisi sit amet sollicitudin accumsan, ante quam egestas lorem, a dapibus quam orci quis nulla. Donec quis orci ut lacus dictum sollicitudin at eget turpis. Nam condimentum iaculis enim, id volutpat est dapibus id. Quisque sed enim in est condimentum convallis. Cras at posuere ipsum. Cras tempor dui nunc, vel malesuada odio.";
 
+/*---------------------------------------------------------------------------*/
+/*                            WriteStringToStream()                          */
+/*---------------------------------------------------------------------------*/
+
 void WriteStringToStream( const PdfString & rsString, std::ostringstream & oss, PdfFont* pFont )
 {
     PdfEncoding* pEncoding = new PdfIdentityEncoding( 0, 0xffff, true );
@@ -46,17 +50,33 @@ void WriteStringToStream( const PdfString & rsString, std::ostringstream & oss, 
     delete pEncoding;
 }
 
+/*---------------------------------------------------------------------------*/
+/*                    CreateUnicodeAnnotationText()                          */
+/*---------------------------------------------------------------------------*/
+
 void CreateUnicodeAnnotationText( PdfPage* pPage, PdfDocument* pDocument )
 {
+    PdfString sGerman(reinterpret_cast<const pdf_utf8*>("Unicode Umlauts: ÄÖÜß"));
     PdfString sJap(reinterpret_cast<const pdf_utf8*>("「PoDoFo」は今から日本語も話せます。"));
+
+	/* create a annotation in this page with type ePdfAnnotation_text,and 
+	 * specifying Rectangle
+	 */
+
+	/* how to create a annotation typed link? */
+	/* construct a annotation, and return pointer to generated pointer */
     PdfAnnotation* pAnnotation = 
         pPage->CreateAnnotation( ePdfAnnotation_Text, PdfRect( 400.0, 200.0, 20.0, 20.0 ) );
 
-    PdfString sGerman(reinterpret_cast<const pdf_utf8*>("Unicode Umlauts: ÄÖÜß"));
-    pAnnotation->SetTitle( sGerman );
-    pAnnotation->SetContents( sJap );
-    pAnnotation->SetOpen( true );
+	/* set properties(k-v) in a annotation obj */
+    pAnnotation->SetTitle( sGerman ); /* addkey("T", sGerman) */
+    pAnnotation->SetContents( sJap ); /* addkey("Contents", sJap) */
+    pAnnotation->SetOpen( true );     /* addkey("open", true) */
 }
+
+/*---------------------------------------------------------------------------*/
+/*                CreateUnicodeAnnotationFreeText()                          */
+/*---------------------------------------------------------------------------*/
 
 void CreateUnicodeAnnotationFreeText( PdfPage* pPage, PdfDocument* pDocument )
 {
@@ -101,6 +121,10 @@ void CreateUnicodeAnnotationFreeText( PdfPage* pPage, PdfDocument* pDocument )
     
 
 }
+
+/*---------------------------------------------------------------------------*/
+/*                              LineTest()                                   */
+/*---------------------------------------------------------------------------*/
 
 void LineTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
 {
@@ -284,6 +308,10 @@ void LineTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
     }
 }
 
+/*---------------------------------------------------------------------------*/
+/*                              RectTest()                                   */
+/*---------------------------------------------------------------------------*/
+
 void RectTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
 {
     double     x     = 10000 * CONVERSION_CONSTANT;
@@ -379,6 +407,10 @@ void RectTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
     pPainter->ClosePath();
     pPainter->Stroke();
 }
+
+/*---------------------------------------------------------------------------*/
+/*                              TestTest()                                   */
+/*---------------------------------------------------------------------------*/
 
 void TextTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
 {
@@ -489,6 +521,10 @@ void TextTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
     pPainter->DrawText( x, y, "PoDoFo rocks!" );
 }
 
+/*---------------------------------------------------------------------------*/
+/*                              Imagetest()                                  */
+/*---------------------------------------------------------------------------*/
+
 void ImageTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
 {
     double        y      = pPage->GetPageSize().GetHeight() - 60000 * CONVERSION_CONSTANT;
@@ -561,6 +597,10 @@ void ImageTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
     pAnnot5->SetOpen( true );
 }
 
+/*---------------------------------------------------------------------------*/
+/*                              EllipseTest()                                */
+/*---------------------------------------------------------------------------*/
+
 void EllipseTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
 {
     PdfAnnotation* pFileAnnotation;
@@ -580,6 +620,10 @@ void EllipseTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
     pFileAnnotation->SetContents( "A JPEG image of Lena" );
     pFileAnnotation->SetFileAttachement( file );
 }
+
+/*---------------------------------------------------------------------------*/
+/*                              XObjcetTest()                                */
+/*---------------------------------------------------------------------------*/
 
 void XObjectTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
 {
@@ -644,6 +688,10 @@ void XObjectTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
                            &xObj4 );
 }
 
+/*---------------------------------------------------------------------------*/
+/*                                  MMtest()                                 */
+/*---------------------------------------------------------------------------*/
+
 void MMTest( PdfPainterMM* pPainter, PdfPage* pPage, PdfDocument* pDocument )
 {
     long        lX     = 10000;
@@ -672,6 +720,10 @@ void MMTest( PdfPainterMM* pPainter, PdfPage* pPage, PdfDocument* pDocument )
 
 
 }
+
+/*---------------------------------------------------------------------------*/
+/*                               TableTest()                                 */
+/*---------------------------------------------------------------------------*/
 
 void TableTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
 {
@@ -724,6 +776,12 @@ void TableTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
 
     
 }
+
+/******************************************************************************
+ *                                                                            *
+ *                                   main()                                   *
+ *                                                                            *
+ *****************************************************************************/
 
 int main( int argc, char* argv[] ) 
 {

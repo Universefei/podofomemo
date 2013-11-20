@@ -309,15 +309,25 @@ int PdfPage::GetNumAnnots() const
     return pObj ? static_cast<int>(pObj->GetArray().size()) : 0;
 }
 
+/*----- -----------------------------------------------------------------*/
 PdfAnnotation* PdfPage::CreateAnnotation( EPdfAnnotation eType, const PdfRect & rRect )
 {
+	/* call constructor implicitly */
     PdfAnnotation* pAnnot = new PdfAnnotation( this, eType, rRect, this->GetObject()->GetOwner() );
+
+	/* get /Annot array in a pdf file page, this key-value specify all annotations in
+	 * this page, See example.pdf
+	 */
+	/* get key:/annot  array */
     PdfObject*     pObj   = this->GetAnnotationsArray( true );
+
     PdfReference   ref    = pAnnot->GetObject()->Reference();
 
+	/* push ref of annotation obj to /annot array  */
     pObj->GetArray().push_back( ref );
     m_mapAnnotations[ref] = pAnnot;
 
+	/* return generated annotation, See example 23 0 obj */
     return pAnnot;
 }
 

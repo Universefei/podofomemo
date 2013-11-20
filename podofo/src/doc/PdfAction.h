@@ -47,7 +47,7 @@ enum EPdfAction {
     ePdfAction_GoToE,
     ePdfAction_Launch,    
     ePdfAction_Thread,
-    ePdfAction_URI,
+    ePdfAction_URI,                     //supported
     ePdfAction_Sound,
     ePdfAction_Movie,
     ePdfAction_Hide,
@@ -55,7 +55,7 @@ enum EPdfAction {
     ePdfAction_SubmitForm,
     ePdfAction_ResetForm,
     ePdfAction_ImportData,
-    ePdfAction_JavaScript,
+    ePdfAction_JavaScript,              //supported
     ePdfAction_SetOCGState,
     ePdfAction_Rendition,
     ePdfAction_Trans,
@@ -144,7 +144,7 @@ class PODOFO_DOC_API PdfAction : public PdfElement {
      *
      *  \param dictionary the action will be added to this dictionary
      */
-    void AddToDictionary( PdfDictionary & dictionary ) const;
+    void AddToDictionary( PdfDictionary & dictionary ) const; /* /A 23 0 obj */
 
 
  private:

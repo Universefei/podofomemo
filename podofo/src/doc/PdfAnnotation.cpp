@@ -103,11 +103,13 @@ PdfAnnotation::~PdfAnnotation()
     delete m_pFileSpec;
 }
 
+/*----- -----------------------------------------------------------------*/
 PdfRect PdfAnnotation::GetRect() const
 {
    if( this->GetObject()->GetDictionary().HasKey( PdfName::KeyRect ) )
         return PdfRect( this->GetObject()->GetDictionary().GetKey( PdfName::KeyRect )->GetArray() );
 
+   /* if no this k-v, construct one */
    return PdfRect();
 }
 
@@ -168,11 +170,13 @@ void PdfAnnotation::SetBorderStyle( double dHCorner, double dVCorner, double dWi
     this->GetObject()->GetDictionary().AddKey( "Border", aValues );
 }
 
+/*----- -----------------------------------------------------------------*/
 void PdfAnnotation::SetTitle( const PdfString & sTitle )
 {
     this->GetObject()->GetDictionary().AddKey( "T", sTitle );
 }
 
+/*----- -----------------------------------------------------------------*/
 PdfString PdfAnnotation::GetTitle() const
 {
     if( this->GetObject()->GetDictionary().HasKey( "T" ) )
@@ -181,11 +185,13 @@ PdfString PdfAnnotation::GetTitle() const
     return PdfString();
 }
 
+/*----- -----------------------------------------------------------------*/
 void PdfAnnotation::SetContents( const PdfString & sContents )
 {
     this->GetObject()->GetDictionary().AddKey( "Contents", sContents );
 }
 
+/*----- -----------------------------------------------------------------*/
 PdfString PdfAnnotation::GetContents() const
 {
     if( this->GetObject()->GetDictionary().HasKey( "Contents" ) )

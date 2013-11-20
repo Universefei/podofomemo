@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/podofobox.dir/podofobox.cpp.o CMakeFiles/podofobox.dir/boxsetter.cpp.o  -o podofobox -rdynamic -L/home/univ/projects/podofomemo/build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -lpng -lz -ltiff -lcrypto -ljpeg -lpthread -lfreetype -lpng -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/build/src: 

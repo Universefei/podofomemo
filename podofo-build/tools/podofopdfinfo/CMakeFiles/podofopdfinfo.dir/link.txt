@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.o  -o podofopdfinfo -rdynamic -L/home/univ/projects/podofomemo/podofo-build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/podofo-build/src: 

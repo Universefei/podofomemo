@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.o  -o TokenizerTest -rdynamic -L/home/univ/projects/podofomemo/build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -lpng -lz -ltiff -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -lpng -lz -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/build/src 

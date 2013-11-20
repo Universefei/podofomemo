@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.o  -o helloworld-base14 -rdynamic -L/home/univ/projects/podofomemo/build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -lpng -lz -ltiff -lcrypto -ljpeg -lpthread -lfreetype -lpng -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/build/src 

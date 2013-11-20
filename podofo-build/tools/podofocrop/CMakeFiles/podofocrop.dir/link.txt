@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/podofocrop.dir/podofocrop.cpp.o  -o podofocrop -rdynamic -L/home/univ/projects/podofomemo/podofo-build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/podofo-build/src: 

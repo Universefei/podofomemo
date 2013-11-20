@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/WatermarkTest.dir/WatermarkTest.cpp.o  -o WatermarkTest -rdynamic -L/home/univ/projects/podofomemo/build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -lpng -lz -ltiff -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -lpng -lz -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/build/src 

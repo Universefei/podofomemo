@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.o  -o podofotxtextract -rdynamic -L/home/univ/projects/podofomemo/podofo-build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/podofo-build/src: 

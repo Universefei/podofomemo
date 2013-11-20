@@ -128,6 +128,7 @@ PdfObject* PdfPage::GetContentsForAppending() const
     return m_pContents->GetContentsForAppending(); 
 }
 
+/* create a Pdf page Rect */
 PdfRect PdfPage::CreateStandardPageSize( const EPdfPageSize ePageSize, bool bLandscape )
 {
     PdfRect rect;
@@ -188,6 +189,7 @@ PdfRect PdfPage::CreateStandardPageSize( const EPdfPageSize ePageSize, bool bLan
             break;
     }
 
+	/* swap Width and Height of a Rect */
     if( bLandscape ) 
     {
         double dTmp = rect.GetWidth();
@@ -210,6 +212,7 @@ const PdfObject* PdfPage::GetInheritedKeyFromObject( const char* inKey, const Pd
             return pObj;
     }
     
+	//
     // if we get here, we need to go check the parent - if there is one!
     if( inObject->GetDictionary().HasKey( "Parent" ) ) 
     {

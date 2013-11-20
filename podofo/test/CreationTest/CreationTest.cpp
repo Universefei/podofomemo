@@ -72,6 +72,17 @@ void CreateUnicodeAnnotationText( PdfPage* pPage, PdfDocument* pDocument )
     pAnnotation->SetTitle( sGerman ); /* addkey("T", sGerman) */
     pAnnotation->SetContents( sJap ); /* addkey("Contents", sJap) */
     pAnnotation->SetOpen( true );     /* addkey("open", true) */
+
+	/* if I want to insert a action i should do this: */
+
+	/*
+	PdfAction Action();                      // /S /URI
+	PdfAction *pAction = &Action;
+	pAction->SetURI();                       // /URI (http://google.com)
+
+	pAnnotation->SetAction( pAction );
+	*/
+	
 }
 
 /*---------------------------------------------------------------------------*/
@@ -409,7 +420,7 @@ void RectTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )
 }
 
 /*---------------------------------------------------------------------------*/
-/*                              TestTest()                                   */
+/*                              TextTest()                                   */
 /*---------------------------------------------------------------------------*/
 
 void TextTest( PdfPainter* pPainter, PdfPage* pPage, PdfDocument* pDocument )

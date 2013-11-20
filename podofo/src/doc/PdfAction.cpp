@@ -25,7 +25,10 @@
 
 namespace PoDoFo {
 
+
+/* action number */
 const long  PdfAction::s_lNumActions = 18;
+/* action name C-style psz */
 const char* PdfAction::s_names[] = {
     "GoTo",
     "GoToR",
@@ -48,6 +51,16 @@ const char* PdfAction::s_names[] = {
     NULL
 };
 
+
+/*----- constructor -----------------------------------------------------------------*/
+/* a action must belong to a annotation? */
+
+
+/**
+ * a constructor with specified action type, and the object vector that this action
+ * belong to
+ */
+
 PdfAction::PdfAction( EPdfAction eAction, PdfVecObjects* pParent )
     : PdfElement( "Action", pParent ), m_eType( eAction )
 {
@@ -60,6 +73,18 @@ PdfAction::PdfAction( EPdfAction eAction, PdfVecObjects* pParent )
 
     this->GetObject()->GetDictionary().AddKey( "S", type );
 }
+
+
+/**
+ * construct with specified action type and document where the action in
+ */
+
+/*  PdfElement("Action", pParent) 
+ *  =============================
+ *  1] pParent is a pointer to PdfDocument, why specify this param?
+ *  2] create entry for this element in PdfDocument
+ *  3] See: PdfElement constructor
+ */
 
 PdfAction::PdfAction( EPdfAction eAction, PdfDocument* pParent )
     : PdfElement( "Action", pParent ), m_eType( eAction )
@@ -81,6 +106,7 @@ PdfAction::PdfAction( PdfObject* pObject )
     m_eType = static_cast<EPdfAction>(TypeNameToIndex( this->GetObject()->GetDictionary().GetKeyAsName( "S" ).GetName().c_str(), s_names, s_lNumActions, ePdfAction_Unknown ));
 }
 
+/* copy constructor */
 PdfAction::PdfAction( const PdfAction & rhs )
     : PdfElement( "Action", rhs.GetNonConstObject() )
 {

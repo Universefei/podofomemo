@@ -31,6 +31,7 @@
 
 namespace PoDoFo {
 
+/*----- constructors -----------------------------------------------------------------*/
 PdfPage::PdfPage( const PdfRect & rSize, PdfDocument* pParent )
     : PdfElement( "Page", pParent ), PdfCanvas(), m_pContents( NULL )
 {
@@ -71,6 +72,7 @@ PdfPage::PdfPage( PdfObject* pObject, const std::deque<PdfObject*> & rListOfPare
     }
 }
 
+/*----- Destructor -----------------------------------------------------------------*/
 PdfPage::~PdfPage()
 {
     TIMapAnnotation it = m_mapAnnotations.begin();
@@ -85,6 +87,7 @@ PdfPage::~PdfPage()
     delete m_pContents;	// just clears the C++ object from memory, NOT the PdfObject
 }
 
+/*----- InitNewPage -----------------------------------------------------------------*/
 void PdfPage::InitNewPage( const PdfRect & rSize )
 {
     PdfVariant mediabox;
@@ -98,6 +101,9 @@ void PdfPage::InitNewPage( const PdfRect & rSize )
     m_pResources->GetDictionary().AddKey( "ProcSet", PdfCanvas::GetProcSet() );
 }
 
+/*----- Contents -----------------------------------------------------------------*/
+
+/* CreateContents */
 void PdfPage::CreateContents() 
 {
     if( !m_pContents ) 
@@ -108,6 +114,7 @@ void PdfPage::CreateContents()
     }
 }
 
+/* GetContents */
 PdfObject* PdfPage::GetContents() const 
 { 
     if( !m_pContents ) 
@@ -309,7 +316,7 @@ int PdfPage::GetNumAnnots() const
     return pObj ? static_cast<int>(pObj->GetArray().size()) : 0;
 }
 
-/*----- -----------------------------------------------------------------*/
+/*----- CreateAnnotation -----------------------------------------------------------------*/
 PdfAnnotation* PdfPage::CreateAnnotation( EPdfAnnotation eType, const PdfRect & rRect )
 {
 	/* call constructor implicitly */

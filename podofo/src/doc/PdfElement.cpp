@@ -37,6 +37,8 @@ PdfElement::PdfElement( const char* pszType, PdfVecObjects* pParent )
     m_pObject = pParent->CreateObject( pszType );
 }
 
+/*----- create entry in PdfDocument for this PdfElement -----------------------*/
+
 PdfElement::PdfElement( const char* pszType, PdfDocument* pParent )
 {
     m_pObject = pParent->m_vecObjects.CreateObject( pszType );
@@ -49,6 +51,7 @@ PdfElement::PdfElement( const char* pszType, PdfObject* pObject )
         PODOFO_RAISE_ERROR( ePdfError_InvalidHandle );
     }
 
+	/* this is the only explicit data member of class PdfElement */
     m_pObject = pObject;
 
     if( !m_pObject->IsDictionary() ) 

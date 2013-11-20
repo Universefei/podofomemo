@@ -65,6 +65,7 @@ const char* PdfAnnotation::s_names[] = {
     NULL
 };
 
+/*----- constructors -----------------------------------------------------------------*/
 PdfAnnotation::PdfAnnotation( PdfPage* pPage, EPdfAnnotation eAnnot, const PdfRect & rRect, PdfVecObjects* pParent )
     : PdfElement( "Annot", pParent ), m_eAnnotation( eAnnot ), m_pAction( NULL ), m_pFileSpec( NULL ), m_pPage( pPage )
 {
@@ -97,6 +98,7 @@ PdfAnnotation::PdfAnnotation( PdfObject* pObject, PdfPage* pPage )
     m_eAnnotation = static_cast<EPdfAnnotation>(TypeNameToIndex( this->GetObject()->GetDictionary().GetKeyAsName( PdfName::KeySubtype ).GetName().c_str(), s_names, s_lNumActions, ePdfAnnotation_Unknown ));
 }
 
+/*----- destructor -----------------------------------------------------------------*/
 PdfAnnotation::~PdfAnnotation()
 {
     delete m_pAction;
@@ -187,7 +189,11 @@ PdfString PdfAnnotation::GetTitle() const
 
 /*----- -----------------------------------------------------------------*/
 void PdfAnnotation::SetContents( const PdfString & sContents )
-{
+{ke -G "Unix Makefiles" ../podofo-src \
+		-DCMAKE_INCLUDE_PATH=/usr/sfw/include \
+				-DCMAKE_LIBRARY_PATH=/usr/sfw/lib \
+					-DPODOFO_BUILD_SHARED:BOOL=TRUE \
+						-DPODOFO_BUILD_STATIC:BOOL=FALSE
     this->GetObject()->GetDictionary().AddKey( "Contents", sContents );
 }
 
@@ -200,6 +206,7 @@ PdfString PdfAnnotation::GetContents() const
     return PdfString();
 }
 
+/*----- Destination -----------------------------------------------------------------*/
 void PdfAnnotation::SetDestination( const PdfDestination & rDestination )
 {
     rDestination.AddToDictionary( this->GetObject()->GetDictionary() );
@@ -214,6 +221,10 @@ bool PdfAnnotation::HasDestination() const
 {
     return this->GetObject()->GetDictionary().HasKey( "Dest" );
 }
+
+/*----- Action -----------------------------------------------------------------*/
+
+/* you must have create a action before you set it in a PdfAnnotation */
 
 void PdfAnnotation::SetAction( const PdfAction & rAction )
 {
@@ -237,6 +248,7 @@ bool PdfAnnotation::HasAction() const
     return this->GetObject()->GetDictionary().HasKey( "A" );
 }
 
+/*----- Open -----------------------------------------------------------------*/
 void PdfAnnotation::SetOpen( bool b )
 {
     this->GetObject()->GetDictionary().AddKey( "Open", b );

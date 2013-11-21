@@ -18,18 +18,6 @@ string
 vector
 -
 
-/home/univ/projects/podofomemo/podofoSRC/feicode/imgNuri/imgNuri.cpp
-stdio.h
--
-stdlib.h
--
-config.h
--
-ImageConverter.h
-/home/univ/projects/podofomemo/podofoSRC/feicode/imgNuri/ImageConverter.h
-podofo.h
--
-
 /home/univ/projects/podofomemo/podofoSRC/podofo/base/../../src/base/Pdf3rdPtyForwardDecl.h
 
 /home/univ/projects/podofomemo/podofoSRC/podofo/base/../../src/base/PdfArray.h

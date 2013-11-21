@@ -118,9 +118,18 @@ void ImageConverter::Work()
  */
 
 	/* 1] create pdfAnnotation */
+
+	/*  param of PdfRect()
+	 *  ==================
+	 *  1) left
+	 *  2) bottom
+	 *  3) width
+	 *  4) height
+	 */
+	
 	PoDoFo::PdfAnnotation* pAnnotation = 
 		pPage->CreateAnnotation( PoDoFo::ePdfAnnotation_Link, PoDoFo::PdfRect(dX, dY, 
-					dX + image.GetWidth()*dScale, dY + image.GetHeight()*dScale) );
+					image.GetWidth()*dScale, image.GetHeight()*dScale) );
 
     /* 2] Set properties of PdfAnnotation */
 	
@@ -131,7 +140,6 @@ void ImageConverter::Work()
 	/* 4] Set URI of the action */
 	PoDoFo::PdfString enURI( m_sURI);
 	pAction->SetURI( enURI );
-
 
 	/* 5] binding Action to Annotation */
     pAnnotation->SetAction( eAction );

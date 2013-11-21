@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddImage	ImageConverter.h	/^    inline void AddImage( const char* pszImage ) {$/;"	f	class:ImageConverter
+AddURI	ImageConverter.h	/^    inline void AddURI( const char* pszURI ) {$/;"	f	class:ImageConverter
+ImageConverter	ImageConverter.cpp	/^ImageConverter::ImageConverter() $/;"	f	class:ImageConverter
+ImageConverter	ImageConverter.h	/^class ImageConverter {$/;"	c
+SetOutputFilename	ImageConverter.h	/^    inline void SetOutputFilename( const char* pszFilename ) {$/;"	f	class:ImageConverter
+Work	ImageConverter.cpp	/^void ImageConverter::Work() $/;"	f	class:ImageConverter
+m_sImage	ImageConverter.h	/^    std::string              m_sImage;$/;"	m	class:ImageConverter
+m_sOutputFilename	ImageConverter.h	/^    std::string              m_sOutputFilename;$/;"	m	class:ImageConverter
+m_sURI	ImageConverter.h	/^    std::string              m_sURI;$/;"	m	class:ImageConverter
+main	test.cpp	/^int main( int argc, char* argv[] )$/;"	f
+print_help	test.cpp	/^void print_help()$/;"	f
+~ImageConverter	ImageConverter.cpp	/^ImageConverter::~ImageConverter() $/;"	f	class:ImageConverter

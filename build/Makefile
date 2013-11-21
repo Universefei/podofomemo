@@ -556,19 +556,6 @@ podofoxmp/fast:
 .PHONY : podofoxmp/fast
 
 #=============================================================================
-# Target rules for targets named task
-
-# Build rule for target.
-task: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 task
-.PHONY : task
-
-# fast build rule for target.
-task/fast:
-	$(MAKE) -f tools/task/CMakeFiles/task.dir/build.make tools/task/CMakeFiles/task.dir/build
-.PHONY : task/fast
-
-#=============================================================================
 # Target rules for targets named helloworld
 
 # Build rule for target.
@@ -593,6 +580,32 @@ helloworld-base14: cmake_check_build_system
 helloworld-base14/fast:
 	$(MAKE) -f examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/build.make examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/build
 .PHONY : helloworld-base14/fast
+
+#=============================================================================
+# Target rules for targets named imgNuri
+
+# Build rule for target.
+imgNuri: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 imgNuri
+.PHONY : imgNuri
+
+# fast build rule for target.
+imgNuri/fast:
+	$(MAKE) -f feicode/imgNuri/CMakeFiles/imgNuri.dir/build.make feicode/imgNuri/CMakeFiles/imgNuri.dir/build
+.PHONY : imgNuri/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 # Help Target
 help:
@@ -638,9 +651,10 @@ help:
 	@echo "... podofoimpose"
 	@echo "... podofoincrementalupdates"
 	@echo "... podofoxmp"
-	@echo "... task"
 	@echo "... helloworld"
 	@echo "... helloworld-base14"
+	@echo "... imgNuri"
+	@echo "... test"
 .PHONY : help
 
 

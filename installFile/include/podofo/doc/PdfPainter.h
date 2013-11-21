@@ -254,6 +254,10 @@ class PODOFO_DOC_API PdfPainter {
      */
     inline void SetClipRect( const PdfRect & rRect );
 
+
+
+/*----- Draw -----------------------------------------------------------------*/
+
     /** Draw a line with the current color and line settings.
      *  \param dStartX x coordinate of the starting point
      *  \param dStartY y coordinate of the starting point

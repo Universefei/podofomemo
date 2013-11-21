@@ -12,6 +12,7 @@
 /home/univ/projects/podofomemo/build/test/WatermarkTest/CMakeFiles/WatermarkTest.dir
 /home/univ/projects/podofomemo/build/examples/helloworld/CMakeFiles/helloworld.dir
 /home/univ/projects/podofomemo/build/examples/helloworld-base14/CMakeFiles/helloworld-base14.dir
+/home/univ/projects/podofomemo/build/feicode/imgNuri/CMakeFiles/imgNuri.dir
 /home/univ/projects/podofomemo/build/test/unit/CMakeFiles/podofo-test.dir
 /home/univ/projects/podofomemo/build/src/CMakeFiles/podofo_static.dir
 /home/univ/projects/podofomemo/build/tools/podofobox/CMakeFiles/podofobox.dir
@@ -31,5 +32,5 @@
 /home/univ/projects/podofomemo/build/tools/podofotxtextract/CMakeFiles/podofotxtextract.dir
 /home/univ/projects/podofomemo/build/tools/podofouncompress/CMakeFiles/podofouncompress.dir
 /home/univ/projects/podofomemo/build/tools/podofoxmp/CMakeFiles/podofoxmp.dir
-/home/univ/projects/podofomemo/build/tools/task/CMakeFiles/task.dir
+/home/univ/projects/podofomemo/build/feicode/test/CMakeFiles/test.dir
 /home/univ/projects/podofomemo/build/CMakeFiles/uninstall.dir

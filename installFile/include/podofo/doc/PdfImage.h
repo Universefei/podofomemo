@@ -32,6 +32,12 @@ class PdfInputStream;
 class PdfObject;
 class PdfVecObjects;
 
+/******************************************************************************
+ *                                                                            *
+ *                               class PdfImage                               *
+ *                                                                            *
+ *****************************************************************************/
+
 /** A PdfImage object is needed when ever you want to embedd an image
  *  file into a PDF document.
  *  The PdfImage object is embedded once and can be drawn as often
@@ -166,12 +172,14 @@ class PODOFO_DOC_API PdfImage : public PdfXObject {
     void LoadFromJpeg( const wchar_t* pszFilename );
 #endif // _WIN32
 #endif // PODOFO_HAVE_JPEG_LIB
+
 #ifdef PODOFO_HAVE_TIFF_LIB
     /** Load the image data from a TIFF file
      *  \param pszFilename
      */
     void LoadFromTiff( const char* pszFilename );
 #endif // PODOFO_HAVE_TIFF_LIB
+
 #ifdef PODOFO_HAVE_PNG_LIB
     /** Load the image data from a PNG file
      *  \param pszFilename

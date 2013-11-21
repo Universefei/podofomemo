@@ -38,6 +38,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/univ/projects/podofomemo/build/test/cmake_install.cmake")
   INCLUDE("/home/univ/projects/podofomemo/build/tools/cmake_install.cmake")
   INCLUDE("/home/univ/projects/podofomemo/build/examples/cmake_install.cmake")
+  INCLUDE("/home/univ/projects/podofomemo/build/feicode/cmake_install.cmake")
   INCLUDE("/home/univ/projects/podofomemo/build/debian/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

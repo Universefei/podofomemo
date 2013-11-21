@@ -51,7 +51,6 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/univ/projects/podofomemo/build/tools/podofoimpose/cmake_install.cmake")
   INCLUDE("/home/univ/projects/podofomemo/build/tools/podofoincrementalupdates/cmake_install.cmake")
   INCLUDE("/home/univ/projects/podofomemo/build/tools/podofoxmp/cmake_install.cmake")
-  INCLUDE("/home/univ/projects/podofomemo/build/tools/task/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

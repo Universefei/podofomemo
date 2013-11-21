@@ -119,7 +119,8 @@
 /home/univ/projects/podofomemo/installFile/bin/podofoimpose
 /home/univ/projects/podofomemo/installFile/bin/podofoincrementalupdates
 /home/univ/projects/podofomemo/installFile/bin/podofoxmp
-/home/univ/projects/podofomemo/installFile/bin/task
+/home/univ/projects/podofomemo/installFile/feicode/imgNuri
+/home/univ/projects/podofomemo/installFile/feicode/test
 /home/univ/projects/podofomemo/installFile/share/man/man1/podofobox.1
 /home/univ/projects/podofomemo/installFile/share/man/man1/podofocountpages.1
 /home/univ/projects/podofomemo/installFile/share/man/man1/podofocrop.1

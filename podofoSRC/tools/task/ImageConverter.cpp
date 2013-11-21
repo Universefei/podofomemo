@@ -72,8 +72,8 @@ void ImageConverter::Work()
 		/* TODO: optimize the layout */
 		/**About PdfPainter.DrawImage()
 		 * ============================
-		 * param 1 : X is left of start draw point
-		 * param 2 : Y is bottom of start draw point
+		 * param 1 : X is left 
+		 * param 2 : Y is bottom 
 		 * param 3 : content(pointer to image) to be drawn
 		 * param 4 : enlarge times of X axis
 		 * param 5 : enlarge times of Y axis
@@ -93,7 +93,7 @@ void ImageConverter::Work()
 	/* 
 	 * let image to be drawn in the center of the Rect
 	 */
-	else /* image is small */
+	else /* image is small, place in the center */
 	{
 		/* set start draw coordinate, so that image can be placed in the center of the Rect */
 		/* dX: left  dY: bottom */
@@ -123,7 +123,6 @@ void ImageConverter::Work()
 					dX + image.GetWidth()*dScale, dY + image.GetHeight()*dScale) );
 
     /* 2] Set properties of PdfAnnotation */
-    //pAnnotation->Set()  
 	
 	/* 3] Create PdfAction */
 	PoDoFo::PdfAction eAction( PoDoFo::ePdfAction_URI, &document );
@@ -131,7 +130,6 @@ void ImageConverter::Work()
 
 	/* 4] Set URI of the action */
 	PoDoFo::PdfString enURI( m_sURI);
-	//PoDoFo::PdfString* pURI = &enURI;
 	pAction->SetURI( enURI );
 
 

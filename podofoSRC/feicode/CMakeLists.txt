@@ -1,0 +1,2 @@
+ADD_SUBDIRECTORY( imgNuri )
+ADD_SUBDIRECTORY( test )

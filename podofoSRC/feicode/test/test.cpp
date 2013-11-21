@@ -15,7 +15,7 @@
 void print_help()
 {
   printf("Usage: ./test [output.pdf] [image] [URI]\n");
-  printf("===============================================\n");
+  printf("============================================================\n");
   printf("This tool will write the specified images into a single PDF.\n");
   printf("And embeded a hyperlink underneath this image.          \n");
   printf("Large pages will be scaled to fit the page and imags smaller\n");

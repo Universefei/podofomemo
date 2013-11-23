@@ -195,6 +195,7 @@ class PODOFO_DOC_API PdfMemDocument : public PdfDocument {
      */
     void Write( PdfOutputDevice* pDevice );
 
+/*----- Mode -----------------------------------------------------------------*/
     /** Set the write mode to use when writing the PDF.
      *  \param eWriteMode write mode
      */
@@ -205,6 +206,7 @@ class PODOFO_DOC_API PdfMemDocument : public PdfDocument {
      */
     virtual EPdfWriteMode GetWriteMode() const { return m_eWriteMode; }
 
+/*----- Version --------------------------------------------------------------*/
     /** Set the PDF Version of the document. Has to be called before Write() to
      *  have an effect.
      *  \param eVersion  version of the pdf document
@@ -216,6 +218,7 @@ class PODOFO_DOC_API PdfMemDocument : public PdfDocument {
      */
     EPdfVersion GetPdfVersion() const { return m_eVersion; }
 
+/*----- Encrypted ------------------------------------------------------------*/
     /** If you try to open an encrypted PDF file, which requires
      *  a password to open, PoDoFo will throw a PdfError( ePdfError_InvalidPassword ) 
      *  exception. 
@@ -276,6 +279,7 @@ class PODOFO_DOC_API PdfMemDocument : public PdfDocument {
      */
     bool IsLinearized() const { return m_bLinearized; }
     
+/*----- Get Entries ------------------------------------------------------------*/
     /** Get a reference to the sorted internal objects vector.
      *  \returns the internal objects vector.
      */
@@ -337,6 +341,7 @@ class PODOFO_DOC_API PdfMemDocument : public PdfDocument {
      */
     PdfFont* GetFont( PdfObject* pObject );
 
+/*----- Page operation --------------------------------------------------------*/
     /** Copies one or more pages from another PdfMemDocument to this document
      *  \param rDoc the document to append
      *  \param inFirstPage the first page number to copy (0-based)
@@ -356,6 +361,7 @@ class PODOFO_DOC_API PdfMemDocument : public PdfDocument {
      */
     void DeletePages( int inFirstPage, int inNumPages );
 
+/*----- Judge -----------------------------------------------------------------*/
     /** Checks if printing this document is allowed.
      *  Every PDF consuming applications has to adhere this value!
      *
@@ -428,6 +434,7 @@ class PODOFO_DOC_API PdfMemDocument : public PdfDocument {
      */
     inline virtual bool IsHighPrintAllowed() const;
 
+/*----- Memory Management ----------------------------------------------------*/
     /** Tries to free all memory allocated by the given
      *  PdfObject (variables and streams) and reads
      *  it from disk again if it is requested another time.

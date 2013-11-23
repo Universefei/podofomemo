@@ -4,14 +4,13 @@ PDF Document Operations
 **Document-related Class Hierarchy**
 ![document.png](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/Document.png)
 
-**NB:**
+**NB:** 
+- PdfDocument is the core interface for working  with PDF documents.  
+- PdfMemDocument is the core class for reading and manipulating PDF file and
+  	Writing them back to disk.  
+- PdfStreamedDocument is the perferred class for creating new Pdf documents
 
-- PdfDocument is the core interface for working  with PDF documents.
-  - PdfMemDocument is the core class for reading and manipulating PDF file and
-  	Writing them back to disk
-  - PdfStreamedDocument is the perferred class for creating new Pdf documents
-
-**PdfDocument**
+## PdfDocument
 
 PdfDocument is the core interface for working with PDF documents.
 
@@ -20,14 +19,14 @@ to certain special dictionaries.
 
 PdfDocument cannot be used directly.
 
-Use pdfMemDocument whenever you want to change the object structure of a PDF
+* Use pdfMemDocument whenever you want to change the object structure of a PDF
 file.
 
-When you are only creating PDF files, please use PdfStreamedDocument which is 
+* When you are only creating PDF files, please use PdfStreamedDocument which is 
 usually faster for creating PDFs.
 
 
-**PdfMemDocument**
+## PdfMemDocument
 
 PdfMemDocument is the core class for reading and manipulating PDF files and
 writing them back to disk.
@@ -42,7 +41,7 @@ When you are only creating PDF files, please use PdfStreamedDocument which is
 usually faster for creating PDFs.
 
 
-**PdfStreamedDocument**
+## PdfStreamedDocument
 
 PdfStreamedDocument is the preferred class for creating new PDF documents.
 

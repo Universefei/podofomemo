@@ -22,6 +22,12 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 #     9) Generate config files
 
 
+# ============================================================================
+# Catalog of content in root CMakeLists.txt
+# ============================================================================
+
+#     1) Path unrelated (system dependency check)
+#     2) Path related   (src check)
 
 
 # ============================================================================

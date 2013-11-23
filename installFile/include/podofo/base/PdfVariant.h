@@ -140,6 +140,7 @@ class PODOFO_API PdfVariant {
     PdfVariant( const PdfVariant & rhs );
 
 /*---------------------------------------------------------------------------*/
+
 /*----- Destructors ---------------------------------------------------------*/
 
     virtual ~PdfVariant();
@@ -486,11 +487,12 @@ class PODOFO_API PdfVariant {
 
 /*---------------------------------------------------------------------------*/
 /*                                                                           */
-/*                           Data Memvers                                    */
+/*                           Data Members                                    */
 /*                                                                           */
 /*---------------------------------------------------------------------------*/
 
  private:
+
     /**
      * It's an easy mistake to pass a pointer to a PdfVariant when trying to
      * copy a PdfVariant, especially with heap allocators like `new'. This can

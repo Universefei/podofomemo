@@ -643,6 +643,7 @@ void PdfPainter::DrawCircle( double dX, double dY, double dRadius )
     m_pCanvas->Append( "S\n" );
 }
 
+//fei test failed
 void PdfPainter::DrawText( double dX, double dY, const PdfString & sText )
 {
     this->DrawText( dX, dY, sText, static_cast<long>(sText.GetCharacterLength()) );

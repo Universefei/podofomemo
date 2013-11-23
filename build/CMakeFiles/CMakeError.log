@@ -100,8 +100,8 @@ Linking C executable cmTryCompileExec
 /usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: ld 返回 1
-make[1]: *** [cmTryCompileExec] 错误 1
 make[1]:正在离开目录 `/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec] 错误 1
 make: *** [cmTryCompileExec/fast] 错误 2
 
 

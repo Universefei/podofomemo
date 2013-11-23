@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/imgNuri.dir/imgNuri.cpp.o CMakeFiles/imgNuri.dir/ImageConverter.cpp.o  -o imgNuri -rdynamic -L/home/univ/projects/podofomemo/build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -lpng -lz -ltiff -lcrypto -ljpeg -lpthread -lfreetype -lpng -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/build/src: 

@@ -27,14 +27,16 @@ void WatermarkFile( const char* pszInFilename, const char* pszOutFilename )
 {
     printf("Running watermark test\n");
 
+	/* construct with the filesystem filename, and readin data */
     PdfMemDocument doc( pszInFilename );
     PdfPainter     painter;
     PdfPage*       pPage;
     PdfRect        rect;
     int            i;
+	//PdfString      psz( "feilunzhou" );
+	//char psz[12] = "feilunzhou\0";
 
-    for(i=0;i<doc.GetPageCount();i++)
-    {
+    for(i=0;i<doc.GetPageCount();i++) {
         pPage = doc.GetPage( i );
         if( !pPage ) 
         {
@@ -47,7 +49,14 @@ void WatermarkFile( const char* pszInFilename, const char* pszOutFilename )
         painter.SetStrokingColor( 1.0, 0.0, 0.0 );
         painter.SetStrokeWidth( 5 );
         painter.DrawLine( 0.0, 0.0, rect.GetWidth(), rect.GetHeight() );
+		painter.DrawLine( 0.0, rect.GetHeight()/2.0, rect.GetWidth(), rect.GetHeight()/2.0 );
         painter.DrawLine( 0, rect.GetHeight(), rect.GetWidth(), 0.0 );
+		//painter.FillRect ( 2.0, 2.0, rect.GetWidth()/2.0, rect.GetHeight()/2.0, 200.0, 200.0 );
+		//painter.DrawRect ( 2.0, 2.0, rect.GetWidth()/2.0, rect.GetHeight()/2.0, 200.0, 200.0 );
+		//painter.DrawEllipse ( 2.0, 2.0, rect.GetWidth()/2.0, rect.GetHeight()/2.0 );
+		painter.DrawCircle ( rect.GetWidth()/2.0, rect.GetHeight()/2.0, 100 );
+		//painter.DrawText ( 0.0, 0.0, psz, 10 );             //failed
+		//painter.DrawGlyph ( &doc, 0.0, 0.0, "feilunzhou" );             //failed
         painter.FinishPage();
     }
 

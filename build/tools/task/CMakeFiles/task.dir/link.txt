@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/task.dir/task.cpp.o CMakeFiles/task.dir/ImageConverter.cpp.o  -o task -rdynamic -L/home/univ/projects/podofomemo/build/src -lpodofo -lfontconfig -lz -lcrypto -ljpeg -lpthread -lfreetype -lpng -lz -ltiff -lcrypto -ljpeg -lpthread -lfreetype -lpng -ltiff -Wl,-rpath,/home/univ/projects/podofomemo/build/src: 

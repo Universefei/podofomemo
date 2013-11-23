@@ -2,8 +2,8 @@ PoDoFo Overall Model Analysis
 =============================
 
 **Class diagram**
-![overall model](://raw.github.com/Universefei/podofomemo/master/doc/feifigure/EntriesAccess.png)
+![overall model](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/EntriesAccess.png)
 
 **Model illustration**
-![Model](ttps://raw.github.com/Universefei/podofomemo/master/doc/feifigure/Entries%20access%20model.png)
+![Model](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/Entries%20access%20model.png)
 

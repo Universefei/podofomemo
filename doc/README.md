@@ -1,14 +1,19 @@
 PoDoFo performance on Image & Link
 ==================================
 
-## File operation classes
+## Primary
+
+### Document operation
 ![document](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/Document.png)
 
-## Overall Class diagram
+### Overall Class diagram
 ![UML diagram for entriesAccess](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/EntriesAccess.png)
 
 ## Image-related Classes
 ![image.png](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/Image.png)
+* [about image](https://github.com/Universefei/podofomemo/blob/master/doc/image.md)
 
 ## Link-related Classes
 ![link.png](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/Link.png)
+* [about link](https://github.com/Universefei/podofomemo/blob/master/doc/link.md)
+

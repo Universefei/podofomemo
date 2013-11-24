@@ -198,8 +198,11 @@ void ImageConverter::Work()
 	/* output file to external storagek, to generate PDF file */
     document.Write( m_sOutputFilename.c_str() );
 }
+
 ```
 
 ### test
 
-![imgNuri]()
+![imgNuri](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/imgNuri.png)
+
+![product](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/product.png)

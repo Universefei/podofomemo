@@ -197,3 +197,6 @@ void ImageConverter::Work()
 #### generated PDF file
 ![product](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/product.png)
 * click in the area of the image, it will open `www.baidu.com` in the browser.
+
+![GenText](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/GenText.png)
+

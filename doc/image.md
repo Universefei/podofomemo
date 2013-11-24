@@ -68,9 +68,6 @@ void ImageConverter::Work()
 	/* create document struct */
     PoDoFo::PdfMemDocument document;
 
-    //std::vector<std::string>::const_iterator it = m_vecImages.begin();
-	//auto it = m_vecImages.begin()
-
 	/* default Rectange position and bulk */
 	/* A4, Not swap Width and Height */
     PoDoFo::PdfRect size = PoDoFo::PdfPage::CreateStandardPageSize( PoDoFo::ePdfPageSize_A4, false );
@@ -88,14 +85,12 @@ void ImageConverter::Work()
 
 	/*----- load image from external storage to memory pdf document -------------*/
 	/* construct a image in a document */
-	/* just a object in PDF file */
 	PoDoFo::PdfImage image( &document );
 	/* load a image per time frome external storage */
 	image.LoadFromFile( m_sImage.c_str() );
 
 
 	/*----- prepare page and painter to draw ------------------------------------*/
-	/* just a pointer, allocate a pointer */
 	PoDoFo::PdfPage* pPage;
 	/* create a page in this document, and specify the page size */
 	pPage = document.CreatePage( size ); /* allocate space and return a pointer */
@@ -114,11 +109,8 @@ void ImageConverter::Work()
 	 * 2] if page Rect can contain entire image, draw image in the 
 	 *    center of the page Rectangle
 	 */
-	/* if Rect can not include entire image-image is larger than Rectangle */
-	/* shrink image to draw */
 	if( dScale < 1.0 )  /* image is large */
 	{
-		/* TODO: optimize the layout */
 		/** About PdfPainter.DrawImage()
 		 *  ============================
 		 *  param 1 : X is left 
@@ -128,7 +120,6 @@ void ImageConverter::Work()
 		 *  param 5 : enlarge times of Y axis
 		 *  
 		 */
-		/* optimized layout */
 		if( dScale == dScaleX ) {
 			dX = 0.0;
 			dY = ( size.GetHeight() - image.GetHeight() * dScale )/2.0;
@@ -139,9 +130,6 @@ void ImageConverter::Work()
 		}
 		painter.DrawImage( dX, dY, &image, dScale, dScale );
 	}
-	/* 
-	 * let image to be drawn in the center of the Rect
-	 */
 	else /* image is small, place in the center */
 	{
 		/* set start draw coordinate, so that image can be placed in the center of the Rect */
@@ -194,7 +182,6 @@ void ImageConverter::Work()
     pAnnotation->SetAction( eAction );
 
 
-
 	/* output file to external storagek, to generate PDF file */
     document.Write( m_sOutputFilename.c_str() );
 }
@@ -203,6 +190,9 @@ void ImageConverter::Work()
 
 ### test
 
+#### excute
 ![imgNuri](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/imgNuri.png)
 
+#### generated PDF file
 ![product](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/product.png)
+* click in the area of the image, it will open `www.baidu.com` in the browser.

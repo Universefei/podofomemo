@@ -32,7 +32,6 @@ void ImageConverter::Work()
     double dScaleY = 1.0;
     double dScale  = 1.0;
 
-	/* traverse all items in vector m_vecImages */
 	double dX, dY;
 
 /*----- Draw image --------------------------------------------------------------*/
@@ -70,14 +69,14 @@ void ImageConverter::Work()
 	if( dScale < 1.0 )  /* image is large */
 	{
 		/* TODO: optimize the layout */
-		/**About PdfPainter.DrawImage()
-		 * ============================
-		 * param 1 : X is left 
-		 * param 2 : Y is bottom 
-		 * param 3 : content(pointer to image) to be drawn
-		 * param 4 : enlarge times of X axis
-		 * param 5 : enlarge times of Y axis
-		 * 
+		/** About PdfPainter.DrawImage()
+		 *  ============================
+		 *  param 1 : X is left 
+		 *  param 2 : Y is bottom 
+		 *  param 3 : content(pointer to image) to be drawn
+		 *  param 4 : enlarge times of X axis
+		 *  param 5 : enlarge times of Y axis
+		 *  
 		 */
 		/* optimized layout */
 		if( dScale == dScaleX ) {

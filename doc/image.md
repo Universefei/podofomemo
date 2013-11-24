@@ -13,7 +13,7 @@ PdfElement, and utilize operations provided by PdfCanvas( and PdfPainter ) to
 draw image or other miscellies on a PdfPage.
 
 
-The following Classes are important to draw a imgage:
+The following Classes are important to draw a image:
 * `PdfMemDocument` document-level operations
 * `PdfPage` every image must draw on a certain page
 * `PdfRect` area to draw
@@ -23,15 +23,28 @@ The following Classes are important to draw a imgage:
 ## Steps to draw a pic
 
 ### Step 1: create a Document
+```
+PdfMemDocument document;
+```
 
 
 ### Step 2: create a Page
-
+```
+PdfRect size = CreateStandardPageSize( ePdfPageSize_A4, false );
+PdfPage* pPage = document.Createpage( size );
+```
 
 ### Step 3: specify Rectangle
 
 
 ### Step 4: create image to draw
+```
+```
 
 
 ### Step 5: Draw with Painter
+```
+PdfPainter painter;
+painter.SetPage( pPage );
+painter.DrawImage();
+```

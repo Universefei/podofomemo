@@ -18,9 +18,8 @@ while PoDoFo just has a limited support for those features.
 
 ### Actions
 
-
 ![Actions.png](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/Actions.png)
-
 ![Actions.png](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/ActionsEntries.png)
 
+PoDoFo support URI action and JavaScrip action.
 ![supportActions.png](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/supportActions.png)

@@ -127,6 +127,12 @@ enum ELogSeverity {
     eLogSeverity_Unknown = 0xffff     /**< Unknown log level */
 };
 
+/******************************************************************************
+ *                                                                            *
+ *                                   MACRO                                    *
+ *                                                                            *
+ *****************************************************************************/
+
 /** \def PODOFO_RAISE_ERROR( x )
  *  
  *  Set the value of the variable eCode (which has to exist in the current function) to x
@@ -159,12 +165,18 @@ enum ELogSeverity {
     #define PODOFO_RAISE_LOGIC_IF( x, y ) {};
 #endif
 
+/******************************************************************************
+ *                                                                            *
+ *                           class PdfErrorInfo                               *
+ *                                                                            *
+ *****************************************************************************/
+
 class PODOFO_API PdfErrorInfo {
  public:
     PdfErrorInfo();
     PdfErrorInfo( int line, const char* pszFile, const char* pszInfo );
     PdfErrorInfo( int line, const char* pszFile, const wchar_t* pszInfo );
-		PdfErrorInfo( const PdfErrorInfo & rhs );
+	PdfErrorInfo( const PdfErrorInfo & rhs );
 
     const PdfErrorInfo & operator=( const PdfErrorInfo & rhs );
 
@@ -193,6 +205,12 @@ typedef TDequeErrorInfo::const_iterator TCIDequeErrorInfo;
 // Without this define doxygen thinks we have a class called PODOFO_EXCEPTION_API(PODOFO_API) ...
 #define PODOFO_EXCEPTION_API_DOXYGEN PODOFO_EXCEPTION_API(PODOFO_API)
 
+/******************************************************************************
+ *                                                                            *
+ *                            class PdfError                                  *
+ *                                                                            *
+ *****************************************************************************/
+
 /** The error handling class of PoDoFo lib.
  *  Whenever a function encounters an error
  *  a PdfError object is returned.
@@ -203,6 +221,7 @@ typedef TDequeErrorInfo::const_iterator TCIDequeErrorInfo;
  *  This class provides also meaningfull
  *  error descriptions.
  */
+
 class PODOFO_EXCEPTION_API_DOXYGEN PdfError : public std::exception {
  public:
 
@@ -220,6 +239,8 @@ class PODOFO_EXCEPTION_API_DOXYGEN PdfError : public std::exception {
      *  \returns the pointer to the previous callback functor object
      */
     static LogMessageCallback* SetLogMessageCallback(LogMessageCallback* fLogMessageCallback);
+
+/*----- constructors & destructor --------------------------------------------*/
 
     /** Create a PdfError object initialized to ErrOk
      */
@@ -244,6 +265,8 @@ class PODOFO_EXCEPTION_API_DOXYGEN PdfError : public std::exception {
 
     virtual ~PdfError() throw();
     
+/*----- operators overloading --------------------------------------------------*/
+
     /** Assignment operator
      *  \param rhs another PdfError object
      *  \returns this object
@@ -279,6 +302,8 @@ class PODOFO_EXCEPTION_API_DOXYGEN PdfError : public std::exception {
      *  \returns true if this object has different error code.
      */
     bool operator!=( const EPdfError & eCode );
+
+/*----- operations ----------------------------------------------------------*/
 
     /** Return the error code of this object
      *  \returns the error code of this object
@@ -423,8 +448,10 @@ class PODOFO_EXCEPTION_API_DOXYGEN PdfError : public std::exception {
  private:
     EPdfError          m_error;
 
+	/* a deque of instances of class PdfErrorInfo */
     TDequeErrorInfo    m_callStack;
 
+	/* static data member was stored in .Data of .BSS */
     static bool        s_DgbEnabled;
     static bool        s_LogEnabled;
 

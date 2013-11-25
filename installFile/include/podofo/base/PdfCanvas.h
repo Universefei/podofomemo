@@ -49,6 +49,8 @@ class PODOFO_API PdfCanvas {
      */
     virtual ~PdfCanvas() {};
 
+	/*----- pure virtual function --------------------------------------------*/
+
     /** Get access to the contents object of this page.
      *  If you want to draw onto the page, you have to add 
      *  drawing commands to the stream of the Contents object.

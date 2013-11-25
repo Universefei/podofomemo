@@ -23,3 +23,12 @@ while PoDoFo just has a limited support for those features.
 
 PoDoFo support URI action and JavaScrip action.
 ![supportActions.png](https://raw.github.com/Universefei/podofomemo/master/doc/feifigure/supportActions.png)
+
+## Steps to create a Hyperlink
+
+### Step 1: 
+
+### Step 2: 
+### Step 3: 
+### Step 4: 
+### Step 5: 

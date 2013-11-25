@@ -20,12 +20,6 @@ public:
 		m_sURI = pszURI;
     }
 
-	/*
-    inline void SetUseImageSize( bool bImageSize ) {
-        m_bUseImageSize = bImageSize;
-    }
-	*/
-
 	/* to generate PDF file */
     void Work();
 

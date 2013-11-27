@@ -4,7 +4,7 @@
 
 using namespace PoDoFo;
 
-void prompt()
+void Prompt()
 {
 	printf("Function Menu:\n");
 	printf("==============\n");
@@ -14,33 +14,68 @@ void prompt()
 	printf("2] Add a new page with a plain text.\n");
 	printf("3] Add a new page, and draw some geometories.\n");
 
+} 
+
+void WriteTitle( PdfPage* pPage) 
+{
+	std::string title;
+	cout<<"Input the titile for this page:"<<endl;
+	cin<<title;
+
 }
+
 
 /*---------------------------------------------------------------------------*/
 /*                                 drawImg()                                 */
 /*---------------------------------------------------------------------------*/
-
-void drawImg(PdfDocument* doc, PdfPainter* painter)
+void DrawImg(PdfPage* pPage)
 {
-	string title, imagePath, imageURI;
+	std::string imagePath, imageURI;
+	double dX, dY;
+
+	PdfPainter painter;
 
 	/* prompt for user to input */
-	cout<<"input the TITLE of the new page:";
-	cin>>title;
 	cout<<"input the IMAGE PATH"<<endl;
 	cin>>imagePath;
 	cout<<"input the URI"<<endl;
 	cin>>imageURI;
 
-	/* Create new page to use */
-	PdfPage* pPage = doc.CreatePage();
-	painter->SetPage( pPage );
-
 	/* load image */
 	PdfImage image( doc );
 	image.LoadFromFile( imagePath.c_str() );
 
+	/* check input param pPage */
+	if( NULL == pPage )
+	{
+		cout<<"Usage errer: pPage can not be NULL"<<endl;
+	}
+	painter.setPage( pPage );
+
 	/* draw image with painter on pPage */
+	dScaleX = 150.0 / image.GetWidth();
+	dScaleY = 150.0 / image.GetHeight();
+	dScale = PDF_MIN( dScaleX, dScaleY );
+	if( dScale >= 1 ) 
+	{
+		dX = (size.GetWidth() - image.GetWidth()) / 2.0;
+		dY = (size.GetHeight() - image.GetHeight()) / 2.0;
+		painter.DrawImage( dX, dY, &image );
+	} 
+	else
+	{
+		if( dScale == dScaleX )
+		{
+			dX = ( size.GetWidth() - 150.0 ) / 2.0;
+			dY = ( size.GetHeight() - image.GetHeight*dScale ) /2.0;
+		}
+		else
+		{
+			dX = ( size.GetWidth() - image.GetWidth*dScale ) / 2.0;
+			dY = ( size.GetHeight() - 150.0 ) / 2.0;
+		}
+		painter.DrawImage( dX, dY, &image, dScale, dScale );
+	}
 
 	/* add hyperlink  */
 	PdfAnnotation* pAnnot = pPage->CreateAnnotation( );
@@ -57,12 +92,31 @@ void drawImg(PdfDocument* doc, PdfPainter* painter)
 /*---------------------------------------------------------------------------*/
 /*                                 drawGeo()                                 */
 /*---------------------------------------------------------------------------*/
-
-void drawGeo()
+void DrawGeo( PdfPage* pPage )
 {
-	PdfPage* pPage = doc.CreatePage();
-	painter->SetPage( pPage );
-	
+	PdfPainter painter;
+	PdfRect rect;
+
+	/* check input param pPage */
+	if( NULL == pPage )
+	{
+		cout<<"Usage errer: pPage can not be NULL"<<endl;
+	}
+
+	painter.setPage( pPage );
+	rect = pageToDraw->GetPageSize();
+
+	/* Draw geometries */
+	painter.SetStrokingColor( 1.0, 0.0, 0.0 );
+	painter.SetStrokeWidth( 3 );
+	painter.DrawLine( 0.0, 0.0, rect.GetWidth(), rect.GetHeight() );
+	painter.DrawLine( 0.0, rect.GetHeight()/2.0, rect.GetWidth(), rect.GetHeight()/2.0 );
+	painter.DrawLine( 0.0, rect.GetHeight(), rect.GetWidth(), rect.GetHeight()/2.0, 0.0 );
+	painter.FillRect( 2.0, 2.0, rect.GetWidth()/2.0, rect.GetHeight()/2.0, 200.0, 200.0 );
+	painter.DrawRect( rect.GetWidth()/2.0, rect.GetHeight()/2.0, rect.GetWidth()/2.0, 
+			rect.GetHeight()/2.0, 100.0, 100.0 );
+	painter.DrawEllipse( rect.GetWidth()/2.0, 0, rect.GetWidth()/2.0, rectGetHeight()/2.0 );
+	painter.DrawCircle( rect.GetWidth()/2.0, rect.GetHeight()/2.0, 200 );
 	
 	painter.FinishiPage();
 	cout<<"Draw some geometory in new pdf page SUCCESSFULLY!"<<endl;
@@ -72,7 +126,7 @@ void drawGeo()
 /*                                 drawText()                                */
 /*---------------------------------------------------------------------------*/
 
-void drawText()
+void DrawText()
 {
 	PdfPage* pPage = doc.CreatePage();
 	painter->SetPage( pPage );
@@ -80,6 +134,52 @@ void drawText()
 	
 	painter.FinishiPage();
 	cout<<"Draw some Text in new pdf page SUCCESSFULLY!"<<endl;
+}
+
+/*---------------------------------------------------------------------------*/
+/*                               UnicodeTest()                               */
+/*---------------------------------------------------------------------------*/
+
+void CreateUnicodeAnnotationFreeText( PdfPage* pPage, PdfDocument* pDocument )
+{
+    PdfString sJap(reinterpret_cast<const pdf_utf8*>("「PoDoFo」は今から日本語も話せます。"));
+    PdfFont* pFont = pDocument->CreateFont( "Arial Unicode MS", new PdfIdentityEncoding( 0, 0xffff, true ) ); 
+
+    PdfRect rect( 200.0, 200.0, 200.0, 200.0 );
+    /*
+    PdfXObject xObj( rect, pDocument );
+    
+    PdfPainter painter;
+    painter.SetPage( &xObj );
+    painter.SetFont( pFont );
+    painter.SetColor( 1.0, 0.0, 0.0 );
+    painter.DrawRect( 10.0, 10.0, 100.0, 100.0 );
+    painter.DrawText( 100.0, 100.0, sJap );
+    painter.FinishPage();
+    */
+
+    std::ostringstream  oss;
+    oss << "BT" << std::endl << "/" <<   pFont->GetIdentifier().GetName()
+        << " "  <<   pFont->GetFontSize()
+        << " Tf " << std::endl;
+
+    WriteStringToStream( sJap, oss, pFont );
+    oss << "Tj ET" << std::endl;
+
+    PdfDictionary fonts;
+    fonts.AddKey(pFont->GetIdentifier().GetName(), pFont->GetObject()->Reference());
+    PdfDictionary resources;
+    resources.AddKey( PdfName("Fonts"), fonts );
+
+    PdfAnnotation* pAnnotation = 
+        pPage->CreateAnnotation( ePdfAnnotation_FreeText, rect );
+
+    PdfString sGerman(reinterpret_cast<const pdf_utf8*>("Unicode Umlauts: ÄÖÜß"));
+    pAnnotation->SetTitle( sGerman );
+    pAnnotation->SetContents( sJap );
+    //pAnnotation->SetAppearanceStream( &xObj );
+    pAnnotation->GetObject()->GetDictionary().AddKey( PdfName("DA"), PdfString(oss.str()) );
+    pAnnotation->GetObject()->GetDictionary().AddKey( PdfName("DR"), resources );
 }
 
 /******************************************************************************
@@ -93,33 +193,40 @@ int main (int argc, char const* argv[])
 	int usrcmd;
 	bool terminate;
 
+	PdfMemDocument doc;
+	PdfPage* pPage;
+
 	printf("Mytest application.\n");
 	printf("===================\n");
 	printf("Usage:./app [output filename]\n");
 	printf("Mytest application.\n");
 
-	PdfMemDocument doc;
-	PdfPainter     painter;
-
 	while( 1 ) 
 	{
-		prompt();
+		Prompt();
 		cin<<usrcmd;
-		switch (usrcmd) {
+		if( usrcmd != 0 )
+		{
+			pPage = doc.CreatePage( size );
+			WriteTitle( pPage );
+		}
+		switch( usrcmd ) 
+		{
 			case 0:
 				terminate = true;
 				break;
 			case 1:
-				drawImg( &doc, &painter);
+				DrawImg( pPage );
 				break;
 			case 2:
-				drawText( &doc );
+				DrawText( pPage );
 				break;
 			case 3:
-				drawGeo( &doc );
+				DrawGeo( pPage );
 				break;
 		}
-		if terminate {
+		if( terminate ) 
+		{
 			break;
 		}
 	}

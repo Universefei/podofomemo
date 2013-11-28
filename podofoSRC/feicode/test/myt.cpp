@@ -28,12 +28,10 @@ void WriteTitle( PdfPage* pPage)
 /*---------------------------------------------------------------------------*/
 /*                                 drawImg()                                 */
 /*---------------------------------------------------------------------------*/
-void DrawImg(PdfPage* pPage)
+void DrawImg(PdfPage* pPage, PdfPainter* pPainter )
 {
 	std::string imagePath, imageURI;
 	double dX, dY;
-
-	PdfPainter painter;
 
 	/* prompt for user to input */
 	cout<<"input the IMAGE PATH"<<endl;
@@ -46,11 +44,11 @@ void DrawImg(PdfPage* pPage)
 	image.LoadFromFile( imagePath.c_str() );
 
 	/* check input param pPage */
-	if( NULL == pPage )
+	if( NULL == pPage || NULL == painter )
 	{
-		cout<<"Usage errer: pPage can not be NULL"<<endl;
+		cout<<"Usage errer: parameteries can not be NULL"<<endl;
 	}
-	painter.setPage( pPage );
+	pPainter->SetPage( pPage );
 
 	/* draw image with painter on pPage */
 	dScaleX = 150.0 / image.GetWidth();
@@ -60,7 +58,7 @@ void DrawImg(PdfPage* pPage)
 	{
 		dX = (size.GetWidth() - image.GetWidth()) / 2.0;
 		dY = (size.GetHeight() - image.GetHeight()) / 2.0;
-		painter.DrawImage( dX, dY, &image );
+		pPainter->DrawImage( dX, dY, &image );
 	} 
 	else
 	{
@@ -74,7 +72,7 @@ void DrawImg(PdfPage* pPage)
 			dX = ( size.GetWidth() - image.GetWidth*dScale ) / 2.0;
 			dY = ( size.GetHeight() - 150.0 ) / 2.0;
 		}
-		painter.DrawImage( dX, dY, &image, dScale, dScale );
+		pPainter->DrawImage( dX, dY, &image, dScale, dScale );
 	}
 
 	/* add hyperlink  */
@@ -85,60 +83,177 @@ void DrawImg(PdfPage* pPage)
 	pAnnot->SetAction( eAction );
 
 	/* finish page and print prompt infomation */
-	painter.FinishPage();
 	cout<<"Draw image with URI in new pdf page SUCCESSFULLY!"<<endl;
 }
 
 /*---------------------------------------------------------------------------*/
 /*                                 drawGeo()                                 */
 /*---------------------------------------------------------------------------*/
-void DrawGeo( PdfPage* pPage )
+void DrawGeo( PdfPage* pPage, PdfPainter* pPainter )
 {
-	PdfPainter painter;
 	PdfRect rect;
 
 	/* check input param pPage */
-	if( NULL == pPage )
+	if( NULL == pPage || NULL == painter )
 	{
-		cout<<"Usage errer: pPage can not be NULL"<<endl;
+		cout<<"Usage errer: parameteries can not be NULL"<<endl;
 	}
 
-	painter.setPage( pPage );
+	pPainter->SetPage( pPage );
 	rect = pageToDraw->GetPageSize();
 
 	/* Draw geometries */
-	painter.SetStrokingColor( 1.0, 0.0, 0.0 );
-	painter.SetStrokeWidth( 3 );
-	painter.DrawLine( 0.0, 0.0, rect.GetWidth(), rect.GetHeight() );
-	painter.DrawLine( 0.0, rect.GetHeight()/2.0, rect.GetWidth(), rect.GetHeight()/2.0 );
-	painter.DrawLine( 0.0, rect.GetHeight(), rect.GetWidth(), rect.GetHeight()/2.0, 0.0 );
-	painter.FillRect( 2.0, 2.0, rect.GetWidth()/2.0, rect.GetHeight()/2.0, 200.0, 200.0 );
-	painter.DrawRect( rect.GetWidth()/2.0, rect.GetHeight()/2.0, rect.GetWidth()/2.0, 
+	pPainter->SetStrokingColor( 1.0, 0.0, 0.0 );
+	pPainter->SetStrokeWidth( 3 );
+	pPainter->DrawLine( 0.0, 0.0, rect.GetWidth(), rect.GetHeight() );
+	pPainter->DrawLine( 0.0, rect.GetHeight()/2.0, rect.GetWidth(), rect.GetHeight()/2.0 );
+	pPainter->DrawLine( 0.0, rect.GetHeight(), rect.GetWidth(), rect.GetHeight()/2.0, 0.0 );
+	pPainter->FillRect( 2.0, 2.0, rect.GetWidth()/2.0, rect.GetHeight()/2.0, 200.0, 200.0 );
+	pPainter->DrawRect( rect.GetWidth()/2.0, rect.GetHeight()/2.0, rect.GetWidth()/2.0, 
 			rect.GetHeight()/2.0, 100.0, 100.0 );
-	painter.DrawEllipse( rect.GetWidth()/2.0, 0, rect.GetWidth()/2.0, rectGetHeight()/2.0 );
-	painter.DrawCircle( rect.GetWidth()/2.0, rect.GetHeight()/2.0, 200 );
+	pPainter->DrawEllipse( rect.GetWidth()/2.0, 0, rect.GetWidth()/2.0, rectGetHeight()/2.0 );
+	pPainter->DrawCircle( rect.GetWidth()/2.0, rect.GetHeight()/2.0, 200 );
 	
-	painter.FinishiPage();
 	cout<<"Draw some geometory in new pdf page SUCCESSFULLY!"<<endl;
 }
 
 /*---------------------------------------------------------------------------*/
 /*                                 drawText()                                */
 /*---------------------------------------------------------------------------*/
+#define CONVERSION_CONSTANT 0.002834645669291339
 
-void DrawText()
+void DrawText( PdfPage* pPage, PdfPainter* pPainter )
 {
-	PdfPage* pPage = doc.CreatePage();
-	painter->SetPage( pPage );
+	pPainter->SetPage( pPage );
+    double x = 10000 * CONVERSION_CONSTANT;
+    double y = pPage->GetPageSize().GetHeight() - 10000 * CONVERSION_CONSTANT;
+
+    printf("Embedding Font\n");
+    printf("!!!!!!!!!!!!!!!\n");
+    pPainter->SetFont( pDocument->CreateFont( "Times New Roman" ) );
+    pPainter->GetFont()->SetFontSize( 24.0 );
+    printf("!!!!!!!!!!!!!!!\n");
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+
+    pPainter->SetColor( 0.0, 0.0, 0.0 );
+    pPainter->DrawText( x, y, "Hallo Welt!" );
+    
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+    pPainter->GetFont()->SetUnderlined( true );
+    pPainter->SetStrokingColor( 1.0, 0.0, 0.0 );
+    pPainter->DrawText( x, y, "Underlined text in the same font!" );
+
+    pPainter->GetFont()->SetUnderlined( false );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+    pPainter->DrawText( x, y, "Disabled the underline again..." );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+    
+    PdfFont* pFont = pDocument->CreateFont( "Arial" );
+    pFont->SetFontSize( 12.0 );
+    
+    pPainter->SetFont( pFont );
+
+    pPainter->DrawText( x, y, "Normal" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+
+    pPainter->GetFont()->SetUnderlined( true );
+    pPainter->DrawText( x, y, "Normal+underlinded" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+
+    pPainter->GetFont()->SetUnderlined( false );
+    pFont->SetFontCharSpace( 100.0 );
+    pPainter->DrawText( x, y, "Mormal+spaced" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
 	
-	
-	painter.FinishiPage();
+    pPainter->GetFont()->SetUnderlined( true );
+    pPainter->DrawText( x, y, "Normal+underlined+spaced" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+    pPainter->GetFont()->SetUnderlined( false );
+    pFont->SetFontCharSpace( 0.0 );
+
+
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+
+
+    pFont->SetFontScale( 50.0 );
+    pPainter->DrawText( x, y, "Condensed" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+
+    pFont->SetFontCharSpace( 0.0 );
+    pPainter->GetFont()->SetUnderlined( true );
+    pPainter->DrawText( x, y, "Condensed+underlinded" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+
+    pPainter->GetFont()->SetUnderlined( false );
+    pFont->SetFontCharSpace( 100.0 );
+    pPainter->DrawText( x, y, "Condensed+spaced" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+
+    
+    pPainter->GetFont()->SetUnderlined( true );
+    pPainter->DrawText( x, y, "Condensed+underlined+spaced" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+    pPainter->GetFont()->SetUnderlined( false );
+    pFont->SetFontCharSpace( 0.0 );
+
+
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+
+    pFont->SetFontScale( 200.0 );
+    pPainter->DrawText( x, y, "Expanded" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+
+    pPainter->GetFont()->SetUnderlined( true );
+    pPainter->DrawText( x, y, "Expanded+underlinded" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+    
+    pPainter->GetFont()->SetUnderlined( false );
+    pFont->SetFontCharSpace( 100.0 );
+    pPainter->DrawText( x, y, "Expanded+spaced" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+
+    pPainter->GetFont()->SetUnderlined( true );
+    pPainter->DrawText( x, y, "Expanded+underlined+spaced" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+    pPainter->GetFont()->SetUnderlined( false );
+    pFont->SetFontCharSpace( 0.0 );
+    pFont->SetFontScale( 100.0 );
+
+
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+
+    pPainter->GetFont()->SetStrikeOut( true );
+    pPainter->DrawText( x, y, "Strikeout" );
+    y -= pPainter->GetFont()->GetFontMetrics()->GetLineSpacing();
+    pPainter->GetFont()->SetUnderlined( false );
+
+
+    pPainter->DrawText( x, y, "PoDoFo rocks!" );
+
 	cout<<"Draw some Text in new pdf page SUCCESSFULLY!"<<endl;
 }
 
 /*---------------------------------------------------------------------------*/
 /*                               UnicodeTest()                               */
 /*---------------------------------------------------------------------------*/
+
+void WriteStringToStream( const PdfString & rsString, std;;ostringstream & oss, PdfFont* pFont )
+{
+	PdfEncoding* pEncoding = new PdfIdentityEncoding( 0, 0xffff, true );
+	PdfRefCountedBuffer buffer = pEncoding->ConvertToEncoding( rsString, pFont );
+	pdf_long lLen = 0;
+	char* pBuffer = NULL;
+
+	std::auto_ptr<PdfFilter> pFilter = PdfFilterFactory::Create( ePdfFilter_ASCIIHexDecode );
+	pFilter->Encode( buffer.GetBuffer(), buffer.GetSize(), &pBuffer, &lLen );
+
+	oss << "<";
+	oss << std::string( pBuffer, lLen );
+	oss << ">";
+	free( pBuffer );
+	delete pEncoding;
+}
 
 void CreateUnicodeAnnotationFreeText( PdfPage* pPage, PdfDocument* pDocument )
 {
@@ -191,10 +306,11 @@ void CreateUnicodeAnnotationFreeText( PdfPage* pPage, PdfDocument* pDocument )
 int main (int argc, char const* argv[])
 {
 	int usrcmd;
-	bool terminate;
 
 	PdfMemDocument doc;
 	PdfPage* pPage;
+	PdfPainter painter;
+	PdfRect size = CreateStandardPageSize( ePdfPageSize_A4, false );
 
 	printf("Mytest application.\n");
 	printf("===================\n");
@@ -203,6 +319,8 @@ int main (int argc, char const* argv[])
 
 	while( 1 ) 
 	{
+		bool terminate = false;
+
 		Prompt();
 		cin<<usrcmd;
 		if( usrcmd != 0 )
@@ -216,19 +334,24 @@ int main (int argc, char const* argv[])
 				terminate = true;
 				break;
 			case 1:
-				DrawImg( pPage );
+				DrawImg( pPage, &painter );
 				break;
 			case 2:
-				DrawText( pPage );
+				DrawText( pPage &painter );
 				break;
 			case 3:
-				DrawGeo( pPage );
+				DrawGeo( pPage &painter );
 				break;
 		}
 		if( terminate ) 
 		{
 			break;
 		}
+		else
+		{
+			painter.FinishPage();
+		}
+
 	}
 
 	doc.Write(argv[1].c_str());

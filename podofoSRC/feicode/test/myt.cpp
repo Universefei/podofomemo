@@ -19,8 +19,8 @@ void Prompt()
 void WriteTitle( PdfPage* pPage) 
 {
 	std::string title;
-	cout<<"Input the titile for this page:"<<endl;
-	cin<<title;
+	std::cout << "Input the titile for this page:"<<std::endl;
+	std::cin >> title;
 
 }
 
@@ -28,31 +28,36 @@ void WriteTitle( PdfPage* pPage)
 /*---------------------------------------------------------------------------*/
 /*                                 drawImg()                                 */
 /*---------------------------------------------------------------------------*/
-void DrawImg(PdfPage* pPage, PdfPainter* pPainter )
+void DrawImg(PdfDocument* pdoc, PdfPage* pPage, PdfPainter* pPainter )
 {
 	std::string imagePath, imageURI;
 	double dX, dY;
+	double dScaleX, dScaleY, dScale;
+	double bulk;
 
 	/* prompt for user to input */
-	cout<<"input the IMAGE PATH"<<endl;
-	cin>>imagePath;
-	cout<<"input the URI"<<endl;
-	cin>>imageURI;
+	std::cout << "input the IMAGE PATH" << std::endl;
+	std::cin >> imagePath;
+	std::cout << "input the Image scale" << std::endl;
+	std::cin >> bulk;
+	std::cout << "input the URI" << std::endl;
+	std::cin >> imageURI;
 
 	/* load image */
-	PdfImage image( doc );
+	PdfImage image( pdoc );
 	image.LoadFromFile( imagePath.c_str() );
 
 	/* check input param pPage */
-	if( NULL == pPage || NULL == painter )
+	if( NULL == pPage || NULL == pPainter )
 	{
-		cout<<"Usage errer: parameteries can not be NULL"<<endl;
+		std::cout<<"Usage errer: parameteries can not be NULL"<<std::endl;
 	}
 	pPainter->SetPage( pPage );
+	PdfRect size = pPage->GetPageSize();
 
 	/* draw image with painter on pPage */
-	dScaleX = 150.0 / image.GetWidth();
-	dScaleY = 150.0 / image.GetHeight();
+	dScaleX = bulk / image.GetWidth();
+	dScaleY = bulk / image.GetHeight();
 	dScale = PDF_MIN( dScaleX, dScaleY );
 	if( dScale >= 1 ) 
 	{
@@ -64,57 +69,61 @@ void DrawImg(PdfPage* pPage, PdfPainter* pPainter )
 	{
 		if( dScale == dScaleX )
 		{
-			dX = ( size.GetWidth() - 150.0 ) / 2.0;
-			dY = ( size.GetHeight() - image.GetHeight*dScale ) /2.0;
+			dX = ( size.GetWidth() - bulk ) / 2.0;
+			dY = ( size.GetHeight() - image.GetHeight()*dScale ) /2.0;
 		}
 		else
 		{
-			dX = ( size.GetWidth() - image.GetWidth*dScale ) / 2.0;
-			dY = ( size.GetHeight() - 150.0 ) / 2.0;
+			dX = ( size.GetWidth() - image.GetWidth()*dScale ) / 2.0;
+			dY = ( size.GetHeight() - bulk ) / 2.0;
 		}
 		pPainter->DrawImage( dX, dY, &image, dScale, dScale );
 	}
 
-	/* add hyperlink  */
-	PdfAnnotation* pAnnot = pPage->CreateAnnotation( );
-	PdfRect rectAnnot();
-	PdfAction eAction();
-	eAction.SetURI( iamgeURI );
+	/* specify annotation area  */
+	PdfRect rectAnnot( dX, dY, image.GetWidth()*dScale, image.GetHeight()*dScale );
+	/*  add hyperlinke as annotation typed ePdfAnnotation_link, associate with
+	 *  Action typed ePdfAction_URI
+	 */
+	PdfAnnotation* pAnnot = pPage->CreateAnnotation( ePdfAnnotation_Link, rectAnnot );
+	PdfAction eAction( ePdfAction_URI, pdoc );
+	eAction.SetURI( imageURI );
 	pAnnot->SetAction( eAction );
 
 	/* finish page and print prompt infomation */
-	cout<<"Draw image with URI in new pdf page SUCCESSFULLY!"<<endl;
+	std::cout<<"Draw image with URI in new pdf page SUCCESSFULLY!"<<std::endl;
 }
 
 /*---------------------------------------------------------------------------*/
 /*                                 drawGeo()                                 */
 /*---------------------------------------------------------------------------*/
-void DrawGeo( PdfPage* pPage, PdfPainter* pPainter )
+
+void DrawGeo( PdfDocument* pdoc, PdfPage* pPage, PdfPainter* pPainter )
 {
 	PdfRect rect;
 
 	/* check input param pPage */
-	if( NULL == pPage || NULL == painter )
+	if( NULL == pPage || NULL == pPainter )
 	{
-		cout<<"Usage errer: parameteries can not be NULL"<<endl;
+		std::cout<<"Usage errer: parameteries can not be NULL"<<std::endl;
 	}
 
 	pPainter->SetPage( pPage );
-	rect = pageToDraw->GetPageSize();
+	rect = pPage->GetPageSize();
 
 	/* Draw geometries */
 	pPainter->SetStrokingColor( 1.0, 0.0, 0.0 );
 	pPainter->SetStrokeWidth( 3 );
 	pPainter->DrawLine( 0.0, 0.0, rect.GetWidth(), rect.GetHeight() );
 	pPainter->DrawLine( 0.0, rect.GetHeight()/2.0, rect.GetWidth(), rect.GetHeight()/2.0 );
-	pPainter->DrawLine( 0.0, rect.GetHeight(), rect.GetWidth(), rect.GetHeight()/2.0, 0.0 );
+	pPainter->DrawLine( 0.0, rect.GetHeight(), rect.GetWidth(), 0.0 );
 	pPainter->FillRect( 2.0, 2.0, rect.GetWidth()/2.0, rect.GetHeight()/2.0, 200.0, 200.0 );
 	pPainter->DrawRect( rect.GetWidth()/2.0, rect.GetHeight()/2.0, rect.GetWidth()/2.0, 
 			rect.GetHeight()/2.0, 100.0, 100.0 );
-	pPainter->DrawEllipse( rect.GetWidth()/2.0, 0, rect.GetWidth()/2.0, rectGetHeight()/2.0 );
+	pPainter->DrawEllipse( rect.GetWidth()/2.0, 0, rect.GetWidth()/2.0, rect.GetHeight()/2.0 );
 	pPainter->DrawCircle( rect.GetWidth()/2.0, rect.GetHeight()/2.0, 200 );
 	
-	cout<<"Draw some geometory in new pdf page SUCCESSFULLY!"<<endl;
+	std::cout<<"Draw some geometory in new pdf page SUCCESSFULLY!"<<std::endl;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -122,7 +131,7 @@ void DrawGeo( PdfPage* pPage, PdfPainter* pPainter )
 /*---------------------------------------------------------------------------*/
 #define CONVERSION_CONSTANT 0.002834645669291339
 
-void DrawText( PdfPage* pPage, PdfPainter* pPainter )
+void DrawText( PdfDocument* pDocument, PdfPage* pPage, PdfPainter* pPainter )
 {
 	pPainter->SetPage( pPage );
     double x = 10000 * CONVERSION_CONSTANT;
@@ -231,13 +240,14 @@ void DrawText( PdfPage* pPage, PdfPainter* pPainter )
 
     pPainter->DrawText( x, y, "PoDoFo rocks!" );
 
-	cout<<"Draw some Text in new pdf page SUCCESSFULLY!"<<endl;
+	std::cout<<"Draw some Text in new pdf page SUCCESSFULLY!"<<std::endl;
 }
 
 /*---------------------------------------------------------------------------*/
 /*                               UnicodeTest()                               */
 /*---------------------------------------------------------------------------*/
 
+/*
 void WriteStringToStream( const PdfString & rsString, std;;ostringstream & oss, PdfFont* pFont )
 {
 	PdfEncoding* pEncoding = new PdfIdentityEncoding( 0, 0xffff, true );
@@ -261,17 +271,6 @@ void CreateUnicodeAnnotationFreeText( PdfPage* pPage, PdfDocument* pDocument )
     PdfFont* pFont = pDocument->CreateFont( "Arial Unicode MS", new PdfIdentityEncoding( 0, 0xffff, true ) ); 
 
     PdfRect rect( 200.0, 200.0, 200.0, 200.0 );
-    /*
-    PdfXObject xObj( rect, pDocument );
-    
-    PdfPainter painter;
-    painter.SetPage( &xObj );
-    painter.SetFont( pFont );
-    painter.SetColor( 1.0, 0.0, 0.0 );
-    painter.DrawRect( 10.0, 10.0, 100.0, 100.0 );
-    painter.DrawText( 100.0, 100.0, sJap );
-    painter.FinishPage();
-    */
 
     std::ostringstream  oss;
     oss << "BT" << std::endl << "/" <<   pFont->GetIdentifier().GetName()
@@ -296,6 +295,8 @@ void CreateUnicodeAnnotationFreeText( PdfPage* pPage, PdfDocument* pDocument )
     pAnnotation->GetObject()->GetDictionary().AddKey( PdfName("DA"), PdfString(oss.str()) );
     pAnnotation->GetObject()->GetDictionary().AddKey( PdfName("DR"), resources );
 }
+*/
+
 
 /******************************************************************************
  *                                                                            *
@@ -310,19 +311,22 @@ int main (int argc, char const* argv[])
 	PdfMemDocument doc;
 	PdfPage* pPage;
 	PdfPainter painter;
-	PdfRect size = CreateStandardPageSize( ePdfPageSize_A4, false );
+	PdfRect size = PdfPage::CreateStandardPageSize( ePdfPageSize_A4, false );
 
-	printf("Mytest application.\n");
-	printf("===================\n");
-	printf("Usage:./app [output filename]\n");
-	printf("Mytest application.\n");
+	if( argc != 2 )
+	{
+		printf("Mytest application.\n");
+		printf("===================\n");
+		printf("Usage:./app [output filename]\n");
+		printf("Mytest application.\n");
+	}
 
 	while( 1 ) 
 	{
 		bool terminate = false;
 
 		Prompt();
-		cin<<usrcmd;
+		std::cin >> usrcmd;
 		if( usrcmd != 0 )
 		{
 			pPage = doc.CreatePage( size );
@@ -334,13 +338,13 @@ int main (int argc, char const* argv[])
 				terminate = true;
 				break;
 			case 1:
-				DrawImg( pPage, &painter );
+				DrawImg( &doc, pPage, &painter );
 				break;
 			case 2:
-				DrawText( pPage &painter );
+				DrawText( &doc, pPage, &painter );
 				break;
 			case 3:
-				DrawGeo( pPage &painter );
+				DrawGeo( &doc, pPage, &painter );
 				break;
 		}
 		if( terminate ) 
@@ -354,6 +358,6 @@ int main (int argc, char const* argv[])
 
 	}
 
-	doc.Write(argv[1].c_str());
+	doc.Write(argv[1]);
 	return 0;
 }

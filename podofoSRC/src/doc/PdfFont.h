@@ -35,6 +35,12 @@ class PdfWriter;
 
 
 
+/******************************************************************************
+ *                                                                            *
+ *                                Class PdfFont                               *
+ *                                                                            *
+ *****************************************************************************/
+
 /** Before you can draw text on a PDF document, you have to create
  *  a font object first. You can reuse this font object as often
  *  as you want.

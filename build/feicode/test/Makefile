@@ -153,53 +153,29 @@ test/fast:
 	cd /home/univ/projects/podofomemo/build && $(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-ImageConverter.o: ImageConverter.cpp.o
-.PHONY : ImageConverter.o
+myt.o: myt.cpp.o
+.PHONY : myt.o
 
 # target to build an object file
-ImageConverter.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o
-.PHONY : ImageConverter.cpp.o
+myt.cpp.o:
+	cd /home/univ/projects/podofomemo/build && $(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/myt.cpp.o
+.PHONY : myt.cpp.o
 
-ImageConverter.i: ImageConverter.cpp.i
-.PHONY : ImageConverter.i
-
-# target to preprocess a source file
-ImageConverter.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.i
-.PHONY : ImageConverter.cpp.i
-
-ImageConverter.s: ImageConverter.cpp.s
-.PHONY : ImageConverter.s
-
-# target to generate assembly for a file
-ImageConverter.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.s
-.PHONY : ImageConverter.cpp.s
-
-test.o: test.cpp.o
-.PHONY : test.o
-
-# target to build an object file
-test.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/test.cpp.o
-.PHONY : test.cpp.o
-
-test.i: test.cpp.i
-.PHONY : test.i
+myt.i: myt.cpp.i
+.PHONY : myt.i
 
 # target to preprocess a source file
-test.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/test.cpp.i
-.PHONY : test.cpp.i
+myt.cpp.i:
+	cd /home/univ/projects/podofomemo/build && $(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/myt.cpp.i
+.PHONY : myt.cpp.i
 
-test.s: test.cpp.s
-.PHONY : test.s
+myt.s: myt.cpp.s
+.PHONY : myt.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/test.cpp.s
-.PHONY : test.cpp.s
+myt.cpp.s:
+	cd /home/univ/projects/podofomemo/build && $(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/myt.cpp.s
+.PHONY : myt.cpp.s
 
 # Help Target
 help:
@@ -214,12 +190,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... ImageConverter.o"
-	@echo "... ImageConverter.i"
-	@echo "... ImageConverter.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... myt.o"
+	@echo "... myt.i"
+	@echo "... myt.s"
 .PHONY : help
 
 

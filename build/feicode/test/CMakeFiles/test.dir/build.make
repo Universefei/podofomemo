@@ -49,62 +49,37 @@ include feicode/test/CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include feicode/test/CMakeFiles/test.dir/flags.make
 
-feicode/test/CMakeFiles/test.dir/test.cpp.o: feicode/test/CMakeFiles/test.dir/flags.make
-feicode/test/CMakeFiles/test.dir/test.cpp.o: /home/univ/projects/podofomemo/podofoSRC/feicode/test/test.cpp
+feicode/test/CMakeFiles/test.dir/myt.cpp.o: feicode/test/CMakeFiles/test.dir/flags.make
+feicode/test/CMakeFiles/test.dir/myt.cpp.o: /home/univ/projects/podofomemo/podofoSRC/feicode/test/myt.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object feicode/test/CMakeFiles/test.dir/test.cpp.o"
-	cd /home/univ/projects/podofomemo/build/feicode/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/test.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/feicode/test/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object feicode/test/CMakeFiles/test.dir/myt.cpp.o"
+	cd /home/univ/projects/podofomemo/build/feicode/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/myt.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/feicode/test/myt.cpp
 
-feicode/test/CMakeFiles/test.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/test.cpp.i"
-	cd /home/univ/projects/podofomemo/build/feicode/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/feicode/test/test.cpp > CMakeFiles/test.dir/test.cpp.i
+feicode/test/CMakeFiles/test.dir/myt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/myt.cpp.i"
+	cd /home/univ/projects/podofomemo/build/feicode/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/feicode/test/myt.cpp > CMakeFiles/test.dir/myt.cpp.i
 
-feicode/test/CMakeFiles/test.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/test.cpp.s"
-	cd /home/univ/projects/podofomemo/build/feicode/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/feicode/test/test.cpp -o CMakeFiles/test.dir/test.cpp.s
+feicode/test/CMakeFiles/test.dir/myt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/myt.cpp.s"
+	cd /home/univ/projects/podofomemo/build/feicode/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/feicode/test/myt.cpp -o CMakeFiles/test.dir/myt.cpp.s
 
-feicode/test/CMakeFiles/test.dir/test.cpp.o.requires:
-.PHONY : feicode/test/CMakeFiles/test.dir/test.cpp.o.requires
+feicode/test/CMakeFiles/test.dir/myt.cpp.o.requires:
+.PHONY : feicode/test/CMakeFiles/test.dir/myt.cpp.o.requires
 
-feicode/test/CMakeFiles/test.dir/test.cpp.o.provides: feicode/test/CMakeFiles/test.dir/test.cpp.o.requires
-	$(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/test.cpp.o.provides.build
-.PHONY : feicode/test/CMakeFiles/test.dir/test.cpp.o.provides
+feicode/test/CMakeFiles/test.dir/myt.cpp.o.provides: feicode/test/CMakeFiles/test.dir/myt.cpp.o.requires
+	$(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/myt.cpp.o.provides.build
+.PHONY : feicode/test/CMakeFiles/test.dir/myt.cpp.o.provides
 
-feicode/test/CMakeFiles/test.dir/test.cpp.o.provides.build: feicode/test/CMakeFiles/test.dir/test.cpp.o
-
-feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o: feicode/test/CMakeFiles/test.dir/flags.make
-feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o: /home/univ/projects/podofomemo/podofoSRC/feicode/test/ImageConverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o"
-	cd /home/univ/projects/podofomemo/build/feicode/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/ImageConverter.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/feicode/test/ImageConverter.cpp
-
-feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/ImageConverter.cpp.i"
-	cd /home/univ/projects/podofomemo/build/feicode/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/feicode/test/ImageConverter.cpp > CMakeFiles/test.dir/ImageConverter.cpp.i
-
-feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/ImageConverter.cpp.s"
-	cd /home/univ/projects/podofomemo/build/feicode/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/feicode/test/ImageConverter.cpp -o CMakeFiles/test.dir/ImageConverter.cpp.s
-
-feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o.requires:
-.PHONY : feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o.requires
-
-feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o.provides: feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o.requires
-	$(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o.provides.build
-.PHONY : feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o.provides
-
-feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o.provides.build: feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o
+feicode/test/CMakeFiles/test.dir/myt.cpp.o.provides.build: feicode/test/CMakeFiles/test.dir/myt.cpp.o
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/test.cpp.o" \
-"CMakeFiles/test.dir/ImageConverter.cpp.o"
+"CMakeFiles/test.dir/myt.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-feicode/test/test: feicode/test/CMakeFiles/test.dir/test.cpp.o
-feicode/test/test: feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o
+feicode/test/test: feicode/test/CMakeFiles/test.dir/myt.cpp.o
 feicode/test/test: /usr/lib/i386-linux-gnu/libfontconfig.so
 feicode/test/test: /usr/lib/i386-linux-gnu/libz.so
 feicode/test/test: /usr/lib/i386-linux-gnu/libcrypto.so
@@ -127,8 +102,7 @@ feicode/test/test: feicode/test/CMakeFiles/test.dir/link.txt
 feicode/test/CMakeFiles/test.dir/build: feicode/test/test
 .PHONY : feicode/test/CMakeFiles/test.dir/build
 
-feicode/test/CMakeFiles/test.dir/requires: feicode/test/CMakeFiles/test.dir/test.cpp.o.requires
-feicode/test/CMakeFiles/test.dir/requires: feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o.requires
+feicode/test/CMakeFiles/test.dir/requires: feicode/test/CMakeFiles/test.dir/myt.cpp.o.requires
 .PHONY : feicode/test/CMakeFiles/test.dir/requires
 
 feicode/test/CMakeFiles/test.dir/clean:

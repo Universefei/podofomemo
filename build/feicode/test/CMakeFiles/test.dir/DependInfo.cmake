@@ -4,8 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/univ/projects/podofomemo/podofoSRC/feicode/test/ImageConverter.cpp" "/home/univ/projects/podofomemo/build/feicode/test/CMakeFiles/test.dir/ImageConverter.cpp.o"
-  "/home/univ/projects/podofomemo/podofoSRC/feicode/test/test.cpp" "/home/univ/projects/podofomemo/build/feicode/test/CMakeFiles/test.dir/test.cpp.o"
+  "/home/univ/projects/podofomemo/podofoSRC/feicode/test/myt.cpp" "/home/univ/projects/podofomemo/build/feicode/test/CMakeFiles/test.dir/myt.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

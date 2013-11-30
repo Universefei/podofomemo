@@ -34,6 +34,7 @@ namespace PoDoFo {
 class PdfFontMetrics;
 class PdfVecObjects;
 
+/* Why defined as a strcut not class?? */
 /** A private structure,
  *  which represents a font in the cache.
  */

@@ -6,28 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/home/univ/projects/podofomemo/podofoSRC/feicode/test/ImageConverter.cpp
-ImageConverter.h
-/home/univ/projects/podofomemo/podofoSRC/feicode/test/ImageConverter.h
+/home/univ/projects/podofomemo/podofoSRC/feicode/test/myt.cpp
 podofo.h
 -
-
-/home/univ/projects/podofomemo/podofoSRC/feicode/test/ImageConverter.h
-string
+cstdio
 -
-vector
--
-
-/home/univ/projects/podofomemo/podofoSRC/feicode/test/test.cpp
-stdio.h
--
-stdlib.h
--
-config.h
--
-ImageConverter.h
-/home/univ/projects/podofomemo/podofoSRC/feicode/test/ImageConverter.h
-podofo.h
+iostream
 -
 
 /home/univ/projects/podofomemo/podofoSRC/podofo/base/../../src/base/Pdf3rdPtyForwardDecl.h

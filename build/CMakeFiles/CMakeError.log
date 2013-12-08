@@ -1,64 +1,82 @@
-Determining if the include file winsock2.h exists failed with the following output:
-Change Dir: /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: 
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: 正在进入目录 `/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
-/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:22: 致命错误： winsock2.h：没有那个文件或目录
-编译中断。
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o] 错误 1
-make[1]:正在离开目录 `/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec/fast] 错误 2
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c
+
+The output was:
+No such file or directory
+
+
+Determining if the include file winsock2.h exists failed with the following output:
+Change Dir: /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4096151490/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4096151490.dir/build.make CMakeFiles/cmTryCompileExec4096151490.dir/build
+make[1]: Entering directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4096151490.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec4096151490.dir/CheckIncludeFile.c.o   -c /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:22: fatal error: winsock2.h: No such file or directory
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec4096151490.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4096151490/fast] Error 2
 
 
 Determining if the include file mem.h exists failed with the following output:
-Change Dir: /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp
+Change Dir: /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: 正在进入目录 `/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
-/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:17: 致命错误： mem.h：没有那个文件或目录
-编译中断。
-make[1]:正在离开目录 `/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp'
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o] 错误 1
-make: *** [cmTryCompileExec/fast] 错误 2
+Run Build Command:/usr/bin/make "cmTryCompileExec4152722642/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4152722642.dir/build.make CMakeFiles/cmTryCompileExec4152722642.dir/build
+make[1]: Entering directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4152722642.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec4152722642.dir/CheckIncludeFile.c.o   -c /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:17: fatal error: mem.h: No such file or directory
+compilation terminated.
+make[1]: Leaving directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec4152722642.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec4152722642/fast] Error 2
 
 
 Determining if the include file BaseTsd.h exists failed with the following output:
-Change Dir: /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp
+Change Dir: /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: 正在进入目录 `/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
-/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:21: 致命错误： BaseTsd.h：没有那个文件或目录
-编译中断。
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o] 错误 1
-make[1]:正在离开目录 `/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec/fast] 错误 2
+Run Build Command:/usr/bin/make "cmTryCompileExec787403588/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec787403588.dir/build.make CMakeFiles/cmTryCompileExec787403588.dir/build
+make[1]: Entering directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec787403588.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec787403588.dir/CheckIncludeFile.c.o   -c /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:21: fatal error: BaseTsd.h: No such file or directory
+compilation terminated.
+make[1]: Leaving directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec787403588.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec787403588/fast] Error 2
 
 
 Determining if the system is big endian passed with the following output:
-Change Dir: /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp
+Change Dir: /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: 正在进入目录 `/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec.dir/TestEndianess.c.o
-/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/TestEndianess.c.o   -c /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/TestEndianess.c
-Linking C executable cmTryCompileExec
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/usr/bin/gcc         CMakeFiles/cmTryCompileExec.dir/TestEndianess.c.o  -o cmTryCompileExec -rdynamic 
-make[1]:正在离开目录 `/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp'
+Run Build Command:/usr/bin/make "cmTryCompileExec2102081533/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2102081533.dir/build.make CMakeFiles/cmTryCompileExec2102081533.dir/build
+make[1]: Entering directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2102081533.dir/TestEndianess.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2102081533.dir/TestEndianess.c.o   -c /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec2102081533
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2102081533.dir/link.txt --verbose=1
+/usr/bin/gcc         CMakeFiles/cmTryCompileExec2102081533.dir/TestEndianess.c.o  -o cmTryCompileExec2102081533 -rdynamic 
+make[1]: Leaving directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
 
 TestEndianess.c:
 /* A 16 bit integer is required. */
@@ -86,22 +104,56 @@ int main(int argc, char *argv[])
 }
 
 
-Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: 正在进入目录 `/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
-/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lpthreads 
+Run Build Command:/usr/bin/make "cmTryCompileExec1454622098/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1454622098.dir/build.make CMakeFiles/cmTryCompileExec1454622098.dir/build
+make[1]: Entering directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1454622098.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec1454622098.dir/CheckSymbolExists.c.o   -c /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1454622098
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1454622098.dir/link.txt --verbose=1
+/usr/bin/gcc         CMakeFiles/cmTryCompileExec1454622098.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1454622098 -rdynamic 
+CMakeFiles/cmTryCompileExec1454622098.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1454622098] Error 1
+make[1]: Leaving directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1454622098/fast] Error 2
+
+File /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1917570204/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1917570204.dir/build.make CMakeFiles/cmTryCompileExec1917570204.dir/build
+make[1]: Entering directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1917570204.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1917570204.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1917570204
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1917570204.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1917570204.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1917570204 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
-collect2: ld 返回 1
-make[1]:正在离开目录 `/home/univ/projects/podofomemo/build/CMakeFiles/CMakeTmp'
-make[1]: *** [cmTryCompileExec] 错误 1
-make: *** [cmTryCompileExec/fast] 错误 2
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/fei/proj/podofomemo/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1917570204] Error 1
+make: *** [cmTryCompileExec1917570204/fast] Error 2
 
 

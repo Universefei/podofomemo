@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/progress.make
 include tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/flags.make
 
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o: tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/flags.make
-tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofopdfinfo/pdfinfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofopdfinfo/pdfinfo.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofopdfinfo/pdfinfo.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofopdfinfo/pdfinfo.cpp
 
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofopdfinfo/pdfinfo.cpp > CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofopdfinfo/pdfinfo.cpp > CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.i
 
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofopdfinfo/pdfinfo.cpp -o CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofopdfinfo/pdfinfo.cpp -o CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.s
 
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o.requires:
 .PHONY : tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o.requires
@@ -73,18 +73,18 @@ tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o.provides: tools/p
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o.provides.build: tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o
 
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.o: tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/flags.make
-tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofopdfinfo/podofopdfinfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
+tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofopdfinfo/podofopdfinfo.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofopdfinfo/podofopdfinfo.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofopdfinfo/podofopdfinfo.cpp
 
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofopdfinfo/podofopdfinfo.cpp > CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofopdfinfo/podofopdfinfo.cpp > CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.i
 
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofopdfinfo/podofopdfinfo.cpp -o CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofopdfinfo && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofopdfinfo/podofopdfinfo.cpp -o CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.s
 
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.o.requires:
 .PHONY : tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.o.requires
@@ -105,23 +105,16 @@ podofopdfinfo_EXTERNAL_OBJECTS =
 
 tools/podofopdfinfo/podofopdfinfo: tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/pdfinfo.cpp.o
 tools/podofopdfinfo/podofopdfinfo: tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/podofopdfinfo.cpp.o
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libz.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libz.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofopdfinfo/podofopdfinfo: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofopdfinfo/podofopdfinfo: tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/build.make
+tools/podofopdfinfo/podofopdfinfo: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofopdfinfo/podofopdfinfo: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofopdfinfo/podofopdfinfo: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofopdfinfo/podofopdfinfo: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofopdfinfo/podofopdfinfo: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofopdfinfo/podofopdfinfo: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofopdfinfo/podofopdfinfo: tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofopdfinfo"
-	cd /home/univ/projects/podofomemo/build/tools/podofopdfinfo && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofopdfinfo.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofopdfinfo && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofopdfinfo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/build: tools/podofopdfinfo/podofopdfinfo
@@ -132,10 +125,10 @@ tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/requires: tools/podofopdfinfo/C
 .PHONY : tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/requires
 
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofopdfinfo && $(CMAKE_COMMAND) -P CMakeFiles/podofopdfinfo.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofopdfinfo && $(CMAKE_COMMAND) -P CMakeFiles/podofopdfinfo.dir/cmake_clean.cmake
 .PHONY : tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/clean
 
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofopdfinfo /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofopdfinfo /home/univ/projects/podofomemo/build/tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofopdfinfo /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofopdfinfo /home/fei/proj/podofomemo/build/tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/depend
 

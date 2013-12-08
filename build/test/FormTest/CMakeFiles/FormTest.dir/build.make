@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include test/FormTest/CMakeFiles/FormTest.dir/depend.make
@@ -50,18 +50,18 @@ include test/FormTest/CMakeFiles/FormTest.dir/progress.make
 include test/FormTest/CMakeFiles/FormTest.dir/flags.make
 
 test/FormTest/CMakeFiles/FormTest.dir/FormTest.cpp.o: test/FormTest/CMakeFiles/FormTest.dir/flags.make
-test/FormTest/CMakeFiles/FormTest.dir/FormTest.cpp.o: /home/univ/projects/podofomemo/podofoSRC/test/FormTest/FormTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+test/FormTest/CMakeFiles/FormTest.dir/FormTest.cpp.o: /home/fei/proj/podofomemo/podofoSRC/test/FormTest/FormTest.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/FormTest/CMakeFiles/FormTest.dir/FormTest.cpp.o"
-	cd /home/univ/projects/podofomemo/build/test/FormTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/FormTest.dir/FormTest.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/test/FormTest/FormTest.cpp
+	cd /home/fei/proj/podofomemo/build/test/FormTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/FormTest.dir/FormTest.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/test/FormTest/FormTest.cpp
 
 test/FormTest/CMakeFiles/FormTest.dir/FormTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FormTest.dir/FormTest.cpp.i"
-	cd /home/univ/projects/podofomemo/build/test/FormTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/test/FormTest/FormTest.cpp > CMakeFiles/FormTest.dir/FormTest.cpp.i
+	cd /home/fei/proj/podofomemo/build/test/FormTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/test/FormTest/FormTest.cpp > CMakeFiles/FormTest.dir/FormTest.cpp.i
 
 test/FormTest/CMakeFiles/FormTest.dir/FormTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FormTest.dir/FormTest.cpp.s"
-	cd /home/univ/projects/podofomemo/build/test/FormTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/test/FormTest/FormTest.cpp -o CMakeFiles/FormTest.dir/FormTest.cpp.s
+	cd /home/fei/proj/podofomemo/build/test/FormTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/test/FormTest/FormTest.cpp -o CMakeFiles/FormTest.dir/FormTest.cpp.s
 
 test/FormTest/CMakeFiles/FormTest.dir/FormTest.cpp.o.requires:
 .PHONY : test/FormTest/CMakeFiles/FormTest.dir/FormTest.cpp.o.requires
@@ -80,26 +80,22 @@ FormTest_OBJECTS = \
 FormTest_EXTERNAL_OBJECTS =
 
 test/FormTest/FormTest: test/FormTest/CMakeFiles/FormTest.dir/FormTest.cpp.o
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libz.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libcrypto.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libjpeg.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libfreetype.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libpng.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libz.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libtiff.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libz.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libcrypto.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libjpeg.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libfreetype.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libpng.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libz.so
-test/FormTest/FormTest: /usr/lib/i386-linux-gnu/libtiff.so
 test/FormTest/FormTest: test/FormTest/CMakeFiles/FormTest.dir/build.make
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libz.so
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libtiff.so
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libz.so
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/FormTest/FormTest: /usr/lib/x86_64-linux-gnu/libtiff.so
 test/FormTest/FormTest: test/FormTest/CMakeFiles/FormTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable FormTest"
-	cd /home/univ/projects/podofomemo/build/test/FormTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FormTest.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/test/FormTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FormTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/FormTest/CMakeFiles/FormTest.dir/build: test/FormTest/FormTest
@@ -109,10 +105,10 @@ test/FormTest/CMakeFiles/FormTest.dir/requires: test/FormTest/CMakeFiles/FormTes
 .PHONY : test/FormTest/CMakeFiles/FormTest.dir/requires
 
 test/FormTest/CMakeFiles/FormTest.dir/clean:
-	cd /home/univ/projects/podofomemo/build/test/FormTest && $(CMAKE_COMMAND) -P CMakeFiles/FormTest.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/test/FormTest && $(CMAKE_COMMAND) -P CMakeFiles/FormTest.dir/cmake_clean.cmake
 .PHONY : test/FormTest/CMakeFiles/FormTest.dir/clean
 
 test/FormTest/CMakeFiles/FormTest.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/test/FormTest /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/test/FormTest /home/univ/projects/podofomemo/build/test/FormTest/CMakeFiles/FormTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/test/FormTest /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/test/FormTest /home/fei/proj/podofomemo/build/test/FormTest/CMakeFiles/FormTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/FormTest/CMakeFiles/FormTest.dir/depend
 

@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/depend.make
@@ -50,18 +50,18 @@ include examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/progress.mak
 include examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/flags.make
 
 examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.o: examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/flags.make
-examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.o: /home/univ/projects/podofomemo/podofoSRC/examples/helloworld-base14/helloworld-base14.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.o: /home/fei/proj/podofomemo/podofoSRC/examples/helloworld-base14/helloworld-base14.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.o"
-	cd /home/univ/projects/podofomemo/build/examples/helloworld-base14 && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/examples/helloworld-base14/helloworld-base14.cpp
+	cd /home/fei/proj/podofomemo/build/examples/helloworld-base14 && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/examples/helloworld-base14/helloworld-base14.cpp
 
 examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.i"
-	cd /home/univ/projects/podofomemo/build/examples/helloworld-base14 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/examples/helloworld-base14/helloworld-base14.cpp > CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.i
+	cd /home/fei/proj/podofomemo/build/examples/helloworld-base14 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/examples/helloworld-base14/helloworld-base14.cpp > CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.i
 
 examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.s"
-	cd /home/univ/projects/podofomemo/build/examples/helloworld-base14 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/examples/helloworld-base14/helloworld-base14.cpp -o CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.s
+	cd /home/fei/proj/podofomemo/build/examples/helloworld-base14 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/examples/helloworld-base14/helloworld-base14.cpp -o CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.s
 
 examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.o.requires:
 .PHONY : examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.o.requires
@@ -80,23 +80,16 @@ helloworld__base14_OBJECTS = \
 helloworld__base14_EXTERNAL_OBJECTS =
 
 examples/helloworld-base14/helloworld-base14: examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/helloworld-base14.cpp.o
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libfontconfig.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libz.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libcrypto.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libjpeg.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libfreetype.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libpng.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libz.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libtiff.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libcrypto.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libjpeg.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libfreetype.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libpng.so
-examples/helloworld-base14/helloworld-base14: /usr/lib/i386-linux-gnu/libtiff.so
 examples/helloworld-base14/helloworld-base14: examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/build.make
+examples/helloworld-base14/helloworld-base14: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+examples/helloworld-base14/helloworld-base14: /usr/lib/x86_64-linux-gnu/libz.so
+examples/helloworld-base14/helloworld-base14: /usr/lib/x86_64-linux-gnu/libcrypto.so
+examples/helloworld-base14/helloworld-base14: /usr/lib/x86_64-linux-gnu/libjpeg.so
+examples/helloworld-base14/helloworld-base14: /usr/lib/x86_64-linux-gnu/libfreetype.so
+examples/helloworld-base14/helloworld-base14: /usr/lib/x86_64-linux-gnu/libtiff.so
 examples/helloworld-base14/helloworld-base14: examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable helloworld-base14"
-	cd /home/univ/projects/podofomemo/build/examples/helloworld-base14 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/helloworld-base14.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/examples/helloworld-base14 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/helloworld-base14.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/build: examples/helloworld-base14/helloworld-base14
@@ -106,10 +99,10 @@ examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/requires: examples/h
 .PHONY : examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/requires
 
 examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/clean:
-	cd /home/univ/projects/podofomemo/build/examples/helloworld-base14 && $(CMAKE_COMMAND) -P CMakeFiles/helloworld-base14.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/examples/helloworld-base14 && $(CMAKE_COMMAND) -P CMakeFiles/helloworld-base14.dir/cmake_clean.cmake
 .PHONY : examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/clean
 
 examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/examples/helloworld-base14 /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/examples/helloworld-base14 /home/univ/projects/podofomemo/build/examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/examples/helloworld-base14 /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/examples/helloworld-base14 /home/fei/proj/podofomemo/build/examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/depend
 

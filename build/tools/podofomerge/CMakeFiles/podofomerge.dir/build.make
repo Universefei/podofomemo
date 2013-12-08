@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofomerge/CMakeFiles/podofomerge.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofomerge/CMakeFiles/podofomerge.dir/progress.make
 include tools/podofomerge/CMakeFiles/podofomerge.dir/flags.make
 
 tools/podofomerge/CMakeFiles/podofomerge.dir/podofomerge.cpp.o: tools/podofomerge/CMakeFiles/podofomerge.dir/flags.make
-tools/podofomerge/CMakeFiles/podofomerge.dir/podofomerge.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofomerge/podofomerge.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofomerge/CMakeFiles/podofomerge.dir/podofomerge.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofomerge/podofomerge.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofomerge/CMakeFiles/podofomerge.dir/podofomerge.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofomerge && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofomerge.dir/podofomerge.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofomerge/podofomerge.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofomerge && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofomerge.dir/podofomerge.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofomerge/podofomerge.cpp
 
 tools/podofomerge/CMakeFiles/podofomerge.dir/podofomerge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofomerge.dir/podofomerge.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofomerge && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofomerge/podofomerge.cpp > CMakeFiles/podofomerge.dir/podofomerge.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofomerge && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofomerge/podofomerge.cpp > CMakeFiles/podofomerge.dir/podofomerge.cpp.i
 
 tools/podofomerge/CMakeFiles/podofomerge.dir/podofomerge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofomerge.dir/podofomerge.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofomerge && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofomerge/podofomerge.cpp -o CMakeFiles/podofomerge.dir/podofomerge.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofomerge && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofomerge/podofomerge.cpp -o CMakeFiles/podofomerge.dir/podofomerge.cpp.s
 
 tools/podofomerge/CMakeFiles/podofomerge.dir/podofomerge.cpp.o.requires:
 .PHONY : tools/podofomerge/CMakeFiles/podofomerge.dir/podofomerge.cpp.o.requires
@@ -80,23 +80,16 @@ podofomerge_OBJECTS = \
 podofomerge_EXTERNAL_OBJECTS =
 
 tools/podofomerge/podofomerge: tools/podofomerge/CMakeFiles/podofomerge.dir/podofomerge.cpp.o
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libz.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libz.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofomerge/podofomerge: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofomerge/podofomerge: tools/podofomerge/CMakeFiles/podofomerge.dir/build.make
+tools/podofomerge/podofomerge: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofomerge/podofomerge: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofomerge/podofomerge: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofomerge/podofomerge: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofomerge/podofomerge: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofomerge/podofomerge: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofomerge/podofomerge: tools/podofomerge/CMakeFiles/podofomerge.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofomerge"
-	cd /home/univ/projects/podofomemo/build/tools/podofomerge && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofomerge.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofomerge && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofomerge.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofomerge/CMakeFiles/podofomerge.dir/build: tools/podofomerge/podofomerge
@@ -106,10 +99,10 @@ tools/podofomerge/CMakeFiles/podofomerge.dir/requires: tools/podofomerge/CMakeFi
 .PHONY : tools/podofomerge/CMakeFiles/podofomerge.dir/requires
 
 tools/podofomerge/CMakeFiles/podofomerge.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofomerge && $(CMAKE_COMMAND) -P CMakeFiles/podofomerge.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofomerge && $(CMAKE_COMMAND) -P CMakeFiles/podofomerge.dir/cmake_clean.cmake
 .PHONY : tools/podofomerge/CMakeFiles/podofomerge.dir/clean
 
 tools/podofomerge/CMakeFiles/podofomerge.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofomerge /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofomerge /home/univ/projects/podofomemo/build/tools/podofomerge/CMakeFiles/podofomerge.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofomerge /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofomerge /home/fei/proj/podofomemo/build/tools/podofomerge/CMakeFiles/podofomerge.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofomerge/CMakeFiles/podofomerge.dir/depend
 

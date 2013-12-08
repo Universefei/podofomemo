@@ -41,12 +41,12 @@
 
 /* Libraries */
 #define PODOFO_HAVE_JPEG_LIB
-#define PODOFO_HAVE_PNG_LIB
+/* #undef PODOFO_HAVE_PNG_LIB */
 #define PODOFO_HAVE_TIFF_LIB
 #define PODOFO_HAVE_FONTCONFIG
 /* #undef PODOFO_HAVE_LUA */
 /* #undef PODOFO_HAVE_BOOST */
-#define PODOFO_HAVE_CPPUNIT
+/* #undef PODOFO_HAVE_CPPUNIT */
 /* #undef PODOFO_HAVE_LIBIDN */
 
 /* Platform quirks */

@@ -1,8 +1,8 @@
-# Install script for directory: /home/univ/projects/podofomemo/podofoSRC/tools/podofoimg2pdf
+# Install script for directory: /home/fei/proj/podofomemo/podofoSRC/tools/podofoimg2pdf
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/univ/projects/podofomemo/installFile")
+  SET(CMAKE_INSTALL_PREFIX "/home/fei/proj/podofomemo/installFile")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/podofoimg2pdf"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/univ/projects/podofomemo/build/tools/podofoimg2pdf/podofoimg2pdf")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/fei/proj/podofomemo/build/tools/podofoimg2pdf/podofoimg2pdf")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/podofoimg2pdf" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/podofoimg2pdf")
     FILE(RPATH_REMOVE

@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/progress.make
 include tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/flags.make
 
 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o: tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/flags.make
-tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofoencrypt/podofoencrypt.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofoencrypt/podofoencrypt.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofoencrypt && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofoencrypt/podofoencrypt.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofoencrypt && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofoencrypt/podofoencrypt.cpp
 
 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofoencrypt && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofoencrypt/podofoencrypt.cpp > CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofoencrypt && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofoencrypt/podofoencrypt.cpp > CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.i
 
 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofoencrypt && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofoencrypt/podofoencrypt.cpp -o CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofoencrypt && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofoencrypt/podofoencrypt.cpp -o CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.s
 
 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o.requires:
 .PHONY : tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o.requires
@@ -80,23 +80,16 @@ podofoencrypt_OBJECTS = \
 podofoencrypt_EXTERNAL_OBJECTS =
 
 tools/podofoencrypt/podofoencrypt: tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libz.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libz.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofoencrypt/podofoencrypt: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofoencrypt/podofoencrypt: tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build.make
+tools/podofoencrypt/podofoencrypt: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofoencrypt/podofoencrypt: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofoencrypt/podofoencrypt: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofoencrypt/podofoencrypt: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofoencrypt/podofoencrypt: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofoencrypt/podofoencrypt: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofoencrypt/podofoencrypt: tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofoencrypt"
-	cd /home/univ/projects/podofomemo/build/tools/podofoencrypt && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofoencrypt.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofoencrypt && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofoencrypt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build: tools/podofoencrypt/podofoencrypt
@@ -106,10 +99,10 @@ tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/requires: tools/podofoencrypt/C
 .PHONY : tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/requires
 
 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofoencrypt && $(CMAKE_COMMAND) -P CMakeFiles/podofoencrypt.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofoencrypt && $(CMAKE_COMMAND) -P CMakeFiles/podofoencrypt.dir/cmake_clean.cmake
 .PHONY : tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/clean
 
 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofoencrypt /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofoencrypt /home/univ/projects/podofomemo/build/tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofoencrypt /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofoencrypt /home/fei/proj/podofomemo/build/tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/depend
 

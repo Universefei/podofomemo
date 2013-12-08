@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/podofo_static.dir/depend.make
@@ -50,18 +50,18 @@ include src/CMakeFiles/podofo_static.dir/progress.make
 include src/CMakeFiles/podofo_static.dir/flags.make
 
 src/CMakeFiles/podofo_static.dir/base/PdfArray.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfArray.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfArray.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+src/CMakeFiles/podofo_static.dir/base/PdfArray.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfArray.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfArray.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfArray.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfArray.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfArray.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfArray.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfArray.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfArray.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfArray.cpp > CMakeFiles/podofo_static.dir/base/PdfArray.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfArray.cpp > CMakeFiles/podofo_static.dir/base/PdfArray.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfArray.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfArray.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfArray.cpp -o CMakeFiles/podofo_static.dir/base/PdfArray.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfArray.cpp -o CMakeFiles/podofo_static.dir/base/PdfArray.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfArray.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfArray.cpp.o.requires
@@ -73,18 +73,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfArray.cpp.o.provides: src/CMakeFiles/po
 src/CMakeFiles/podofo_static.dir/base/PdfArray.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfArray.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfCanvas.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
+src/CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfCanvas.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfCanvas.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfCanvas.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfCanvas.cpp > CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfCanvas.cpp > CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfCanvas.cpp -o CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfCanvas.cpp -o CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.o.requires
@@ -96,18 +96,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfCanvas.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfColor.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfColor.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfColor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_3)
+src/CMakeFiles/podofo_static.dir/base/PdfColor.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfColor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfColor.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfColor.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfColor.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfColor.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfColor.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfColor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfColor.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfColor.cpp > CMakeFiles/podofo_static.dir/base/PdfColor.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfColor.cpp > CMakeFiles/podofo_static.dir/base/PdfColor.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfColor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfColor.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfColor.cpp -o CMakeFiles/podofo_static.dir/base/PdfColor.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfColor.cpp -o CMakeFiles/podofo_static.dir/base/PdfColor.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfColor.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfColor.cpp.o.requires
@@ -119,18 +119,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfColor.cpp.o.provides: src/CMakeFiles/po
 src/CMakeFiles/podofo_static.dir/base/PdfColor.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfColor.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfContentsTokenizer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_4)
+src/CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfContentsTokenizer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfContentsTokenizer.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfContentsTokenizer.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfContentsTokenizer.cpp > CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfContentsTokenizer.cpp > CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfContentsTokenizer.cpp -o CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfContentsTokenizer.cpp -o CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.o.requires
@@ -142,18 +142,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.o.provides: src/C
 src/CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfContentsTokenizer.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfData.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfData.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfData.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_5)
+src/CMakeFiles/podofo_static.dir/base/PdfData.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfData.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfData.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfData.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfData.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfData.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfData.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfData.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfData.cpp > CMakeFiles/podofo_static.dir/base/PdfData.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfData.cpp > CMakeFiles/podofo_static.dir/base/PdfData.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfData.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfData.cpp -o CMakeFiles/podofo_static.dir/base/PdfData.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfData.cpp -o CMakeFiles/podofo_static.dir/base/PdfData.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfData.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfData.cpp.o.requires
@@ -165,18 +165,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfData.cpp.o.provides: src/CMakeFiles/pod
 src/CMakeFiles/podofo_static.dir/base/PdfData.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfData.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDataType.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_6)
+src/CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDataType.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDataType.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDataType.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDataType.cpp > CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDataType.cpp > CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDataType.cpp -o CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDataType.cpp -o CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.o.requires
@@ -188,18 +188,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.o.provides: src/CMakeFiles
 src/CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfDataType.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfDate.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfDate.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDate.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_7)
+src/CMakeFiles/podofo_static.dir/base/PdfDate.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDate.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfDate.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfDate.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDate.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfDate.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDate.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfDate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfDate.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDate.cpp > CMakeFiles/podofo_static.dir/base/PdfDate.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDate.cpp > CMakeFiles/podofo_static.dir/base/PdfDate.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfDate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfDate.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDate.cpp -o CMakeFiles/podofo_static.dir/base/PdfDate.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDate.cpp -o CMakeFiles/podofo_static.dir/base/PdfDate.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfDate.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfDate.cpp.o.requires
@@ -211,18 +211,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfDate.cpp.o.provides: src/CMakeFiles/pod
 src/CMakeFiles/podofo_static.dir/base/PdfDate.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfDate.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDictionary.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_8)
+src/CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDictionary.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDictionary.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDictionary.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDictionary.cpp > CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDictionary.cpp > CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfDictionary.cpp -o CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfDictionary.cpp -o CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.o.requires
@@ -234,18 +234,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.o.provides: src/CMakeFil
 src/CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfDictionary.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncoding.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_9)
+src/CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncoding.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncoding.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncoding.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncoding.cpp > CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncoding.cpp > CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncoding.cpp -o CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncoding.cpp -o CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.o.requires
@@ -257,18 +257,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.o.provides: src/CMakeFiles
 src/CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfEncoding.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncodingFactory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_10)
+src/CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncodingFactory.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncodingFactory.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncodingFactory.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncodingFactory.cpp > CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncodingFactory.cpp > CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncodingFactory.cpp -o CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncodingFactory.cpp -o CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.o.requires
@@ -280,18 +280,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.o.provides: src/CMa
 src/CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfEncodingFactory.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncrypt.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_11)
+src/CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncrypt.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncrypt.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncrypt.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncrypt.cpp > CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncrypt.cpp > CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfEncrypt.cpp -o CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfEncrypt.cpp -o CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.o.requires
@@ -303,18 +303,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.o.provides: src/CMakeFiles/
 src/CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfEncrypt.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfError.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfError.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfError.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_12)
+src/CMakeFiles/podofo_static.dir/base/PdfError.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfError.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfError.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfError.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfError.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfError.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfError.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfError.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfError.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfError.cpp > CMakeFiles/podofo_static.dir/base/PdfError.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfError.cpp > CMakeFiles/podofo_static.dir/base/PdfError.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfError.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfError.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfError.cpp -o CMakeFiles/podofo_static.dir/base/PdfError.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfError.cpp -o CMakeFiles/podofo_static.dir/base/PdfError.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfError.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfError.cpp.o.requires
@@ -326,18 +326,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfError.cpp.o.provides: src/CMakeFiles/po
 src/CMakeFiles/podofo_static.dir/base/PdfError.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfError.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFileStream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_13)
+src/CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFileStream.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFileStream.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFileStream.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFileStream.cpp > CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFileStream.cpp > CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFileStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFileStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.o.requires
@@ -349,18 +349,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.o.provides: src/CMakeFil
 src/CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfFileStream.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_14)
+src/CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFilter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFilter.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFilter.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFilter.cpp > CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFilter.cpp > CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFilter.cpp -o CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFilter.cpp -o CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.o.requires
@@ -372,18 +372,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfFilter.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFiltersPrivate.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_15)
+src/CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFiltersPrivate.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFiltersPrivate.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFiltersPrivate.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFiltersPrivate.cpp > CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFiltersPrivate.cpp > CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfFiltersPrivate.cpp -o CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfFiltersPrivate.cpp -o CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.o.requires
@@ -395,18 +395,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.o.provides: src/CMak
 src/CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfFiltersPrivate.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfImmediateWriter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_16)
+src/CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfImmediateWriter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfImmediateWriter.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfImmediateWriter.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfImmediateWriter.cpp > CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfImmediateWriter.cpp > CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfImmediateWriter.cpp -o CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfImmediateWriter.cpp -o CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.o.requires
@@ -418,18 +418,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.o.provides: src/CMa
 src/CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfImmediateWriter.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfInputDevice.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_17)
+src/CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfInputDevice.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfInputDevice.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfInputDevice.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfInputDevice.cpp > CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfInputDevice.cpp > CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfInputDevice.cpp -o CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfInputDevice.cpp -o CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.o.requires
@@ -441,18 +441,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.o.provides: src/CMakeFi
 src/CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfInputDevice.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfInputStream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_18)
+src/CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfInputStream.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfInputStream.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfInputStream.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfInputStream.cpp > CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfInputStream.cpp > CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfInputStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfInputStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.o.requires
@@ -464,18 +464,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.o.provides: src/CMakeFi
 src/CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfInputStream.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfLocale.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_19)
+src/CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfLocale.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfLocale.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfLocale.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfLocale.cpp > CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfLocale.cpp > CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfLocale.cpp -o CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfLocale.cpp -o CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.o.requires
@@ -487,18 +487,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfLocale.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfMemoryManagement.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_20)
+src/CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfMemoryManagement.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfMemoryManagement.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfMemoryManagement.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfMemoryManagement.cpp > CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfMemoryManagement.cpp > CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfMemoryManagement.cpp -o CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfMemoryManagement.cpp -o CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.o.requires
@@ -510,18 +510,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.o.provides: src/CM
 src/CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfMemoryManagement.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfMemStream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_21)
+src/CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfMemStream.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfMemStream.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfMemStream.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfMemStream.cpp > CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfMemStream.cpp > CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfMemStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfMemStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.o.requires
@@ -533,18 +533,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.o.provides: src/CMakeFile
 src/CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfMemStream.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfName.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfName.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfName.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_22)
+src/CMakeFiles/podofo_static.dir/base/PdfName.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfName.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfName.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfName.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfName.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfName.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfName.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfName.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfName.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfName.cpp > CMakeFiles/podofo_static.dir/base/PdfName.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfName.cpp > CMakeFiles/podofo_static.dir/base/PdfName.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfName.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfName.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfName.cpp -o CMakeFiles/podofo_static.dir/base/PdfName.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfName.cpp -o CMakeFiles/podofo_static.dir/base/PdfName.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfName.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfName.cpp.o.requires
@@ -556,18 +556,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfName.cpp.o.provides: src/CMakeFiles/pod
 src/CMakeFiles/podofo_static.dir/base/PdfName.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfName.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfObject.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfObject.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfObject.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_23)
+src/CMakeFiles/podofo_static.dir/base/PdfObject.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfObject.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfObject.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfObject.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfObject.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfObject.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfObject.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfObject.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfObject.cpp > CMakeFiles/podofo_static.dir/base/PdfObject.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfObject.cpp > CMakeFiles/podofo_static.dir/base/PdfObject.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfObject.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfObject.cpp -o CMakeFiles/podofo_static.dir/base/PdfObject.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfObject.cpp -o CMakeFiles/podofo_static.dir/base/PdfObject.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfObject.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfObject.cpp.o.requires
@@ -579,18 +579,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfObject.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/base/PdfObject.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfObject.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfObjectStreamParserObject.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_24)
+src/CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfObjectStreamParserObject.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfObjectStreamParserObject.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfObjectStreamParserObject.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfObjectStreamParserObject.cpp > CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfObjectStreamParserObject.cpp > CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfObjectStreamParserObject.cpp -o CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfObjectStreamParserObject.cpp -o CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.o.requires
@@ -602,18 +602,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.o.provides
 src/CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfObjectStreamParserObject.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfOutputDevice.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_25)
+src/CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfOutputDevice.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfOutputDevice.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfOutputDevice.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfOutputDevice.cpp > CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfOutputDevice.cpp > CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfOutputDevice.cpp -o CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfOutputDevice.cpp -o CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.o.requires
@@ -625,18 +625,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.o.provides: src/CMakeF
 src/CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfOutputDevice.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfOutputStream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_26)
+src/CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfOutputStream.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfOutputStream.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfOutputStream.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfOutputStream.cpp > CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfOutputStream.cpp > CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfOutputStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfOutputStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.o.requires
@@ -648,18 +648,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.o.provides: src/CMakeF
 src/CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfOutputStream.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfParser.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfParser.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfParser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_27)
+src/CMakeFiles/podofo_static.dir/base/PdfParser.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfParser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfParser.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfParser.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfParser.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfParser.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfParser.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfParser.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfParser.cpp > CMakeFiles/podofo_static.dir/base/PdfParser.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfParser.cpp > CMakeFiles/podofo_static.dir/base/PdfParser.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfParser.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfParser.cpp -o CMakeFiles/podofo_static.dir/base/PdfParser.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfParser.cpp -o CMakeFiles/podofo_static.dir/base/PdfParser.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfParser.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfParser.cpp.o.requires
@@ -671,18 +671,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfParser.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/base/PdfParser.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfParser.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfParserObject.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_28)
+src/CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfParserObject.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfParserObject.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfParserObject.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfParserObject.cpp > CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfParserObject.cpp > CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfParserObject.cpp -o CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfParserObject.cpp -o CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.o.requires
@@ -694,18 +694,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.o.provides: src/CMakeF
 src/CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfParserObject.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfRect.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfRect.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRect.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_29)
+src/CMakeFiles/podofo_static.dir/base/PdfRect.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRect.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfRect.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfRect.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRect.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfRect.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRect.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfRect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfRect.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRect.cpp > CMakeFiles/podofo_static.dir/base/PdfRect.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRect.cpp > CMakeFiles/podofo_static.dir/base/PdfRect.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfRect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfRect.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRect.cpp -o CMakeFiles/podofo_static.dir/base/PdfRect.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRect.cpp -o CMakeFiles/podofo_static.dir/base/PdfRect.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfRect.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfRect.cpp.o.requires
@@ -717,18 +717,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfRect.cpp.o.provides: src/CMakeFiles/pod
 src/CMakeFiles/podofo_static.dir/base/PdfRect.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfRect.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRefCountedBuffer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_30)
+src/CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRefCountedBuffer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRefCountedBuffer.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRefCountedBuffer.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRefCountedBuffer.cpp > CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRefCountedBuffer.cpp > CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRefCountedBuffer.cpp -o CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRefCountedBuffer.cpp -o CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.o.requires
@@ -740,18 +740,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.o.provides: src/CM
 src/CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfRefCountedBuffer.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRefCountedInputDevice.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_31)
+src/CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRefCountedInputDevice.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRefCountedInputDevice.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRefCountedInputDevice.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRefCountedInputDevice.cpp > CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRefCountedInputDevice.cpp > CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfRefCountedInputDevice.cpp -o CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfRefCountedInputDevice.cpp -o CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.o.requires
@@ -763,18 +763,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.o.provides: s
 src/CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfRefCountedInputDevice.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfReference.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfReference.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfReference.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_32)
+src/CMakeFiles/podofo_static.dir/base/PdfReference.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfReference.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfReference.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfReference.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfReference.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfReference.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfReference.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfReference.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfReference.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfReference.cpp > CMakeFiles/podofo_static.dir/base/PdfReference.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfReference.cpp > CMakeFiles/podofo_static.dir/base/PdfReference.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfReference.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfReference.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfReference.cpp -o CMakeFiles/podofo_static.dir/base/PdfReference.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfReference.cpp -o CMakeFiles/podofo_static.dir/base/PdfReference.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfReference.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfReference.cpp.o.requires
@@ -786,18 +786,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfReference.cpp.o.provides: src/CMakeFile
 src/CMakeFiles/podofo_static.dir/base/PdfReference.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfReference.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfStream.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfStream.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfStream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_33)
+src/CMakeFiles/podofo_static.dir/base/PdfStream.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfStream.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfStream.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfStream.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfStream.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfStream.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfStream.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfStream.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfStream.cpp > CMakeFiles/podofo_static.dir/base/PdfStream.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfStream.cpp > CMakeFiles/podofo_static.dir/base/PdfStream.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfStream.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfStream.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfStream.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfStream.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfStream.cpp.o.requires
@@ -809,18 +809,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfStream.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/base/PdfStream.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfStream.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfString.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfString.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfString.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_34)
+src/CMakeFiles/podofo_static.dir/base/PdfString.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfString.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfString.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfString.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfString.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfString.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfString.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfString.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfString.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfString.cpp > CMakeFiles/podofo_static.dir/base/PdfString.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfString.cpp > CMakeFiles/podofo_static.dir/base/PdfString.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfString.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfString.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfString.cpp -o CMakeFiles/podofo_static.dir/base/PdfString.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfString.cpp -o CMakeFiles/podofo_static.dir/base/PdfString.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfString.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfString.cpp.o.requires
@@ -832,18 +832,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfString.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/base/PdfString.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfString.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfTokenizer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_35)
+src/CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfTokenizer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfTokenizer.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfTokenizer.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfTokenizer.cpp > CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfTokenizer.cpp > CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfTokenizer.cpp -o CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfTokenizer.cpp -o CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.o.requires
@@ -855,18 +855,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.o.provides: src/CMakeFile
 src/CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfTokenizer.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfVariant.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_36)
+src/CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfVariant.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfVariant.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfVariant.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfVariant.cpp > CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfVariant.cpp > CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfVariant.cpp -o CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfVariant.cpp -o CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.o.requires
@@ -878,18 +878,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.o.provides: src/CMakeFiles/
 src/CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfVariant.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfVecObjects.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_37)
+src/CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfVecObjects.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfVecObjects.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfVecObjects.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfVecObjects.cpp > CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfVecObjects.cpp > CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfVecObjects.cpp -o CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfVecObjects.cpp -o CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.o.requires
@@ -901,18 +901,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.o.provides: src/CMakeFil
 src/CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfVecObjects.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfWriter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_38)
+src/CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfWriter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfWriter.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfWriter.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfWriter.cpp > CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfWriter.cpp > CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfWriter.cpp -o CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfWriter.cpp -o CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.o.requires
@@ -924,18 +924,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfWriter.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRef.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_39)
+src/CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRef.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRef.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRef.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRef.cpp > CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRef.cpp > CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRef.cpp -o CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRef.cpp -o CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.o.requires
@@ -947,18 +947,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.o.provides: src/CMakeFiles/pod
 src/CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfXRef.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRefStream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_40)
+src/CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRefStream.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRefStream.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRefStream.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRefStream.cpp > CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRefStream.cpp > CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRefStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRefStream.cpp -o CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.o.requires
@@ -970,18 +970,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.o.provides: src/CMakeFil
 src/CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfXRefStream.cpp.o
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRefStreamParserObject.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_41)
+src/CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRefStreamParserObject.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRefStreamParserObject.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRefStreamParserObject.cpp
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRefStreamParserObject.cpp > CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRefStreamParserObject.cpp > CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.i
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/base/PdfXRefStreamParserObject.cpp -o CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/base/PdfXRefStreamParserObject.cpp -o CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.s
 
 src/CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.o.requires
@@ -993,18 +993,18 @@ src/CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.o.provides: 
 src/CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/base/PdfXRefStreamParserObject.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAcroForm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_42)
+src/CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAcroForm.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAcroForm.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAcroForm.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAcroForm.cpp > CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAcroForm.cpp > CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAcroForm.cpp -o CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAcroForm.cpp -o CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.o.requires
@@ -1016,18 +1016,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.o.provides: src/CMakeFiles/
 src/CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfAcroForm.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAction.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_43)
+src/CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAction.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAction.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAction.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAction.cpp > CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAction.cpp > CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAction.cpp -o CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAction.cpp -o CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.o.requires
@@ -1039,18 +1039,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.o.provides: src/CMakeFiles/po
 src/CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfAction.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAnnotation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_44)
+src/CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAnnotation.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAnnotation.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAnnotation.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAnnotation.cpp > CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAnnotation.cpp > CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfAnnotation.cpp -o CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfAnnotation.cpp -o CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.o.requires
@@ -1062,18 +1062,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.o.provides: src/CMakeFile
 src/CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfAnnotation.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfContents.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_45)
+src/CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfContents.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfContents.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfContents.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfContents.cpp > CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfContents.cpp > CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfContents.cpp -o CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfContents.cpp -o CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.o.requires
@@ -1085,18 +1085,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.o.provides: src/CMakeFiles/
 src/CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfContents.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDestination.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_46)
+src/CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDestination.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDestination.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDestination.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDestination.cpp > CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDestination.cpp > CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDestination.cpp -o CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDestination.cpp -o CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.o.requires
@@ -1108,18 +1108,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.o.provides: src/CMakeFil
 src/CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfDestination.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDifferenceEncoding.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_47)
+src/CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDifferenceEncoding.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDifferenceEncoding.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDifferenceEncoding.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDifferenceEncoding.cpp > CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDifferenceEncoding.cpp > CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDifferenceEncoding.cpp -o CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDifferenceEncoding.cpp -o CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.o.requires
@@ -1131,18 +1131,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.o.provides: src/C
 src/CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfDifferenceEncoding.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDocument.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_48)
+src/CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDocument.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDocument.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDocument.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDocument.cpp > CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDocument.cpp > CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfDocument.cpp -o CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfDocument.cpp -o CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.o.requires
@@ -1154,18 +1154,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.o.provides: src/CMakeFiles/
 src/CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfDocument.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfElement.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_49)
+src/CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfElement.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfElement.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfElement.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfElement.cpp > CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfElement.cpp > CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfElement.cpp -o CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfElement.cpp -o CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.o.requires
@@ -1177,18 +1177,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfElement.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfEncodingObjectFactory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_50)
+src/CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfEncodingObjectFactory.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfEncodingObjectFactory.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfEncodingObjectFactory.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfEncodingObjectFactory.cpp > CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfEncodingObjectFactory.cpp > CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfEncodingObjectFactory.cpp -o CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfEncodingObjectFactory.cpp -o CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.o.requires
@@ -1200,18 +1200,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.o.provides: sr
 src/CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfEncodingObjectFactory.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfExtGState.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_51)
+src/CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfExtGState.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfExtGState.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfExtGState.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfExtGState.cpp > CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfExtGState.cpp > CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfExtGState.cpp -o CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfExtGState.cpp -o CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.o.requires
@@ -1223,18 +1223,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.o.provides: src/CMakeFiles
 src/CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfExtGState.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfField.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfField.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfField.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_52)
+src/CMakeFiles/podofo_static.dir/doc/PdfField.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfField.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfField.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfField.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfField.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfField.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfField.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfField.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfField.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfField.cpp > CMakeFiles/podofo_static.dir/doc/PdfField.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfField.cpp > CMakeFiles/podofo_static.dir/doc/PdfField.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfField.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfField.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfField.cpp -o CMakeFiles/podofo_static.dir/doc/PdfField.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfField.cpp -o CMakeFiles/podofo_static.dir/doc/PdfField.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfField.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfField.cpp.o.requires
@@ -1246,18 +1246,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfField.cpp.o.provides: src/CMakeFiles/pod
 src/CMakeFiles/podofo_static.dir/doc/PdfField.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfField.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFileSpec.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_53)
+src/CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFileSpec.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFileSpec.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFileSpec.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFileSpec.cpp > CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFileSpec.cpp > CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFileSpec.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFileSpec.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.o.requires
@@ -1269,18 +1269,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.o.provides: src/CMakeFiles/
 src/CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFileSpec.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontCache.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_54)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontCache.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontCache.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontCache.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontCache.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontCache.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontCache.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontCache.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.o.requires
@@ -1292,18 +1292,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.o.provides: src/CMakeFiles
 src/CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontCache.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontCID.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_55)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontCID.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontCID.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontCID.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontCID.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontCID.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontCID.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontCID.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.o.requires
@@ -1315,18 +1315,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontCID.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontConfigWrapper.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_56)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontConfigWrapper.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontConfigWrapper.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontConfigWrapper.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontConfigWrapper.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontConfigWrapper.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontConfigWrapper.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontConfigWrapper.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.o.requires
@@ -1338,18 +1338,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.o.provides: src/CM
 src/CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontConfigWrapper.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFont.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_57)
+src/CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFont.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFont.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFont.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFont.cpp > CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFont.cpp > CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFont.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFont.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.o.requires
@@ -1361,18 +1361,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.o.provides: src/CMakeFiles/podo
 src/CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFont.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontFactory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_58)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontFactory.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontFactory.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontFactory.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontFactory.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontFactory.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontFactory.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontFactory.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.o.requires
@@ -1384,18 +1384,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.o.provides: src/CMakeFil
 src/CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontFactory.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsBase14.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_59)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsBase14.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsBase14.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsBase14.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsBase14.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsBase14.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsBase14.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsBase14.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.o.requires
@@ -1407,18 +1407,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.o.provides: src/CM
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsBase14.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetrics.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_60)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetrics.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetrics.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetrics.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetrics.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetrics.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetrics.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetrics.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.o.requires
@@ -1430,18 +1430,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.o.provides: src/CMakeFil
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontMetrics.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsFreetype.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_61)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsFreetype.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsFreetype.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsFreetype.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsFreetype.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsFreetype.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsFreetype.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsFreetype.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.o.requires
@@ -1453,18 +1453,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.o.provides: src/
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsFreetype.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsObject.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_62)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsObject.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_62)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsObject.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsObject.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsObject.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsObject.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontMetricsObject.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontMetricsObject.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.o.requires
@@ -1476,18 +1476,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.o.provides: src/CM
 src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontMetricsObject.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontSimple.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_63)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontSimple.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontSimple.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontSimple.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontSimple.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontSimple.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontSimple.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontSimple.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.o.requires
@@ -1499,18 +1499,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.o.provides: src/CMakeFile
 src/CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontSimple.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontTrueType.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_64)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontTrueType.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontTrueType.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontTrueType.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontTrueType.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontTrueType.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontTrueType.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontTrueType.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.o.requires
@@ -1522,18 +1522,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.o.provides: src/CMakeFi
 src/CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontTrueType.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontTTFSubset.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_65)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontTTFSubset.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontTTFSubset.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontTTFSubset.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontTTFSubset.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontTTFSubset.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontTTFSubset.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontTTFSubset.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.o.requires
@@ -1545,18 +1545,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.o.provides: src/CMakeF
 src/CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontTTFSubset.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontType1Base14.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_66)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontType1Base14.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontType1Base14.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontType1Base14.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontType1Base14.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontType1Base14.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontType1Base14.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontType1Base14.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.o.requires
@@ -1568,18 +1568,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.o.provides: src/CMak
 src/CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontType1Base14.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontType1.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_67)
+src/CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontType1.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontType1.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontType1.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontType1.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontType1.cpp > CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFontType1.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFontType1.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.o.requires
@@ -1591,18 +1591,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.o.provides: src/CMakeFiles
 src/CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFontType1.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFunction.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_68)
+src/CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFunction.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFunction.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFunction.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFunction.cpp > CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFunction.cpp > CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfFunction.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfFunction.cpp -o CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.o.requires
@@ -1614,18 +1614,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.o.provides: src/CMakeFiles/
 src/CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfFunction.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfHintStream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_69)
+src/CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfHintStream.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfHintStream.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfHintStream.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfHintStream.cpp > CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfHintStream.cpp > CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfHintStream.cpp -o CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfHintStream.cpp -o CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.o.requires
@@ -1637,18 +1637,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.o.provides: src/CMakeFile
 src/CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfHintStream.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfIdentityEncoding.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_70)
+src/CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfIdentityEncoding.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfIdentityEncoding.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfIdentityEncoding.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfIdentityEncoding.cpp > CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfIdentityEncoding.cpp > CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfIdentityEncoding.cpp -o CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfIdentityEncoding.cpp -o CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.o.requires
@@ -1660,18 +1660,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.o.provides: src/CMa
 src/CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfIdentityEncoding.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfImage.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_71)
+src/CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfImage.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfImage.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfImage.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfImage.cpp > CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfImage.cpp > CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfImage.cpp -o CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfImage.cpp -o CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.o.requires
@@ -1683,18 +1683,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.o.provides: src/CMakeFiles/pod
 src/CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfImage.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_72)
+src/CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfInfo.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfInfo.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfInfo.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfInfo.cpp > CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfInfo.cpp > CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfInfo.cpp -o CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfInfo.cpp -o CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.o.requires
@@ -1706,18 +1706,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.o.provides: src/CMakeFiles/podo
 src/CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfInfo.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfMemDocument.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_73)
+src/CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfMemDocument.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfMemDocument.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfMemDocument.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfMemDocument.cpp > CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfMemDocument.cpp > CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfMemDocument.cpp -o CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfMemDocument.cpp -o CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.o.requires
@@ -1729,18 +1729,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.o.provides: src/CMakeFil
 src/CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfMemDocument.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfNamesTree.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_74)
+src/CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfNamesTree.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfNamesTree.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfNamesTree.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfNamesTree.cpp > CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfNamesTree.cpp > CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfNamesTree.cpp -o CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfNamesTree.cpp -o CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.o.requires
@@ -1752,18 +1752,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.o.provides: src/CMakeFiles
 src/CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfNamesTree.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfOutlines.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_75)
+src/CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfOutlines.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_75)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfOutlines.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfOutlines.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfOutlines.cpp > CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfOutlines.cpp > CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfOutlines.cpp -o CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfOutlines.cpp -o CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.o.requires
@@ -1775,18 +1775,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.o.provides: src/CMakeFiles/
 src/CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfOutlines.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPage.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_76)
+src/CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPage.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPage.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPage.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPage.cpp > CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPage.cpp > CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPage.cpp -o CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPage.cpp -o CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.o.requires
@@ -1798,18 +1798,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.o.provides: src/CMakeFiles/podo
 src/CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfPage.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPagesTreeCache.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_77)
+src/CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPagesTreeCache.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPagesTreeCache.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPagesTreeCache.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPagesTreeCache.cpp > CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPagesTreeCache.cpp > CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPagesTreeCache.cpp -o CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPagesTreeCache.cpp -o CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.o.requires
@@ -1821,18 +1821,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.o.provides: src/CMake
 src/CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfPagesTreeCache.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPagesTree.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_78)
+src/CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPagesTree.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPagesTree.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPagesTree.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPagesTree.cpp > CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPagesTree.cpp > CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPagesTree.cpp -o CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPagesTree.cpp -o CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.o.requires
@@ -1844,18 +1844,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.o.provides: src/CMakeFiles
 src/CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfPagesTree.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPainter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_79)
+src/CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPainter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_79)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPainter.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPainter.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPainter.cpp > CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPainter.cpp > CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPainter.cpp -o CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPainter.cpp -o CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.o.requires
@@ -1867,18 +1867,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfPainter.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPainterMM.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_80)
+src/CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPainterMM.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_80)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPainterMM.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPainterMM.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPainterMM.cpp > CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPainterMM.cpp > CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfPainterMM.cpp -o CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfPainterMM.cpp -o CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.o.requires
@@ -1890,18 +1890,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.o.provides: src/CMakeFiles
 src/CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfPainterMM.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfShadingPattern.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_81)
+src/CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfShadingPattern.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_81)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfShadingPattern.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfShadingPattern.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfShadingPattern.cpp > CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfShadingPattern.cpp > CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfShadingPattern.cpp -o CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfShadingPattern.cpp -o CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.o.requires
@@ -1913,18 +1913,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.o.provides: src/CMake
 src/CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfShadingPattern.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfSignatureField.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_82)
+src/CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfSignatureField.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_82)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfSignatureField.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfSignatureField.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfSignatureField.cpp > CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfSignatureField.cpp > CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfSignatureField.cpp -o CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfSignatureField.cpp -o CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.o.requires
@@ -1936,18 +1936,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.o.provides: src/CMake
 src/CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfSignatureField.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfSignOutputDevice.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_83)
+src/CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfSignOutputDevice.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_83)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfSignOutputDevice.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfSignOutputDevice.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfSignOutputDevice.cpp > CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfSignOutputDevice.cpp > CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfSignOutputDevice.cpp -o CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfSignOutputDevice.cpp -o CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.o.requires
@@ -1959,18 +1959,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.o.provides: src/CMa
 src/CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfSignOutputDevice.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfStreamedDocument.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_84)
+src/CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfStreamedDocument.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_84)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfStreamedDocument.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfStreamedDocument.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfStreamedDocument.cpp > CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfStreamedDocument.cpp > CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfStreamedDocument.cpp -o CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfStreamedDocument.cpp -o CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.o.requires
@@ -1982,18 +1982,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.o.provides: src/CMa
 src/CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfStreamedDocument.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfTable.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_85)
+src/CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfTable.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_85)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfTable.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfTable.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfTable.cpp > CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfTable.cpp > CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfTable.cpp -o CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfTable.cpp -o CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.o.requires
@@ -2005,18 +2005,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.o.provides: src/CMakeFiles/pod
 src/CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfTable.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfXObject.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_86)
+src/CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfXObject.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_86)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfXObject.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfXObject.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfXObject.cpp > CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfXObject.cpp > CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfXObject.cpp -o CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfXObject.cpp -o CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.o.requires
@@ -2028,18 +2028,18 @@ src/CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.o.provides: src/CMakeFiles/p
 src/CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.o.provides.build: src/CMakeFiles/podofo_static.dir/doc/PdfXObject.cpp.o
 
 src/CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.o: src/CMakeFiles/podofo_static.dir/flags.make
-src/CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.o: /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfCMapEncoding.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_87)
+src/CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.o: /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfCMapEncoding.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_87)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.o"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfCMapEncoding.cpp
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -o CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfCMapEncoding.cpp
 
 src/CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.i"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfCMapEncoding.cpp > CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.i
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -E /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfCMapEncoding.cpp > CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.i
 
 src/CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.s"
-	cd /home/univ/projects/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/univ/projects/podofomemo/podofoSRC/src/doc/PdfCMapEncoding.cpp -o CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.s
+	cd /home/fei/proj/podofomemo/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBUILDING_PODOFO -S /home/fei/proj/podofomemo/podofoSRC/src/doc/PdfCMapEncoding.cpp -o CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.s
 
 src/CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.o.requires:
 .PHONY : src/CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.o.requires
@@ -2233,8 +2233,8 @@ src/libpodofo.a: src/CMakeFiles/podofo_static.dir/doc/PdfCMapEncoding.cpp.o
 src/libpodofo.a: src/CMakeFiles/podofo_static.dir/build.make
 src/libpodofo.a: src/CMakeFiles/podofo_static.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libpodofo.a"
-	cd /home/univ/projects/podofomemo/build/src && $(CMAKE_COMMAND) -P CMakeFiles/podofo_static.dir/cmake_clean_target.cmake
-	cd /home/univ/projects/podofomemo/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofo_static.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/src && $(CMAKE_COMMAND) -P CMakeFiles/podofo_static.dir/cmake_clean_target.cmake
+	cd /home/fei/proj/podofomemo/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofo_static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/podofo_static.dir/build: src/libpodofo.a
@@ -2330,10 +2330,10 @@ src/CMakeFiles/podofo_static.dir/requires: src/CMakeFiles/podofo_static.dir/doc/
 .PHONY : src/CMakeFiles/podofo_static.dir/requires
 
 src/CMakeFiles/podofo_static.dir/clean:
-	cd /home/univ/projects/podofomemo/build/src && $(CMAKE_COMMAND) -P CMakeFiles/podofo_static.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/src && $(CMAKE_COMMAND) -P CMakeFiles/podofo_static.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/podofo_static.dir/clean
 
 src/CMakeFiles/podofo_static.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/src /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/src /home/univ/projects/podofomemo/build/src/CMakeFiles/podofo_static.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/src /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/src /home/fei/proj/podofomemo/build/src/CMakeFiles/podofo_static.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/podofo_static.dir/depend
 

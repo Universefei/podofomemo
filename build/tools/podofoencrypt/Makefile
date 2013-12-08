@@ -35,22 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -110,14 +110,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles /home/univ/projects/podofomemo/build/tools/podofoencrypt/CMakeFiles/progress.marks
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoencrypt/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles /home/fei/proj/podofomemo/build/tools/podofoencrypt/CMakeFiles/progress.marks
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoencrypt/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoencrypt/clean
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoencrypt/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoencrypt/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoencrypt/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoencrypt/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoencrypt/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/rule:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/rule
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/rule
 .PHONY : tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/rule
 
 # Convenience name for target.
@@ -150,7 +150,7 @@ podofoencrypt: tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/rule
 
 # fast build rule for target.
 podofoencrypt/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build.make tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build.make tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build
 .PHONY : podofoencrypt/fast
 
 podofoencrypt.o: podofoencrypt.cpp.o
@@ -158,7 +158,7 @@ podofoencrypt.o: podofoencrypt.cpp.o
 
 # target to build an object file
 podofoencrypt.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build.make tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build.make tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.o
 .PHONY : podofoencrypt.cpp.o
 
 podofoencrypt.i: podofoencrypt.cpp.i
@@ -166,7 +166,7 @@ podofoencrypt.i: podofoencrypt.cpp.i
 
 # target to preprocess a source file
 podofoencrypt.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build.make tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build.make tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.i
 .PHONY : podofoencrypt.cpp.i
 
 podofoencrypt.s: podofoencrypt.cpp.s
@@ -174,7 +174,7 @@ podofoencrypt.s: podofoencrypt.cpp.s
 
 # target to generate assembly for a file
 podofoencrypt.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build.make tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build.make tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/podofoencrypt.cpp.s
 .PHONY : podofoencrypt.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

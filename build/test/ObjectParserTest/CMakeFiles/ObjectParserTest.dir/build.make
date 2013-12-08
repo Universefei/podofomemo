@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/depend.make
@@ -50,18 +50,18 @@ include test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/progress.make
 include test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/flags.make
 
 test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.o: test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/flags.make
-test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.o: /home/univ/projects/podofomemo/podofoSRC/test/ObjectParserTest/ObjectParserTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.o: /home/fei/proj/podofomemo/podofoSRC/test/ObjectParserTest/ObjectParserTest.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.o"
-	cd /home/univ/projects/podofomemo/build/test/ObjectParserTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/test/ObjectParserTest/ObjectParserTest.cpp
+	cd /home/fei/proj/podofomemo/build/test/ObjectParserTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/test/ObjectParserTest/ObjectParserTest.cpp
 
 test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.i"
-	cd /home/univ/projects/podofomemo/build/test/ObjectParserTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/test/ObjectParserTest/ObjectParserTest.cpp > CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.i
+	cd /home/fei/proj/podofomemo/build/test/ObjectParserTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/test/ObjectParserTest/ObjectParserTest.cpp > CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.i
 
 test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.s"
-	cd /home/univ/projects/podofomemo/build/test/ObjectParserTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/test/ObjectParserTest/ObjectParserTest.cpp -o CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.s
+	cd /home/fei/proj/podofomemo/build/test/ObjectParserTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/test/ObjectParserTest/ObjectParserTest.cpp -o CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.s
 
 test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.o.requires:
 .PHONY : test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.o.requires
@@ -80,27 +80,23 @@ ObjectParserTest_OBJECTS = \
 ObjectParserTest_EXTERNAL_OBJECTS =
 
 test/ObjectParserTest/ObjectParserTest: test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/ObjectParserTest.cpp.o
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libz.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libcrypto.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libjpeg.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libfreetype.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libpng.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libz.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libtiff.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libz.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libcrypto.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libjpeg.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libfreetype.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libpng.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libz.so
-test/ObjectParserTest/ObjectParserTest: /usr/lib/i386-linux-gnu/libtiff.so
 test/ObjectParserTest/ObjectParserTest: test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/build.make
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libz.so
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libtiff.so
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libz.so
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/ObjectParserTest/ObjectParserTest: /usr/lib/x86_64-linux-gnu/libtiff.so
 test/ObjectParserTest/ObjectParserTest: test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ObjectParserTest"
-	cd /home/univ/projects/podofomemo/build/test/ObjectParserTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ObjectParserTest.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/univ/projects/podofomemo/build/test/ObjectParserTest && /usr/bin/cmake -E copy_directory /home/univ/projects/podofomemo/podofoSRC/test/ObjectParserTest/objects /home/univ/projects/podofomemo/build/test/ObjectParserTest/objects
+	cd /home/fei/proj/podofomemo/build/test/ObjectParserTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ObjectParserTest.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/test/ObjectParserTest && /usr/bin/cmake -E copy_directory /home/fei/proj/podofomemo/podofoSRC/test/ObjectParserTest/objects /home/fei/proj/podofomemo/build/test/ObjectParserTest/objects
 
 # Rule to build all files generated by this target.
 test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/build: test/ObjectParserTest/ObjectParserTest
@@ -110,10 +106,10 @@ test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/requires: test/ObjectParse
 .PHONY : test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/requires
 
 test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/clean:
-	cd /home/univ/projects/podofomemo/build/test/ObjectParserTest && $(CMAKE_COMMAND) -P CMakeFiles/ObjectParserTest.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/test/ObjectParserTest && $(CMAKE_COMMAND) -P CMakeFiles/ObjectParserTest.dir/cmake_clean.cmake
 .PHONY : test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/clean
 
 test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/test/ObjectParserTest /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/test/ObjectParserTest /home/univ/projects/podofomemo/build/test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/test/ObjectParserTest /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/test/ObjectParserTest /home/fei/proj/podofomemo/build/test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/depend
 

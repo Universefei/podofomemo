@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofocrop/CMakeFiles/podofocrop.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofocrop/CMakeFiles/podofocrop.dir/progress.make
 include tools/podofocrop/CMakeFiles/podofocrop.dir/flags.make
 
 tools/podofocrop/CMakeFiles/podofocrop.dir/podofocrop.cpp.o: tools/podofocrop/CMakeFiles/podofocrop.dir/flags.make
-tools/podofocrop/CMakeFiles/podofocrop.dir/podofocrop.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofocrop/podofocrop.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofocrop/CMakeFiles/podofocrop.dir/podofocrop.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofocrop/podofocrop.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofocrop/CMakeFiles/podofocrop.dir/podofocrop.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofocrop && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocrop.dir/podofocrop.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofocrop/podofocrop.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofocrop && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocrop.dir/podofocrop.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofocrop/podofocrop.cpp
 
 tools/podofocrop/CMakeFiles/podofocrop.dir/podofocrop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofocrop.dir/podofocrop.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofocrop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofocrop/podofocrop.cpp > CMakeFiles/podofocrop.dir/podofocrop.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofocrop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofocrop/podofocrop.cpp > CMakeFiles/podofocrop.dir/podofocrop.cpp.i
 
 tools/podofocrop/CMakeFiles/podofocrop.dir/podofocrop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofocrop.dir/podofocrop.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofocrop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofocrop/podofocrop.cpp -o CMakeFiles/podofocrop.dir/podofocrop.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofocrop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofocrop/podofocrop.cpp -o CMakeFiles/podofocrop.dir/podofocrop.cpp.s
 
 tools/podofocrop/CMakeFiles/podofocrop.dir/podofocrop.cpp.o.requires:
 .PHONY : tools/podofocrop/CMakeFiles/podofocrop.dir/podofocrop.cpp.o.requires
@@ -80,23 +80,16 @@ podofocrop_OBJECTS = \
 podofocrop_EXTERNAL_OBJECTS =
 
 tools/podofocrop/podofocrop: tools/podofocrop/CMakeFiles/podofocrop.dir/podofocrop.cpp.o
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libz.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libz.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofocrop/podofocrop: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofocrop/podofocrop: tools/podofocrop/CMakeFiles/podofocrop.dir/build.make
+tools/podofocrop/podofocrop: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofocrop/podofocrop: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofocrop/podofocrop: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofocrop/podofocrop: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofocrop/podofocrop: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofocrop/podofocrop: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofocrop/podofocrop: tools/podofocrop/CMakeFiles/podofocrop.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofocrop"
-	cd /home/univ/projects/podofomemo/build/tools/podofocrop && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofocrop.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofocrop && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofocrop.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofocrop/CMakeFiles/podofocrop.dir/build: tools/podofocrop/podofocrop
@@ -106,10 +99,10 @@ tools/podofocrop/CMakeFiles/podofocrop.dir/requires: tools/podofocrop/CMakeFiles
 .PHONY : tools/podofocrop/CMakeFiles/podofocrop.dir/requires
 
 tools/podofocrop/CMakeFiles/podofocrop.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofocrop && $(CMAKE_COMMAND) -P CMakeFiles/podofocrop.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofocrop && $(CMAKE_COMMAND) -P CMakeFiles/podofocrop.dir/cmake_clean.cmake
 .PHONY : tools/podofocrop/CMakeFiles/podofocrop.dir/clean
 
 tools/podofocrop/CMakeFiles/podofocrop.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofocrop /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofocrop /home/univ/projects/podofomemo/build/tools/podofocrop/CMakeFiles/podofocrop.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofocrop /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofocrop /home/fei/proj/podofomemo/build/tools/podofocrop/CMakeFiles/podofocrop.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofocrop/CMakeFiles/podofocrop.dir/depend
 

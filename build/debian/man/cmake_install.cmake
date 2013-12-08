@@ -1,8 +1,8 @@
-# Install script for directory: /home/univ/projects/podofomemo/podofoSRC/debian/man
+# Install script for directory: /home/fei/proj/podofomemo/podofoSRC/debian/man
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/univ/projects/podofomemo/installFile")
+  SET(CMAKE_INSTALL_PREFIX "/home/fei/proj/podofomemo/installFile")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,21 +34,21 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofobox.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofocountpages.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofocrop.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofoencrypt.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofoimg2pdf.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofoimgextract.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofoimpose.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofoincrementalupdates.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofomerge.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofopages.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofopdfinfo.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofotxt2pdf.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofotxtextract.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofouncompress.1"
-    "/home/univ/projects/podofomemo/podofoSRC/debian/man/podofoxmp.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofobox.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofocountpages.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofocrop.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofoencrypt.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofoimg2pdf.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofoimgextract.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofoimpose.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofoincrementalupdates.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofomerge.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofopages.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofopdfinfo.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofotxt2pdf.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofotxtextract.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofouncompress.1"
+    "/home/fei/proj/podofomemo/podofoSRC/debian/man/podofoxmp.1"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/univ/projects/podofomemo/podofoSRC
+# Install script for directory: /home/fei/proj/podofomemo/podofoSRC
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/univ/projects/podofomemo/installFile")
+  SET(CMAKE_INSTALL_PREFIX "/home/fei/proj/podofomemo/installFile")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,12 +34,12 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/univ/projects/podofomemo/build/src/cmake_install.cmake")
-  INCLUDE("/home/univ/projects/podofomemo/build/test/cmake_install.cmake")
-  INCLUDE("/home/univ/projects/podofomemo/build/tools/cmake_install.cmake")
-  INCLUDE("/home/univ/projects/podofomemo/build/examples/cmake_install.cmake")
-  INCLUDE("/home/univ/projects/podofomemo/build/feicode/cmake_install.cmake")
-  INCLUDE("/home/univ/projects/podofomemo/build/debian/cmake_install.cmake")
+  INCLUDE("/home/fei/proj/podofomemo/build/src/cmake_install.cmake")
+  INCLUDE("/home/fei/proj/podofomemo/build/test/cmake_install.cmake")
+  INCLUDE("/home/fei/proj/podofomemo/build/tools/cmake_install.cmake")
+  INCLUDE("/home/fei/proj/podofomemo/build/examples/cmake_install.cmake")
+  INCLUDE("/home/fei/proj/podofomemo/build/feicode/cmake_install.cmake")
+  INCLUDE("/home/fei/proj/podofomemo/build/debian/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -49,7 +49,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/univ/projects/podofomemo/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/fei/proj/podofomemo/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/univ/projects/podofomemo/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/fei/proj/podofomemo/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

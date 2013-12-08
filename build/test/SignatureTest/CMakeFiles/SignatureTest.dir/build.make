@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include test/SignatureTest/CMakeFiles/SignatureTest.dir/depend.make
@@ -50,18 +50,18 @@ include test/SignatureTest/CMakeFiles/SignatureTest.dir/progress.make
 include test/SignatureTest/CMakeFiles/SignatureTest.dir/flags.make
 
 test/SignatureTest/CMakeFiles/SignatureTest.dir/SignTest.cpp.o: test/SignatureTest/CMakeFiles/SignatureTest.dir/flags.make
-test/SignatureTest/CMakeFiles/SignatureTest.dir/SignTest.cpp.o: /home/univ/projects/podofomemo/podofoSRC/test/SignatureTest/SignTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+test/SignatureTest/CMakeFiles/SignatureTest.dir/SignTest.cpp.o: /home/fei/proj/podofomemo/podofoSRC/test/SignatureTest/SignTest.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/SignatureTest/CMakeFiles/SignatureTest.dir/SignTest.cpp.o"
-	cd /home/univ/projects/podofomemo/build/test/SignatureTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SignatureTest.dir/SignTest.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/test/SignatureTest/SignTest.cpp
+	cd /home/fei/proj/podofomemo/build/test/SignatureTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SignatureTest.dir/SignTest.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/test/SignatureTest/SignTest.cpp
 
 test/SignatureTest/CMakeFiles/SignatureTest.dir/SignTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SignatureTest.dir/SignTest.cpp.i"
-	cd /home/univ/projects/podofomemo/build/test/SignatureTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/test/SignatureTest/SignTest.cpp > CMakeFiles/SignatureTest.dir/SignTest.cpp.i
+	cd /home/fei/proj/podofomemo/build/test/SignatureTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/test/SignatureTest/SignTest.cpp > CMakeFiles/SignatureTest.dir/SignTest.cpp.i
 
 test/SignatureTest/CMakeFiles/SignatureTest.dir/SignTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SignatureTest.dir/SignTest.cpp.s"
-	cd /home/univ/projects/podofomemo/build/test/SignatureTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/test/SignatureTest/SignTest.cpp -o CMakeFiles/SignatureTest.dir/SignTest.cpp.s
+	cd /home/fei/proj/podofomemo/build/test/SignatureTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/test/SignatureTest/SignTest.cpp -o CMakeFiles/SignatureTest.dir/SignTest.cpp.s
 
 test/SignatureTest/CMakeFiles/SignatureTest.dir/SignTest.cpp.o.requires:
 .PHONY : test/SignatureTest/CMakeFiles/SignatureTest.dir/SignTest.cpp.o.requires
@@ -80,26 +80,22 @@ SignatureTest_OBJECTS = \
 SignatureTest_EXTERNAL_OBJECTS =
 
 test/SignatureTest/SignatureTest: test/SignatureTest/CMakeFiles/SignatureTest.dir/SignTest.cpp.o
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libz.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libcrypto.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libjpeg.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libfreetype.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libpng.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libz.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libtiff.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libz.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libcrypto.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libjpeg.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libfreetype.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libpng.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libz.so
-test/SignatureTest/SignatureTest: /usr/lib/i386-linux-gnu/libtiff.so
 test/SignatureTest/SignatureTest: test/SignatureTest/CMakeFiles/SignatureTest.dir/build.make
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libz.so
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libtiff.so
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libz.so
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/SignatureTest/SignatureTest: /usr/lib/x86_64-linux-gnu/libtiff.so
 test/SignatureTest/SignatureTest: test/SignatureTest/CMakeFiles/SignatureTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable SignatureTest"
-	cd /home/univ/projects/podofomemo/build/test/SignatureTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SignatureTest.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/test/SignatureTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SignatureTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/SignatureTest/CMakeFiles/SignatureTest.dir/build: test/SignatureTest/SignatureTest
@@ -109,10 +105,10 @@ test/SignatureTest/CMakeFiles/SignatureTest.dir/requires: test/SignatureTest/CMa
 .PHONY : test/SignatureTest/CMakeFiles/SignatureTest.dir/requires
 
 test/SignatureTest/CMakeFiles/SignatureTest.dir/clean:
-	cd /home/univ/projects/podofomemo/build/test/SignatureTest && $(CMAKE_COMMAND) -P CMakeFiles/SignatureTest.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/test/SignatureTest && $(CMAKE_COMMAND) -P CMakeFiles/SignatureTest.dir/cmake_clean.cmake
 .PHONY : test/SignatureTest/CMakeFiles/SignatureTest.dir/clean
 
 test/SignatureTest/CMakeFiles/SignatureTest.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/test/SignatureTest /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/test/SignatureTest /home/univ/projects/podofomemo/build/test/SignatureTest/CMakeFiles/SignatureTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/test/SignatureTest /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/test/SignatureTest /home/fei/proj/podofomemo/build/test/SignatureTest/CMakeFiles/SignatureTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/SignatureTest/CMakeFiles/SignatureTest.dir/depend
 

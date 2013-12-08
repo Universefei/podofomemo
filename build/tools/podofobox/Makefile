@@ -35,22 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -110,14 +110,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles /home/univ/projects/podofomemo/build/tools/podofobox/CMakeFiles/progress.marks
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofobox/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles /home/fei/proj/podofomemo/build/tools/podofobox/CMakeFiles/progress.marks
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofobox/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofobox/clean
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofobox/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofobox/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofobox/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofobox/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofobox/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tools/podofobox/CMakeFiles/podofobox.dir/rule:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofobox/CMakeFiles/podofobox.dir/rule
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofobox/CMakeFiles/podofobox.dir/rule
 .PHONY : tools/podofobox/CMakeFiles/podofobox.dir/rule
 
 # Convenience name for target.
@@ -150,7 +150,7 @@ podofobox: tools/podofobox/CMakeFiles/podofobox.dir/rule
 
 # fast build rule for target.
 podofobox/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/build
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/build
 .PHONY : podofobox/fast
 
 boxsetter.o: boxsetter.cpp.o
@@ -158,7 +158,7 @@ boxsetter.o: boxsetter.cpp.o
 
 # target to build an object file
 boxsetter.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/boxsetter.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/boxsetter.cpp.o
 .PHONY : boxsetter.cpp.o
 
 boxsetter.i: boxsetter.cpp.i
@@ -166,7 +166,7 @@ boxsetter.i: boxsetter.cpp.i
 
 # target to preprocess a source file
 boxsetter.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/boxsetter.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/boxsetter.cpp.i
 .PHONY : boxsetter.cpp.i
 
 boxsetter.s: boxsetter.cpp.s
@@ -174,7 +174,7 @@ boxsetter.s: boxsetter.cpp.s
 
 # target to generate assembly for a file
 boxsetter.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/boxsetter.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/boxsetter.cpp.s
 .PHONY : boxsetter.cpp.s
 
 podofobox.o: podofobox.cpp.o
@@ -182,7 +182,7 @@ podofobox.o: podofobox.cpp.o
 
 # target to build an object file
 podofobox.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/podofobox.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/podofobox.cpp.o
 .PHONY : podofobox.cpp.o
 
 podofobox.i: podofobox.cpp.i
@@ -190,7 +190,7 @@ podofobox.i: podofobox.cpp.i
 
 # target to preprocess a source file
 podofobox.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/podofobox.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/podofobox.cpp.i
 .PHONY : podofobox.cpp.i
 
 podofobox.s: podofobox.cpp.s
@@ -198,7 +198,7 @@ podofobox.s: podofobox.cpp.s
 
 # target to generate assembly for a file
 podofobox.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/podofobox.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/podofobox.cpp.s
 .PHONY : podofobox.cpp.s
 
 # Help Target
@@ -231,6 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

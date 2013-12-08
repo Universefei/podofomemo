@@ -35,22 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -110,14 +110,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles /home/univ/projects/podofomemo/build/tools/podofopages/CMakeFiles/progress.marks
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofopages/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles /home/fei/proj/podofomemo/build/tools/podofopages/CMakeFiles/progress.marks
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofopages/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofopages/clean
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofopages/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofopages/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofopages/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofopages/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofopages/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tools/podofopages/CMakeFiles/podofopages.dir/rule:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofopages/CMakeFiles/podofopages.dir/rule
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofopages/CMakeFiles/podofopages.dir/rule
 .PHONY : tools/podofopages/CMakeFiles/podofopages.dir/rule
 
 # Convenience name for target.
@@ -150,7 +150,7 @@ podofopages: tools/podofopages/CMakeFiles/podofopages.dir/rule
 
 # fast build rule for target.
 podofopages/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/build
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/build
 .PHONY : podofopages/fast
 
 DeleteOperation.o: DeleteOperation.cpp.o
@@ -158,7 +158,7 @@ DeleteOperation.o: DeleteOperation.cpp.o
 
 # target to build an object file
 DeleteOperation.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/DeleteOperation.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/DeleteOperation.cpp.o
 .PHONY : DeleteOperation.cpp.o
 
 DeleteOperation.i: DeleteOperation.cpp.i
@@ -166,7 +166,7 @@ DeleteOperation.i: DeleteOperation.cpp.i
 
 # target to preprocess a source file
 DeleteOperation.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/DeleteOperation.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/DeleteOperation.cpp.i
 .PHONY : DeleteOperation.cpp.i
 
 DeleteOperation.s: DeleteOperation.cpp.s
@@ -174,7 +174,7 @@ DeleteOperation.s: DeleteOperation.cpp.s
 
 # target to generate assembly for a file
 DeleteOperation.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/DeleteOperation.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/DeleteOperation.cpp.s
 .PHONY : DeleteOperation.cpp.s
 
 MoveOperation.o: MoveOperation.cpp.o
@@ -182,7 +182,7 @@ MoveOperation.o: MoveOperation.cpp.o
 
 # target to build an object file
 MoveOperation.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/MoveOperation.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/MoveOperation.cpp.o
 .PHONY : MoveOperation.cpp.o
 
 MoveOperation.i: MoveOperation.cpp.i
@@ -190,7 +190,7 @@ MoveOperation.i: MoveOperation.cpp.i
 
 # target to preprocess a source file
 MoveOperation.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/MoveOperation.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/MoveOperation.cpp.i
 .PHONY : MoveOperation.cpp.i
 
 MoveOperation.s: MoveOperation.cpp.s
@@ -198,7 +198,7 @@ MoveOperation.s: MoveOperation.cpp.s
 
 # target to generate assembly for a file
 MoveOperation.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/MoveOperation.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/MoveOperation.cpp.s
 .PHONY : MoveOperation.cpp.s
 
 podofopages.o: podofopages.cpp.o
@@ -206,7 +206,7 @@ podofopages.o: podofopages.cpp.o
 
 # target to build an object file
 podofopages.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/podofopages.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/podofopages.cpp.o
 .PHONY : podofopages.cpp.o
 
 podofopages.i: podofopages.cpp.i
@@ -214,7 +214,7 @@ podofopages.i: podofopages.cpp.i
 
 # target to preprocess a source file
 podofopages.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/podofopages.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/podofopages.cpp.i
 .PHONY : podofopages.cpp.i
 
 podofopages.s: podofopages.cpp.s
@@ -222,7 +222,7 @@ podofopages.s: podofopages.cpp.s
 
 # target to generate assembly for a file
 podofopages.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/podofopages.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/podofopages.cpp.s
 .PHONY : podofopages.cpp.s
 
 # Help Target
@@ -258,6 +258,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

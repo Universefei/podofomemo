@@ -35,22 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -110,14 +110,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles /home/univ/projects/podofomemo/build/tools/podofocolor/CMakeFiles/progress.marks
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofocolor/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles /home/fei/proj/podofomemo/build/tools/podofocolor/CMakeFiles/progress.marks
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofocolor/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofocolor/clean
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofocolor/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofocolor/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofocolor/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofocolor/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofocolor/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tools/podofocolor/CMakeFiles/podofocolor.dir/rule:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofocolor/CMakeFiles/podofocolor.dir/rule
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofocolor/CMakeFiles/podofocolor.dir/rule
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/rule
 
 # Convenience name for target.
@@ -150,7 +150,7 @@ podofocolor: tools/podofocolor/CMakeFiles/podofocolor.dir/rule
 
 # fast build rule for target.
 podofocolor/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/build
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/build
 .PHONY : podofocolor/fast
 
 colorchanger.o: colorchanger.cpp.o
@@ -158,7 +158,7 @@ colorchanger.o: colorchanger.cpp.o
 
 # target to build an object file
 colorchanger.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.o
 .PHONY : colorchanger.cpp.o
 
 colorchanger.i: colorchanger.cpp.i
@@ -166,7 +166,7 @@ colorchanger.i: colorchanger.cpp.i
 
 # target to preprocess a source file
 colorchanger.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.i
 .PHONY : colorchanger.cpp.i
 
 colorchanger.s: colorchanger.cpp.s
@@ -174,7 +174,7 @@ colorchanger.s: colorchanger.cpp.s
 
 # target to generate assembly for a file
 colorchanger.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.s
 .PHONY : colorchanger.cpp.s
 
 colorspace.o: colorspace.cpp.o
@@ -182,7 +182,7 @@ colorspace.o: colorspace.cpp.o
 
 # target to build an object file
 colorspace.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.o
 .PHONY : colorspace.cpp.o
 
 colorspace.i: colorspace.cpp.i
@@ -190,7 +190,7 @@ colorspace.i: colorspace.cpp.i
 
 # target to preprocess a source file
 colorspace.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.i
 .PHONY : colorspace.cpp.i
 
 colorspace.s: colorspace.cpp.s
@@ -198,7 +198,7 @@ colorspace.s: colorspace.cpp.s
 
 # target to generate assembly for a file
 colorspace.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.s
 .PHONY : colorspace.cpp.s
 
 dummyconverter.o: dummyconverter.cpp.o
@@ -206,7 +206,7 @@ dummyconverter.o: dummyconverter.cpp.o
 
 # target to build an object file
 dummyconverter.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o
 .PHONY : dummyconverter.cpp.o
 
 dummyconverter.i: dummyconverter.cpp.i
@@ -214,7 +214,7 @@ dummyconverter.i: dummyconverter.cpp.i
 
 # target to preprocess a source file
 dummyconverter.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.i
 .PHONY : dummyconverter.cpp.i
 
 dummyconverter.s: dummyconverter.cpp.s
@@ -222,7 +222,7 @@ dummyconverter.s: dummyconverter.cpp.s
 
 # target to generate assembly for a file
 dummyconverter.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.s
 .PHONY : dummyconverter.cpp.s
 
 graphicsstack.o: graphicsstack.cpp.o
@@ -230,7 +230,7 @@ graphicsstack.o: graphicsstack.cpp.o
 
 # target to build an object file
 graphicsstack.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.o
 .PHONY : graphicsstack.cpp.o
 
 graphicsstack.i: graphicsstack.cpp.i
@@ -238,7 +238,7 @@ graphicsstack.i: graphicsstack.cpp.i
 
 # target to preprocess a source file
 graphicsstack.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.i
 .PHONY : graphicsstack.cpp.i
 
 graphicsstack.s: graphicsstack.cpp.s
@@ -246,7 +246,7 @@ graphicsstack.s: graphicsstack.cpp.s
 
 # target to generate assembly for a file
 graphicsstack.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.s
 .PHONY : graphicsstack.cpp.s
 
 grayscaleconverter.o: grayscaleconverter.cpp.o
@@ -254,7 +254,7 @@ grayscaleconverter.o: grayscaleconverter.cpp.o
 
 # target to build an object file
 grayscaleconverter.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.o
 .PHONY : grayscaleconverter.cpp.o
 
 grayscaleconverter.i: grayscaleconverter.cpp.i
@@ -262,7 +262,7 @@ grayscaleconverter.i: grayscaleconverter.cpp.i
 
 # target to preprocess a source file
 grayscaleconverter.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.i
 .PHONY : grayscaleconverter.cpp.i
 
 grayscaleconverter.s: grayscaleconverter.cpp.s
@@ -270,7 +270,7 @@ grayscaleconverter.s: grayscaleconverter.cpp.s
 
 # target to generate assembly for a file
 grayscaleconverter.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.s
 .PHONY : grayscaleconverter.cpp.s
 
 iconverter.o: iconverter.cpp.o
@@ -278,7 +278,7 @@ iconverter.o: iconverter.cpp.o
 
 # target to build an object file
 iconverter.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o
 .PHONY : iconverter.cpp.o
 
 iconverter.i: iconverter.cpp.i
@@ -286,7 +286,7 @@ iconverter.i: iconverter.cpp.i
 
 # target to preprocess a source file
 iconverter.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.i
 .PHONY : iconverter.cpp.i
 
 iconverter.s: iconverter.cpp.s
@@ -294,7 +294,7 @@ iconverter.s: iconverter.cpp.s
 
 # target to generate assembly for a file
 iconverter.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.s
 .PHONY : iconverter.cpp.s
 
 podofocolor.o: podofocolor.cpp.o
@@ -302,7 +302,7 @@ podofocolor.o: podofocolor.cpp.o
 
 # target to build an object file
 podofocolor.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.o
 .PHONY : podofocolor.cpp.o
 
 podofocolor.i: podofocolor.cpp.i
@@ -310,7 +310,7 @@ podofocolor.i: podofocolor.cpp.i
 
 # target to preprocess a source file
 podofocolor.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.i
 .PHONY : podofocolor.cpp.i
 
 podofocolor.s: podofocolor.cpp.s
@@ -318,7 +318,7 @@ podofocolor.s: podofocolor.cpp.s
 
 # target to generate assembly for a file
 podofocolor.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.s
 .PHONY : podofocolor.cpp.s
 
 # Help Target
@@ -366,6 +366,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

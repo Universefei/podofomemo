@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include test/ContentParser/CMakeFiles/ContentParser.dir/depend.make
@@ -50,18 +50,18 @@ include test/ContentParser/CMakeFiles/ContentParser.dir/progress.make
 include test/ContentParser/CMakeFiles/ContentParser.dir/flags.make
 
 test/ContentParser/CMakeFiles/ContentParser.dir/main.cpp.o: test/ContentParser/CMakeFiles/ContentParser.dir/flags.make
-test/ContentParser/CMakeFiles/ContentParser.dir/main.cpp.o: /home/univ/projects/podofomemo/podofoSRC/test/ContentParser/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+test/ContentParser/CMakeFiles/ContentParser.dir/main.cpp.o: /home/fei/proj/podofomemo/podofoSRC/test/ContentParser/main.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/ContentParser/CMakeFiles/ContentParser.dir/main.cpp.o"
-	cd /home/univ/projects/podofomemo/build/test/ContentParser && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ContentParser.dir/main.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/test/ContentParser/main.cpp
+	cd /home/fei/proj/podofomemo/build/test/ContentParser && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ContentParser.dir/main.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/test/ContentParser/main.cpp
 
 test/ContentParser/CMakeFiles/ContentParser.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ContentParser.dir/main.cpp.i"
-	cd /home/univ/projects/podofomemo/build/test/ContentParser && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/test/ContentParser/main.cpp > CMakeFiles/ContentParser.dir/main.cpp.i
+	cd /home/fei/proj/podofomemo/build/test/ContentParser && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/test/ContentParser/main.cpp > CMakeFiles/ContentParser.dir/main.cpp.i
 
 test/ContentParser/CMakeFiles/ContentParser.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ContentParser.dir/main.cpp.s"
-	cd /home/univ/projects/podofomemo/build/test/ContentParser && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/test/ContentParser/main.cpp -o CMakeFiles/ContentParser.dir/main.cpp.s
+	cd /home/fei/proj/podofomemo/build/test/ContentParser && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/test/ContentParser/main.cpp -o CMakeFiles/ContentParser.dir/main.cpp.s
 
 test/ContentParser/CMakeFiles/ContentParser.dir/main.cpp.o.requires:
 .PHONY : test/ContentParser/CMakeFiles/ContentParser.dir/main.cpp.o.requires
@@ -80,26 +80,22 @@ ContentParser_OBJECTS = \
 ContentParser_EXTERNAL_OBJECTS =
 
 test/ContentParser/ContentParser: test/ContentParser/CMakeFiles/ContentParser.dir/main.cpp.o
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libz.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libcrypto.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libjpeg.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libfreetype.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libpng.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libz.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libtiff.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libz.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libcrypto.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libjpeg.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libfreetype.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libpng.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libz.so
-test/ContentParser/ContentParser: /usr/lib/i386-linux-gnu/libtiff.so
 test/ContentParser/ContentParser: test/ContentParser/CMakeFiles/ContentParser.dir/build.make
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libz.so
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libtiff.so
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libz.so
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/ContentParser/ContentParser: /usr/lib/x86_64-linux-gnu/libtiff.so
 test/ContentParser/ContentParser: test/ContentParser/CMakeFiles/ContentParser.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ContentParser"
-	cd /home/univ/projects/podofomemo/build/test/ContentParser && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ContentParser.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/test/ContentParser && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ContentParser.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/ContentParser/CMakeFiles/ContentParser.dir/build: test/ContentParser/ContentParser
@@ -109,10 +105,10 @@ test/ContentParser/CMakeFiles/ContentParser.dir/requires: test/ContentParser/CMa
 .PHONY : test/ContentParser/CMakeFiles/ContentParser.dir/requires
 
 test/ContentParser/CMakeFiles/ContentParser.dir/clean:
-	cd /home/univ/projects/podofomemo/build/test/ContentParser && $(CMAKE_COMMAND) -P CMakeFiles/ContentParser.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/test/ContentParser && $(CMAKE_COMMAND) -P CMakeFiles/ContentParser.dir/cmake_clean.cmake
 .PHONY : test/ContentParser/CMakeFiles/ContentParser.dir/clean
 
 test/ContentParser/CMakeFiles/ContentParser.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/test/ContentParser /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/test/ContentParser /home/univ/projects/podofomemo/build/test/ContentParser/CMakeFiles/ContentParser.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/test/ContentParser /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/test/ContentParser /home/fei/proj/podofomemo/build/test/ContentParser/CMakeFiles/ContentParser.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/ContentParser/CMakeFiles/ContentParser.dir/depend
 

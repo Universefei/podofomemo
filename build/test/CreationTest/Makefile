@@ -35,22 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -110,14 +110,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles /home/univ/projects/podofomemo/build/test/CreationTest/CMakeFiles/progress.marks
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/CreationTest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles /home/fei/proj/podofomemo/build/test/CreationTest/CMakeFiles/progress.marks
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/CreationTest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/CreationTest/clean
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/CreationTest/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/CreationTest/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/CreationTest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/CreationTest/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/CreationTest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CreationTest/CMakeFiles/CreationTest.dir/rule:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/CreationTest/CMakeFiles/CreationTest.dir/rule
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/CreationTest/CMakeFiles/CreationTest.dir/rule
 .PHONY : test/CreationTest/CMakeFiles/CreationTest.dir/rule
 
 # Convenience name for target.
@@ -150,7 +150,7 @@ CreationTest: test/CreationTest/CMakeFiles/CreationTest.dir/rule
 
 # fast build rule for target.
 CreationTest/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f test/CreationTest/CMakeFiles/CreationTest.dir/build.make test/CreationTest/CMakeFiles/CreationTest.dir/build
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f test/CreationTest/CMakeFiles/CreationTest.dir/build.make test/CreationTest/CMakeFiles/CreationTest.dir/build
 .PHONY : CreationTest/fast
 
 CreationTest.o: CreationTest.cpp.o
@@ -158,7 +158,7 @@ CreationTest.o: CreationTest.cpp.o
 
 # target to build an object file
 CreationTest.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f test/CreationTest/CMakeFiles/CreationTest.dir/build.make test/CreationTest/CMakeFiles/CreationTest.dir/CreationTest.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f test/CreationTest/CMakeFiles/CreationTest.dir/build.make test/CreationTest/CMakeFiles/CreationTest.dir/CreationTest.cpp.o
 .PHONY : CreationTest.cpp.o
 
 CreationTest.i: CreationTest.cpp.i
@@ -166,7 +166,7 @@ CreationTest.i: CreationTest.cpp.i
 
 # target to preprocess a source file
 CreationTest.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f test/CreationTest/CMakeFiles/CreationTest.dir/build.make test/CreationTest/CMakeFiles/CreationTest.dir/CreationTest.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f test/CreationTest/CMakeFiles/CreationTest.dir/build.make test/CreationTest/CMakeFiles/CreationTest.dir/CreationTest.cpp.i
 .PHONY : CreationTest.cpp.i
 
 CreationTest.s: CreationTest.cpp.s
@@ -174,7 +174,7 @@ CreationTest.s: CreationTest.cpp.s
 
 # target to generate assembly for a file
 CreationTest.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f test/CreationTest/CMakeFiles/CreationTest.dir/build.make test/CreationTest/CMakeFiles/CreationTest.dir/CreationTest.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f test/CreationTest/CMakeFiles/CreationTest.dir/build.make test/CreationTest/CMakeFiles/CreationTest.dir/CreationTest.cpp.s
 .PHONY : CreationTest.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

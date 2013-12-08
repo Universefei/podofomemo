@@ -4,13 +4,24 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/impositionplan.cpp" "/home/univ/projects/podofomemo/build/tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o"
-  "/home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/pdftranslator.cpp" "/home/univ/projects/podofomemo/build/tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o"
-  "/home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/planreader_legacy.cpp" "/home/univ/projects/podofomemo/build/tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o"
-  "/home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/podofoimpose.cpp" "/home/univ/projects/podofomemo/build/tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o"
+  "/home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/impositionplan.cpp" "/home/fei/proj/podofomemo/build/tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o"
+  "/home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/pdftranslator.cpp" "/home/fei/proj/podofomemo/build/tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o"
+  "/home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/planreader_legacy.cpp" "/home/fei/proj/podofomemo/build/tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o"
+  "/home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/podofoimpose.cpp" "/home/fei/proj/podofomemo/build/tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
   )
+
+# The include file search paths:
+SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "."
+  "/home/fei/proj/podofomemo/podofoSRC"
+  "/home/fei/proj/podofomemo/podofoSRC/src"
+  "/usr/include/freetype2"
+  )
+SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_ASM_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

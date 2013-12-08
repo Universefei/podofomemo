@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofocolor/CMakeFiles/podofocolor.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofocolor/CMakeFiles/podofocolor.dir/progress.make
 include tools/podofocolor/CMakeFiles/podofocolor.dir/flags.make
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.o: tools/podofocolor/CMakeFiles/podofocolor.dir/flags.make
-tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/podofocolor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/podofocolor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/podofocolor.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/podofocolor.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/podofocolor.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/podofocolor.cpp
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofocolor.dir/podofocolor.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/podofocolor.cpp > CMakeFiles/podofocolor.dir/podofocolor.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/podofocolor.cpp > CMakeFiles/podofocolor.dir/podofocolor.cpp.i
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofocolor.dir/podofocolor.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/podofocolor.cpp -o CMakeFiles/podofocolor.dir/podofocolor.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/podofocolor.cpp -o CMakeFiles/podofocolor.dir/podofocolor.cpp.s
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.o.requires:
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.o.requires
@@ -73,18 +73,18 @@ tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.o.provides: tools/p
 tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.o.provides.build: tools/podofocolor/CMakeFiles/podofocolor.dir/podofocolor.cpp.o
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.o: tools/podofocolor/CMakeFiles/podofocolor.dir/flags.make
-tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/colorchanger.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
+tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/colorchanger.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/colorchanger.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/colorchanger.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/colorchanger.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/colorchanger.cpp
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofocolor.dir/colorchanger.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/colorchanger.cpp > CMakeFiles/podofocolor.dir/colorchanger.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/colorchanger.cpp > CMakeFiles/podofocolor.dir/colorchanger.cpp.i
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofocolor.dir/colorchanger.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/colorchanger.cpp -o CMakeFiles/podofocolor.dir/colorchanger.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/colorchanger.cpp -o CMakeFiles/podofocolor.dir/colorchanger.cpp.s
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.o.requires:
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.o.requires
@@ -96,18 +96,18 @@ tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.o.provides: tools/
 tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.o.provides.build: tools/podofocolor/CMakeFiles/podofocolor.dir/colorchanger.cpp.o
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.o: tools/podofocolor/CMakeFiles/podofocolor.dir/flags.make
-tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/colorspace.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_3)
+tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/colorspace.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/colorspace.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/colorspace.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/colorspace.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/colorspace.cpp
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofocolor.dir/colorspace.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/colorspace.cpp > CMakeFiles/podofocolor.dir/colorspace.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/colorspace.cpp > CMakeFiles/podofocolor.dir/colorspace.cpp.i
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofocolor.dir/colorspace.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/colorspace.cpp -o CMakeFiles/podofocolor.dir/colorspace.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/colorspace.cpp -o CMakeFiles/podofocolor.dir/colorspace.cpp.s
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.o.requires:
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.o.requires
@@ -119,18 +119,18 @@ tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.o.provides: tools/po
 tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.o.provides.build: tools/podofocolor/CMakeFiles/podofocolor.dir/colorspace.cpp.o
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.o: tools/podofocolor/CMakeFiles/podofocolor.dir/flags.make
-tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/graphicsstack.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_4)
+tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/graphicsstack.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/graphicsstack.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/graphicsstack.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/graphicsstack.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/graphicsstack.cpp
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofocolor.dir/graphicsstack.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/graphicsstack.cpp > CMakeFiles/podofocolor.dir/graphicsstack.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/graphicsstack.cpp > CMakeFiles/podofocolor.dir/graphicsstack.cpp.i
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofocolor.dir/graphicsstack.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/graphicsstack.cpp -o CMakeFiles/podofocolor.dir/graphicsstack.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/graphicsstack.cpp -o CMakeFiles/podofocolor.dir/graphicsstack.cpp.s
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.o.requires:
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.o.requires
@@ -142,18 +142,18 @@ tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.o.provides: tools
 tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.o.provides.build: tools/podofocolor/CMakeFiles/podofocolor.dir/graphicsstack.cpp.o
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o: tools/podofocolor/CMakeFiles/podofocolor.dir/flags.make
-tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/iconverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_5)
+tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/iconverter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/iconverter.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/iconverter.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/iconverter.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/iconverter.cpp
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofocolor.dir/iconverter.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/iconverter.cpp > CMakeFiles/podofocolor.dir/iconverter.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/iconverter.cpp > CMakeFiles/podofocolor.dir/iconverter.cpp.i
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofocolor.dir/iconverter.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/iconverter.cpp -o CMakeFiles/podofocolor.dir/iconverter.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/iconverter.cpp -o CMakeFiles/podofocolor.dir/iconverter.cpp.s
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o.requires:
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o.requires
@@ -165,18 +165,18 @@ tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o.provides: tools/po
 tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o.provides.build: tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o: tools/podofocolor/CMakeFiles/podofocolor.dir/flags.make
-tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/dummyconverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_6)
+tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/dummyconverter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/dummyconverter.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/dummyconverter.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/dummyconverter.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/dummyconverter.cpp
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofocolor.dir/dummyconverter.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/dummyconverter.cpp > CMakeFiles/podofocolor.dir/dummyconverter.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/dummyconverter.cpp > CMakeFiles/podofocolor.dir/dummyconverter.cpp.i
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofocolor.dir/dummyconverter.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/dummyconverter.cpp -o CMakeFiles/podofocolor.dir/dummyconverter.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/dummyconverter.cpp -o CMakeFiles/podofocolor.dir/dummyconverter.cpp.s
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o.requires:
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o.requires
@@ -188,18 +188,18 @@ tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o.provides: tool
 tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o.provides.build: tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.o: tools/podofocolor/CMakeFiles/podofocolor.dir/flags.make
-tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/grayscaleconverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_7)
+tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/grayscaleconverter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/grayscaleconverter.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/grayscaleconverter.cpp
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/grayscaleconverter.cpp > CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/grayscaleconverter.cpp > CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.i
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor/grayscaleconverter.cpp -o CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor/grayscaleconverter.cpp -o CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.s
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.o.requires:
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.o.requires
@@ -230,23 +230,16 @@ tools/podofocolor/podofocolor: tools/podofocolor/CMakeFiles/podofocolor.dir/grap
 tools/podofocolor/podofocolor: tools/podofocolor/CMakeFiles/podofocolor.dir/iconverter.cpp.o
 tools/podofocolor/podofocolor: tools/podofocolor/CMakeFiles/podofocolor.dir/dummyconverter.cpp.o
 tools/podofocolor/podofocolor: tools/podofocolor/CMakeFiles/podofocolor.dir/grayscaleconverter.cpp.o
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libz.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libz.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofocolor/podofocolor: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofocolor/podofocolor: tools/podofocolor/CMakeFiles/podofocolor.dir/build.make
+tools/podofocolor/podofocolor: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofocolor/podofocolor: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofocolor/podofocolor: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofocolor/podofocolor: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofocolor/podofocolor: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofocolor/podofocolor: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofocolor/podofocolor: tools/podofocolor/CMakeFiles/podofocolor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofocolor"
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofocolor.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofocolor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofocolor/CMakeFiles/podofocolor.dir/build: tools/podofocolor/podofocolor
@@ -262,10 +255,10 @@ tools/podofocolor/CMakeFiles/podofocolor.dir/requires: tools/podofocolor/CMakeFi
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/requires
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofocolor && $(CMAKE_COMMAND) -P CMakeFiles/podofocolor.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofocolor && $(CMAKE_COMMAND) -P CMakeFiles/podofocolor.dir/cmake_clean.cmake
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/clean
 
 tools/podofocolor/CMakeFiles/podofocolor.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofocolor /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofocolor /home/univ/projects/podofomemo/build/tools/podofocolor/CMakeFiles/podofocolor.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofocolor /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofocolor /home/fei/proj/podofomemo/build/tools/podofocolor/CMakeFiles/podofocolor.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/depend
 

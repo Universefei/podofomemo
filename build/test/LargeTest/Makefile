@@ -35,22 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -110,14 +110,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles /home/univ/projects/podofomemo/build/test/LargeTest/CMakeFiles/progress.marks
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/LargeTest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles /home/fei/proj/podofomemo/build/test/LargeTest/CMakeFiles/progress.marks
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/LargeTest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/LargeTest/clean
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/LargeTest/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/LargeTest/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/LargeTest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/LargeTest/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/LargeTest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/LargeTest/CMakeFiles/LargeTest.dir/rule:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/LargeTest/CMakeFiles/LargeTest.dir/rule
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 test/LargeTest/CMakeFiles/LargeTest.dir/rule
 .PHONY : test/LargeTest/CMakeFiles/LargeTest.dir/rule
 
 # Convenience name for target.
@@ -150,7 +150,7 @@ LargeTest: test/LargeTest/CMakeFiles/LargeTest.dir/rule
 
 # fast build rule for target.
 LargeTest/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f test/LargeTest/CMakeFiles/LargeTest.dir/build.make test/LargeTest/CMakeFiles/LargeTest.dir/build
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f test/LargeTest/CMakeFiles/LargeTest.dir/build.make test/LargeTest/CMakeFiles/LargeTest.dir/build
 .PHONY : LargeTest/fast
 
 LargeTest.o: LargeTest.cpp.o
@@ -158,7 +158,7 @@ LargeTest.o: LargeTest.cpp.o
 
 # target to build an object file
 LargeTest.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f test/LargeTest/CMakeFiles/LargeTest.dir/build.make test/LargeTest/CMakeFiles/LargeTest.dir/LargeTest.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f test/LargeTest/CMakeFiles/LargeTest.dir/build.make test/LargeTest/CMakeFiles/LargeTest.dir/LargeTest.cpp.o
 .PHONY : LargeTest.cpp.o
 
 LargeTest.i: LargeTest.cpp.i
@@ -166,7 +166,7 @@ LargeTest.i: LargeTest.cpp.i
 
 # target to preprocess a source file
 LargeTest.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f test/LargeTest/CMakeFiles/LargeTest.dir/build.make test/LargeTest/CMakeFiles/LargeTest.dir/LargeTest.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f test/LargeTest/CMakeFiles/LargeTest.dir/build.make test/LargeTest/CMakeFiles/LargeTest.dir/LargeTest.cpp.i
 .PHONY : LargeTest.cpp.i
 
 LargeTest.s: LargeTest.cpp.s
@@ -174,7 +174,7 @@ LargeTest.s: LargeTest.cpp.s
 
 # target to generate assembly for a file
 LargeTest.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f test/LargeTest/CMakeFiles/LargeTest.dir/build.make test/LargeTest/CMakeFiles/LargeTest.dir/LargeTest.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f test/LargeTest/CMakeFiles/LargeTest.dir/build.make test/LargeTest/CMakeFiles/LargeTest.dir/LargeTest.cpp.s
 .PHONY : LargeTest.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

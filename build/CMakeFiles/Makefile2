@@ -43,14 +43,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/uninstall.dir
@@ -59,15 +59,15 @@ CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
 CMakeFiles/uninstall.dir/all:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles 
 	@echo "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -105,7 +105,7 @@ src/preinstall:
 src/CMakeFiles/podofo_static.dir/all:
 	$(MAKE) -f src/CMakeFiles/podofo_static.dir/build.make src/CMakeFiles/podofo_static.dir/depend
 	$(MAKE) -f src/CMakeFiles/podofo_static.dir/build.make src/CMakeFiles/podofo_static.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74
 	@echo "Built target podofo_static"
 .PHONY : src/CMakeFiles/podofo_static.dir/all
 
@@ -115,9 +115,9 @@ all: src/CMakeFiles/podofo_static.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/podofo_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/podofo_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/podofo_static.dir/rule
 
 # Convenience name for target.
@@ -206,7 +206,7 @@ test/ContentParser/preinstall:
 test/ContentParser/CMakeFiles/ContentParser.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/ContentParser/CMakeFiles/ContentParser.dir/build.make test/ContentParser/CMakeFiles/ContentParser.dir/depend
 	$(MAKE) -f test/ContentParser/CMakeFiles/ContentParser.dir/build.make test/ContentParser/CMakeFiles/ContentParser.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles 
 	@echo "Built target ContentParser"
 .PHONY : test/ContentParser/CMakeFiles/ContentParser.dir/all
 
@@ -216,9 +216,9 @@ all: test/ContentParser/CMakeFiles/ContentParser.dir/all
 
 # Build rule for subdir invocation for target.
 test/ContentParser/CMakeFiles/ContentParser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 test/ContentParser/CMakeFiles/ContentParser.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/ContentParser/CMakeFiles/ContentParser.dir/rule
 
 # Convenience name for target.
@@ -256,7 +256,7 @@ test/CreationTest/preinstall:
 test/CreationTest/CMakeFiles/CreationTest.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/CreationTest/CMakeFiles/CreationTest.dir/build.make test/CreationTest/CMakeFiles/CreationTest.dir/depend
 	$(MAKE) -f test/CreationTest/CMakeFiles/CreationTest.dir/build.make test/CreationTest/CMakeFiles/CreationTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  1
 	@echo "Built target CreationTest"
 .PHONY : test/CreationTest/CMakeFiles/CreationTest.dir/all
 
@@ -266,9 +266,9 @@ all: test/CreationTest/CMakeFiles/CreationTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/CreationTest/CMakeFiles/CreationTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 test/CreationTest/CMakeFiles/CreationTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/CreationTest/CMakeFiles/CreationTest.dir/rule
 
 # Convenience name for target.
@@ -306,7 +306,7 @@ test/DeviceTest/preinstall:
 test/DeviceTest/CMakeFiles/DeviceTest.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/DeviceTest/CMakeFiles/DeviceTest.dir/build.make test/DeviceTest/CMakeFiles/DeviceTest.dir/depend
 	$(MAKE) -f test/DeviceTest/CMakeFiles/DeviceTest.dir/build.make test/DeviceTest/CMakeFiles/DeviceTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  2
 	@echo "Built target DeviceTest"
 .PHONY : test/DeviceTest/CMakeFiles/DeviceTest.dir/all
 
@@ -316,9 +316,9 @@ all: test/DeviceTest/CMakeFiles/DeviceTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/DeviceTest/CMakeFiles/DeviceTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 test/DeviceTest/CMakeFiles/DeviceTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/DeviceTest/CMakeFiles/DeviceTest.dir/rule
 
 # Convenience name for target.
@@ -356,7 +356,7 @@ test/FilterTest/preinstall:
 test/FilterTest/CMakeFiles/FilterTest.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/FilterTest/CMakeFiles/FilterTest.dir/build.make test/FilterTest/CMakeFiles/FilterTest.dir/depend
 	$(MAKE) -f test/FilterTest/CMakeFiles/FilterTest.dir/build.make test/FilterTest/CMakeFiles/FilterTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles 
 	@echo "Built target FilterTest"
 .PHONY : test/FilterTest/CMakeFiles/FilterTest.dir/all
 
@@ -366,9 +366,9 @@ all: test/FilterTest/CMakeFiles/FilterTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/FilterTest/CMakeFiles/FilterTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 test/FilterTest/CMakeFiles/FilterTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/FilterTest/CMakeFiles/FilterTest.dir/rule
 
 # Convenience name for target.
@@ -406,7 +406,7 @@ test/FormTest/preinstall:
 test/FormTest/CMakeFiles/FormTest.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/FormTest/CMakeFiles/FormTest.dir/build.make test/FormTest/CMakeFiles/FormTest.dir/depend
 	$(MAKE) -f test/FormTest/CMakeFiles/FormTest.dir/build.make test/FormTest/CMakeFiles/FormTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  3
 	@echo "Built target FormTest"
 .PHONY : test/FormTest/CMakeFiles/FormTest.dir/all
 
@@ -416,9 +416,9 @@ all: test/FormTest/CMakeFiles/FormTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/FormTest/CMakeFiles/FormTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 test/FormTest/CMakeFiles/FormTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/FormTest/CMakeFiles/FormTest.dir/rule
 
 # Convenience name for target.
@@ -456,7 +456,7 @@ test/LargeTest/preinstall:
 test/LargeTest/CMakeFiles/LargeTest.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/LargeTest/CMakeFiles/LargeTest.dir/build.make test/LargeTest/CMakeFiles/LargeTest.dir/depend
 	$(MAKE) -f test/LargeTest/CMakeFiles/LargeTest.dir/build.make test/LargeTest/CMakeFiles/LargeTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  4
 	@echo "Built target LargeTest"
 .PHONY : test/LargeTest/CMakeFiles/LargeTest.dir/all
 
@@ -466,9 +466,9 @@ all: test/LargeTest/CMakeFiles/LargeTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/LargeTest/CMakeFiles/LargeTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 test/LargeTest/CMakeFiles/LargeTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/LargeTest/CMakeFiles/LargeTest.dir/rule
 
 # Convenience name for target.
@@ -506,7 +506,7 @@ test/ObjectParserTest/preinstall:
 test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/build.make test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/depend
 	$(MAKE) -f test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/build.make test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  5
 	@echo "Built target ObjectParserTest"
 .PHONY : test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/all
 
@@ -516,9 +516,9 @@ all: test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/ObjectParserTest/CMakeFiles/ObjectParserTest.dir/rule
 
 # Convenience name for target.
@@ -556,7 +556,7 @@ test/ParserTest/preinstall:
 test/ParserTest/CMakeFiles/ParserTest.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/ParserTest/CMakeFiles/ParserTest.dir/build.make test/ParserTest/CMakeFiles/ParserTest.dir/depend
 	$(MAKE) -f test/ParserTest/CMakeFiles/ParserTest.dir/build.make test/ParserTest/CMakeFiles/ParserTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles 
 	@echo "Built target ParserTest"
 .PHONY : test/ParserTest/CMakeFiles/ParserTest.dir/all
 
@@ -566,9 +566,9 @@ all: test/ParserTest/CMakeFiles/ParserTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/ParserTest/CMakeFiles/ParserTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 test/ParserTest/CMakeFiles/ParserTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/ParserTest/CMakeFiles/ParserTest.dir/rule
 
 # Convenience name for target.
@@ -606,7 +606,7 @@ test/SignatureTest/preinstall:
 test/SignatureTest/CMakeFiles/SignatureTest.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/SignatureTest/CMakeFiles/SignatureTest.dir/build.make test/SignatureTest/CMakeFiles/SignatureTest.dir/depend
 	$(MAKE) -f test/SignatureTest/CMakeFiles/SignatureTest.dir/build.make test/SignatureTest/CMakeFiles/SignatureTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  6
 	@echo "Built target SignatureTest"
 .PHONY : test/SignatureTest/CMakeFiles/SignatureTest.dir/all
 
@@ -616,9 +616,9 @@ all: test/SignatureTest/CMakeFiles/SignatureTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/SignatureTest/CMakeFiles/SignatureTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 test/SignatureTest/CMakeFiles/SignatureTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/SignatureTest/CMakeFiles/SignatureTest.dir/rule
 
 # Convenience name for target.
@@ -656,7 +656,7 @@ test/TokenizerTest/preinstall:
 test/TokenizerTest/CMakeFiles/TokenizerTest.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/TokenizerTest/CMakeFiles/TokenizerTest.dir/build.make test/TokenizerTest/CMakeFiles/TokenizerTest.dir/depend
 	$(MAKE) -f test/TokenizerTest/CMakeFiles/TokenizerTest.dir/build.make test/TokenizerTest/CMakeFiles/TokenizerTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  7
 	@echo "Built target TokenizerTest"
 .PHONY : test/TokenizerTest/CMakeFiles/TokenizerTest.dir/all
 
@@ -666,9 +666,9 @@ all: test/TokenizerTest/CMakeFiles/TokenizerTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/TokenizerTest/CMakeFiles/TokenizerTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 test/TokenizerTest/CMakeFiles/TokenizerTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/TokenizerTest/CMakeFiles/TokenizerTest.dir/rule
 
 # Convenience name for target.
@@ -706,7 +706,7 @@ test/VariantTest/preinstall:
 test/VariantTest/CMakeFiles/VariantTest.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/VariantTest/CMakeFiles/VariantTest.dir/build.make test/VariantTest/CMakeFiles/VariantTest.dir/depend
 	$(MAKE) -f test/VariantTest/CMakeFiles/VariantTest.dir/build.make test/VariantTest/CMakeFiles/VariantTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  8
 	@echo "Built target VariantTest"
 .PHONY : test/VariantTest/CMakeFiles/VariantTest.dir/all
 
@@ -716,9 +716,9 @@ all: test/VariantTest/CMakeFiles/VariantTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/VariantTest/CMakeFiles/VariantTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 test/VariantTest/CMakeFiles/VariantTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/VariantTest/CMakeFiles/VariantTest.dir/rule
 
 # Convenience name for target.
@@ -756,7 +756,7 @@ test/WatermarkTest/preinstall:
 test/WatermarkTest/CMakeFiles/WatermarkTest.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f test/WatermarkTest/CMakeFiles/WatermarkTest.dir/build.make test/WatermarkTest/CMakeFiles/WatermarkTest.dir/depend
 	$(MAKE) -f test/WatermarkTest/CMakeFiles/WatermarkTest.dir/build.make test/WatermarkTest/CMakeFiles/WatermarkTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  9
 	@echo "Built target WatermarkTest"
 .PHONY : test/WatermarkTest/CMakeFiles/WatermarkTest.dir/all
 
@@ -766,9 +766,9 @@ all: test/WatermarkTest/CMakeFiles/WatermarkTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/WatermarkTest/CMakeFiles/WatermarkTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 test/WatermarkTest/CMakeFiles/WatermarkTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : test/WatermarkTest/CMakeFiles/WatermarkTest.dir/rule
 
 # Convenience name for target.
@@ -788,51 +788,16 @@ clean: test/WatermarkTest/CMakeFiles/WatermarkTest.dir/clean
 # Directory level rules for directory test/unit
 
 # Convenience name for "all" pass in the directory.
-test/unit/all: test/unit/CMakeFiles/podofo-test.dir/all
+test/unit/all:
 .PHONY : test/unit/all
 
 # Convenience name for "clean" pass in the directory.
-test/unit/clean: test/unit/CMakeFiles/podofo-test.dir/clean
+test/unit/clean:
 .PHONY : test/unit/clean
 
 # Convenience name for "preinstall" pass in the directory.
 test/unit/preinstall:
 .PHONY : test/unit/preinstall
-
-#=============================================================================
-# Target rules for target test/unit/CMakeFiles/podofo-test.dir
-
-# All Build rule for target.
-test/unit/CMakeFiles/podofo-test.dir/all: src/CMakeFiles/podofo_static.dir/all
-	$(MAKE) -f test/unit/CMakeFiles/podofo-test.dir/build.make test/unit/CMakeFiles/podofo-test.dir/depend
-	$(MAKE) -f test/unit/CMakeFiles/podofo-test.dir/build.make test/unit/CMakeFiles/podofo-test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  11 12 13 14 15 16 17 18 19 20 21
-	@echo "Built target podofo-test"
-.PHONY : test/unit/CMakeFiles/podofo-test.dir/all
-
-# Include target in all.
-all: test/unit/CMakeFiles/podofo-test.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/unit/CMakeFiles/podofo-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 67
-	$(MAKE) -f CMakeFiles/Makefile2 test/unit/CMakeFiles/podofo-test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
-.PHONY : test/unit/CMakeFiles/podofo-test.dir/rule
-
-# Convenience name for target.
-podofo-test: test/unit/CMakeFiles/podofo-test.dir/rule
-.PHONY : podofo-test
-
-# clean rule for target.
-test/unit/CMakeFiles/podofo-test.dir/clean:
-	$(MAKE) -f test/unit/CMakeFiles/podofo-test.dir/build.make test/unit/CMakeFiles/podofo-test.dir/clean
-.PHONY : test/unit/CMakeFiles/podofo-test.dir/clean
-
-# clean rule for target.
-clean: test/unit/CMakeFiles/podofo-test.dir/clean
-.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory tools
@@ -919,7 +884,7 @@ tools/podofobox/preinstall:
 tools/podofobox/CMakeFiles/podofobox.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/depend
 	$(MAKE) -f tools/podofobox/CMakeFiles/podofobox.dir/build.make tools/podofobox/CMakeFiles/podofobox.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  78
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  75 76
 	@echo "Built target podofobox"
 .PHONY : tools/podofobox/CMakeFiles/podofobox.dir/all
 
@@ -929,9 +894,9 @@ all: tools/podofobox/CMakeFiles/podofobox.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofobox/CMakeFiles/podofobox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofobox/CMakeFiles/podofobox.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofobox/CMakeFiles/podofobox.dir/rule
 
 # Convenience name for target.
@@ -969,7 +934,7 @@ tools/podofocolor/preinstall:
 tools/podofocolor/CMakeFiles/podofocolor.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/depend
 	$(MAKE) -f tools/podofocolor/CMakeFiles/podofocolor.dir/build.make tools/podofocolor/CMakeFiles/podofocolor.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  79 80 81 82 83
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  77 78 79 80 81
 	@echo "Built target podofocolor"
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/all
 
@@ -979,9 +944,9 @@ all: tools/podofocolor/CMakeFiles/podofocolor.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofocolor/CMakeFiles/podofocolor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 67
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofocolor/CMakeFiles/podofocolor.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofocolor/CMakeFiles/podofocolor.dir/rule
 
 # Convenience name for target.
@@ -1019,7 +984,7 @@ tools/podofocountpages/preinstall:
 tools/podofocountpages/CMakeFiles/podofocountpages.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofocountpages/CMakeFiles/podofocountpages.dir/build.make tools/podofocountpages/CMakeFiles/podofocountpages.dir/depend
 	$(MAKE) -f tools/podofocountpages/CMakeFiles/podofocountpages.dir/build.make tools/podofocountpages/CMakeFiles/podofocountpages.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  82
 	@echo "Built target podofocountpages"
 .PHONY : tools/podofocountpages/CMakeFiles/podofocountpages.dir/all
 
@@ -1029,9 +994,9 @@ all: tools/podofocountpages/CMakeFiles/podofocountpages.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofocountpages/CMakeFiles/podofocountpages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofocountpages/CMakeFiles/podofocountpages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofocountpages/CMakeFiles/podofocountpages.dir/rule
 
 # Convenience name for target.
@@ -1069,7 +1034,7 @@ tools/podofocrop/preinstall:
 tools/podofocrop/CMakeFiles/podofocrop.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofocrop/CMakeFiles/podofocrop.dir/build.make tools/podofocrop/CMakeFiles/podofocrop.dir/depend
 	$(MAKE) -f tools/podofocrop/CMakeFiles/podofocrop.dir/build.make tools/podofocrop/CMakeFiles/podofocrop.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  84
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles 
 	@echo "Built target podofocrop"
 .PHONY : tools/podofocrop/CMakeFiles/podofocrop.dir/all
 
@@ -1079,9 +1044,9 @@ all: tools/podofocrop/CMakeFiles/podofocrop.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofocrop/CMakeFiles/podofocrop.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofocrop/CMakeFiles/podofocrop.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofocrop/CMakeFiles/podofocrop.dir/rule
 
 # Convenience name for target.
@@ -1119,7 +1084,7 @@ tools/podofoencrypt/preinstall:
 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build.make tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/depend
 	$(MAKE) -f tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build.make tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  85
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  83
 	@echo "Built target podofoencrypt"
 .PHONY : tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/all
 
@@ -1129,9 +1094,9 @@ all: tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofoencrypt/CMakeFiles/podofoencrypt.dir/rule
 
 # Convenience name for target.
@@ -1169,7 +1134,7 @@ tools/podofogc/preinstall:
 tools/podofogc/CMakeFiles/podofogc.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofogc/CMakeFiles/podofogc.dir/build.make tools/podofogc/CMakeFiles/podofogc.dir/depend
 	$(MAKE) -f tools/podofogc/CMakeFiles/podofogc.dir/build.make tools/podofogc/CMakeFiles/podofogc.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  84
 	@echo "Built target podofogc"
 .PHONY : tools/podofogc/CMakeFiles/podofogc.dir/all
 
@@ -1179,9 +1144,9 @@ all: tools/podofogc/CMakeFiles/podofogc.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofogc/CMakeFiles/podofogc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofogc/CMakeFiles/podofogc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofogc/CMakeFiles/podofogc.dir/rule
 
 # Convenience name for target.
@@ -1219,7 +1184,7 @@ tools/podofoimgextract/preinstall:
 tools/podofoimgextract/CMakeFiles/podofoimgextract.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofoimgextract/CMakeFiles/podofoimgextract.dir/build.make tools/podofoimgextract/CMakeFiles/podofoimgextract.dir/depend
 	$(MAKE) -f tools/podofoimgextract/CMakeFiles/podofoimgextract.dir/build.make tools/podofoimgextract/CMakeFiles/podofoimgextract.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  88
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  86 87
 	@echo "Built target podofoimgextract"
 .PHONY : tools/podofoimgextract/CMakeFiles/podofoimgextract.dir/all
 
@@ -1229,9 +1194,9 @@ all: tools/podofoimgextract/CMakeFiles/podofoimgextract.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofoimgextract/CMakeFiles/podofoimgextract.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofoimgextract/CMakeFiles/podofoimgextract.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofoimgextract/CMakeFiles/podofoimgextract.dir/rule
 
 # Convenience name for target.
@@ -1269,7 +1234,7 @@ tools/podofoimg2pdf/preinstall:
 tools/podofoimg2pdf/CMakeFiles/podofoimg2pdf.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofoimg2pdf/CMakeFiles/podofoimg2pdf.dir/build.make tools/podofoimg2pdf/CMakeFiles/podofoimg2pdf.dir/depend
 	$(MAKE) -f tools/podofoimg2pdf/CMakeFiles/podofoimg2pdf.dir/build.make tools/podofoimg2pdf/CMakeFiles/podofoimg2pdf.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  86 87
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  85
 	@echo "Built target podofoimg2pdf"
 .PHONY : tools/podofoimg2pdf/CMakeFiles/podofoimg2pdf.dir/all
 
@@ -1279,9 +1244,9 @@ all: tools/podofoimg2pdf/CMakeFiles/podofoimg2pdf.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofoimg2pdf/CMakeFiles/podofoimg2pdf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofoimg2pdf/CMakeFiles/podofoimg2pdf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofoimg2pdf/CMakeFiles/podofoimg2pdf.dir/rule
 
 # Convenience name for target.
@@ -1319,7 +1284,7 @@ tools/podofomerge/preinstall:
 tools/podofomerge/CMakeFiles/podofomerge.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofomerge/CMakeFiles/podofomerge.dir/build.make tools/podofomerge/CMakeFiles/podofomerge.dir/depend
 	$(MAKE) -f tools/podofomerge/CMakeFiles/podofomerge.dir/build.make tools/podofomerge/CMakeFiles/podofomerge.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  92
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  91
 	@echo "Built target podofomerge"
 .PHONY : tools/podofomerge/CMakeFiles/podofomerge.dir/all
 
@@ -1329,9 +1294,9 @@ all: tools/podofomerge/CMakeFiles/podofomerge.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofomerge/CMakeFiles/podofomerge.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofomerge/CMakeFiles/podofomerge.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofomerge/CMakeFiles/podofomerge.dir/rule
 
 # Convenience name for target.
@@ -1369,7 +1334,7 @@ tools/podofopages/preinstall:
 tools/podofopages/CMakeFiles/podofopages.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/depend
 	$(MAKE) -f tools/podofopages/CMakeFiles/podofopages.dir/build.make tools/podofopages/CMakeFiles/podofopages.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  93 94
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  92 93
 	@echo "Built target podofopages"
 .PHONY : tools/podofopages/CMakeFiles/podofopages.dir/all
 
@@ -1379,9 +1344,9 @@ all: tools/podofopages/CMakeFiles/podofopages.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofopages/CMakeFiles/podofopages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofopages/CMakeFiles/podofopages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofopages/CMakeFiles/podofopages.dir/rule
 
 # Convenience name for target.
@@ -1419,7 +1384,7 @@ tools/podofopdfinfo/preinstall:
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/build.make tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/depend
 	$(MAKE) -f tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/build.make tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  95
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  94
 	@echo "Built target podofopdfinfo"
 .PHONY : tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/all
 
@@ -1429,9 +1394,9 @@ all: tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofopdfinfo/CMakeFiles/podofopdfinfo.dir/rule
 
 # Convenience name for target.
@@ -1469,7 +1434,7 @@ tools/podofotxt2pdf/preinstall:
 tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/build.make tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/depend
 	$(MAKE) -f tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/build.make tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  96
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  95
 	@echo "Built target podofotxt2pdf"
 .PHONY : tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/all
 
@@ -1479,9 +1444,9 @@ all: tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/rule
 
 # Convenience name for target.
@@ -1519,7 +1484,7 @@ tools/podofotxtextract/preinstall:
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/build.make tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/depend
 	$(MAKE) -f tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/build.make tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  97
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  96 97
 	@echo "Built target podofotxtextract"
 .PHONY : tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/all
 
@@ -1529,9 +1494,9 @@ all: tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/rule
 
 # Convenience name for target.
@@ -1569,7 +1534,7 @@ tools/podofouncompress/preinstall:
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofouncompress/CMakeFiles/podofouncompress.dir/build.make tools/podofouncompress/CMakeFiles/podofouncompress.dir/depend
 	$(MAKE) -f tools/podofouncompress/CMakeFiles/podofouncompress.dir/build.make tools/podofouncompress/CMakeFiles/podofouncompress.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  98
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  98
 	@echo "Built target podofouncompress"
 .PHONY : tools/podofouncompress/CMakeFiles/podofouncompress.dir/all
 
@@ -1579,9 +1544,9 @@ all: tools/podofouncompress/CMakeFiles/podofouncompress.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofouncompress/CMakeFiles/podofouncompress.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofouncompress/CMakeFiles/podofouncompress.dir/rule
 
 # Convenience name for target.
@@ -1619,7 +1584,7 @@ tools/podofoimpose/preinstall:
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/depend
 	$(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  89 90
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  88 89
 	@echo "Built target podofoimpose"
 .PHONY : tools/podofoimpose/CMakeFiles/podofoimpose.dir/all
 
@@ -1629,9 +1594,9 @@ all: tools/podofoimpose/CMakeFiles/podofoimpose.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofoimpose/CMakeFiles/podofoimpose.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofoimpose/CMakeFiles/podofoimpose.dir/rule
 
 # Convenience name for target.
@@ -1669,7 +1634,7 @@ tools/podofoincrementalupdates/preinstall:
 tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/build.make tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/depend
 	$(MAKE) -f tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/build.make tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  91
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  90
 	@echo "Built target podofoincrementalupdates"
 .PHONY : tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/all
 
@@ -1679,9 +1644,9 @@ all: tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/rule
 
 # Convenience name for target.
@@ -1719,7 +1684,7 @@ tools/podofoxmp/preinstall:
 tools/podofoxmp/CMakeFiles/podofoxmp.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f tools/podofoxmp/CMakeFiles/podofoxmp.dir/build.make tools/podofoxmp/CMakeFiles/podofoxmp.dir/depend
 	$(MAKE) -f tools/podofoxmp/CMakeFiles/podofoxmp.dir/build.make tools/podofoxmp/CMakeFiles/podofoxmp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  99
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  99
 	@echo "Built target podofoxmp"
 .PHONY : tools/podofoxmp/CMakeFiles/podofoxmp.dir/all
 
@@ -1729,9 +1694,9 @@ all: tools/podofoxmp/CMakeFiles/podofoxmp.dir/all
 
 # Build rule for subdir invocation for target.
 tools/podofoxmp/CMakeFiles/podofoxmp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 tools/podofoxmp/CMakeFiles/podofoxmp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : tools/podofoxmp/CMakeFiles/podofoxmp.dir/rule
 
 # Convenience name for target.
@@ -1787,7 +1752,7 @@ examples/helloworld/preinstall:
 examples/helloworld/CMakeFiles/helloworld.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f examples/helloworld/CMakeFiles/helloworld.dir/build.make examples/helloworld/CMakeFiles/helloworld.dir/depend
 	$(MAKE) -f examples/helloworld/CMakeFiles/helloworld.dir/build.make examples/helloworld/CMakeFiles/helloworld.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  10
 	@echo "Built target helloworld"
 .PHONY : examples/helloworld/CMakeFiles/helloworld.dir/all
 
@@ -1797,9 +1762,9 @@ all: examples/helloworld/CMakeFiles/helloworld.dir/all
 
 # Build rule for subdir invocation for target.
 examples/helloworld/CMakeFiles/helloworld.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 examples/helloworld/CMakeFiles/helloworld.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : examples/helloworld/CMakeFiles/helloworld.dir/rule
 
 # Convenience name for target.
@@ -1837,7 +1802,7 @@ examples/helloworld-base14/preinstall:
 examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/build.make examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/depend
 	$(MAKE) -f examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/build.make examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles 
 	@echo "Built target helloworld-base14"
 .PHONY : examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/all
 
@@ -1847,9 +1812,9 @@ all: examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/all
 
 # Build rule for subdir invocation for target.
 examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/rule
 
 # Convenience name for target.
@@ -1871,16 +1836,19 @@ clean: examples/helloworld-base14/CMakeFiles/helloworld-base14.dir/clean
 # Convenience name for "all" pass in the directory.
 feicode/all: feicode/imgNuri/all
 feicode/all: feicode/test/all
+feicode/all: feicode/TxPicGeo/all
 .PHONY : feicode/all
 
 # Convenience name for "clean" pass in the directory.
 feicode/clean: feicode/imgNuri/clean
 feicode/clean: feicode/test/clean
+feicode/clean: feicode/TxPicGeo/clean
 .PHONY : feicode/clean
 
 # Convenience name for "preinstall" pass in the directory.
 feicode/preinstall: feicode/imgNuri/preinstall
 feicode/preinstall: feicode/test/preinstall
+feicode/preinstall: feicode/TxPicGeo/preinstall
 .PHONY : feicode/preinstall
 
 #=============================================================================
@@ -1905,7 +1873,7 @@ feicode/imgNuri/preinstall:
 feicode/imgNuri/CMakeFiles/imgNuri.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f feicode/imgNuri/CMakeFiles/imgNuri.dir/build.make feicode/imgNuri/CMakeFiles/imgNuri.dir/depend
 	$(MAKE) -f feicode/imgNuri/CMakeFiles/imgNuri.dir/build.make feicode/imgNuri/CMakeFiles/imgNuri.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  11 12
 	@echo "Built target imgNuri"
 .PHONY : feicode/imgNuri/CMakeFiles/imgNuri.dir/all
 
@@ -1915,9 +1883,9 @@ all: feicode/imgNuri/CMakeFiles/imgNuri.dir/all
 
 # Build rule for subdir invocation for target.
 feicode/imgNuri/CMakeFiles/imgNuri.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 feicode/imgNuri/CMakeFiles/imgNuri.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : feicode/imgNuri/CMakeFiles/imgNuri.dir/rule
 
 # Convenience name for target.
@@ -1955,7 +1923,7 @@ feicode/test/preinstall:
 feicode/test/CMakeFiles/test.dir/all: src/CMakeFiles/podofo_static.dir/all
 	$(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/depend
 	$(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles  100
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles  100
 	@echo "Built target test"
 .PHONY : feicode/test/CMakeFiles/test.dir/all
 
@@ -1965,9 +1933,9 @@ all: feicode/test/CMakeFiles/test.dir/all
 
 # Build rule for subdir invocation for target.
 feicode/test/CMakeFiles/test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 feicode/test/CMakeFiles/test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : feicode/test/CMakeFiles/test.dir/rule
 
 # Convenience name for target.
@@ -1981,6 +1949,56 @@ feicode/test/CMakeFiles/test.dir/clean:
 
 # clean rule for target.
 clean: feicode/test/CMakeFiles/test.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory feicode/TxPicGeo
+
+# Convenience name for "all" pass in the directory.
+feicode/TxPicGeo/all: feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/all
+.PHONY : feicode/TxPicGeo/all
+
+# Convenience name for "clean" pass in the directory.
+feicode/TxPicGeo/clean: feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/clean
+.PHONY : feicode/TxPicGeo/clean
+
+# Convenience name for "preinstall" pass in the directory.
+feicode/TxPicGeo/preinstall:
+.PHONY : feicode/TxPicGeo/preinstall
+
+#=============================================================================
+# Target rules for target feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir
+
+# All Build rule for target.
+feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/all: src/CMakeFiles/podofo_static.dir/all
+	$(MAKE) -f feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/build.make feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/depend
+	$(MAKE) -f feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/build.make feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles 
+	@echo "Built target TxPicGeo"
+.PHONY : feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/all
+
+# Include target in all.
+all: feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 62
+	$(MAKE) -f CMakeFiles/Makefile2 feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
+.PHONY : feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/rule
+
+# Convenience name for target.
+TxPicGeo: feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/rule
+.PHONY : TxPicGeo
+
+# clean rule for target.
+feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/clean:
+	$(MAKE) -f feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/build.make feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/clean
+.PHONY : feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/clean
+
+# clean rule for target.
+clean: feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/clean
 .PHONY : clean
 
 #=============================================================================

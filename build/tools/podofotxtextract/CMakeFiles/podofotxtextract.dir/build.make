@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/progress.make
 include tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/flags.make
 
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o: tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/flags.make
-tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofotxtextract/TextExtractor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofotxtextract/TextExtractor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofotxtextract && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofotxtextract/TextExtractor.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofotxtextract && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofotxtextract/TextExtractor.cpp
 
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofotxtextract && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofotxtextract/TextExtractor.cpp > CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofotxtextract && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofotxtextract/TextExtractor.cpp > CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.i
 
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofotxtextract && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofotxtextract/TextExtractor.cpp -o CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofotxtextract && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofotxtextract/TextExtractor.cpp -o CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.s
 
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o.requires:
 .PHONY : tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o.requires
@@ -73,18 +73,18 @@ tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o.provi
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o.provides.build: tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o
 
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.o: tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/flags.make
-tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofotxtextract/podofotxtextract.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
+tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofotxtextract/podofotxtextract.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofotxtextract && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofotxtextract/podofotxtextract.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofotxtextract && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofotxtextract/podofotxtextract.cpp
 
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofotxtextract && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofotxtextract/podofotxtextract.cpp > CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofotxtextract && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofotxtextract/podofotxtextract.cpp > CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.i
 
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofotxtextract && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofotxtextract/podofotxtextract.cpp -o CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofotxtextract && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofotxtextract/podofotxtextract.cpp -o CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.s
 
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.o.requires:
 .PHONY : tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.o.requires
@@ -105,23 +105,16 @@ podofotxtextract_EXTERNAL_OBJECTS =
 
 tools/podofotxtextract/podofotxtextract: tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/TextExtractor.cpp.o
 tools/podofotxtextract/podofotxtextract: tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/podofotxtextract.cpp.o
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libz.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libz.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofotxtextract/podofotxtextract: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofotxtextract/podofotxtextract: tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/build.make
+tools/podofotxtextract/podofotxtextract: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofotxtextract/podofotxtextract: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofotxtextract/podofotxtextract: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofotxtextract/podofotxtextract: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofotxtextract/podofotxtextract: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofotxtextract/podofotxtextract: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofotxtextract/podofotxtextract: tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofotxtextract"
-	cd /home/univ/projects/podofomemo/build/tools/podofotxtextract && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofotxtextract.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofotxtextract && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofotxtextract.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/build: tools/podofotxtextract/podofotxtextract
@@ -132,10 +125,10 @@ tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/requires: tools/podofotxt
 .PHONY : tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/requires
 
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofotxtextract && $(CMAKE_COMMAND) -P CMakeFiles/podofotxtextract.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofotxtextract && $(CMAKE_COMMAND) -P CMakeFiles/podofotxtextract.dir/cmake_clean.cmake
 .PHONY : tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/clean
 
 tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofotxtextract /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofotxtextract /home/univ/projects/podofomemo/build/tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofotxtextract /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofotxtextract /home/fei/proj/podofomemo/build/tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofotxtextract/CMakeFiles/podofotxtextract.dir/depend
 

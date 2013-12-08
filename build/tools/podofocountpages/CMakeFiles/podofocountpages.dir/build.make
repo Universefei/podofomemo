@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofocountpages/CMakeFiles/podofocountpages.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofocountpages/CMakeFiles/podofocountpages.dir/progress.make
 include tools/podofocountpages/CMakeFiles/podofocountpages.dir/flags.make
 
 tools/podofocountpages/CMakeFiles/podofocountpages.dir/countpages.cpp.o: tools/podofocountpages/CMakeFiles/podofocountpages.dir/flags.make
-tools/podofocountpages/CMakeFiles/podofocountpages.dir/countpages.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofocountpages/countpages.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofocountpages/CMakeFiles/podofocountpages.dir/countpages.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofocountpages/countpages.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofocountpages/CMakeFiles/podofocountpages.dir/countpages.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofocountpages && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocountpages.dir/countpages.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofocountpages/countpages.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofocountpages && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofocountpages.dir/countpages.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofocountpages/countpages.cpp
 
 tools/podofocountpages/CMakeFiles/podofocountpages.dir/countpages.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofocountpages.dir/countpages.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofocountpages && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofocountpages/countpages.cpp > CMakeFiles/podofocountpages.dir/countpages.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofocountpages && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofocountpages/countpages.cpp > CMakeFiles/podofocountpages.dir/countpages.cpp.i
 
 tools/podofocountpages/CMakeFiles/podofocountpages.dir/countpages.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofocountpages.dir/countpages.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofocountpages && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofocountpages/countpages.cpp -o CMakeFiles/podofocountpages.dir/countpages.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofocountpages && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofocountpages/countpages.cpp -o CMakeFiles/podofocountpages.dir/countpages.cpp.s
 
 tools/podofocountpages/CMakeFiles/podofocountpages.dir/countpages.cpp.o.requires:
 .PHONY : tools/podofocountpages/CMakeFiles/podofocountpages.dir/countpages.cpp.o.requires
@@ -80,23 +80,16 @@ podofocountpages_OBJECTS = \
 podofocountpages_EXTERNAL_OBJECTS =
 
 tools/podofocountpages/podofocountpages: tools/podofocountpages/CMakeFiles/podofocountpages.dir/countpages.cpp.o
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libz.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libz.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofocountpages/podofocountpages: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofocountpages/podofocountpages: tools/podofocountpages/CMakeFiles/podofocountpages.dir/build.make
+tools/podofocountpages/podofocountpages: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofocountpages/podofocountpages: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofocountpages/podofocountpages: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofocountpages/podofocountpages: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofocountpages/podofocountpages: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofocountpages/podofocountpages: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofocountpages/podofocountpages: tools/podofocountpages/CMakeFiles/podofocountpages.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofocountpages"
-	cd /home/univ/projects/podofomemo/build/tools/podofocountpages && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofocountpages.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofocountpages && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofocountpages.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofocountpages/CMakeFiles/podofocountpages.dir/build: tools/podofocountpages/podofocountpages
@@ -106,10 +99,10 @@ tools/podofocountpages/CMakeFiles/podofocountpages.dir/requires: tools/podofocou
 .PHONY : tools/podofocountpages/CMakeFiles/podofocountpages.dir/requires
 
 tools/podofocountpages/CMakeFiles/podofocountpages.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofocountpages && $(CMAKE_COMMAND) -P CMakeFiles/podofocountpages.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofocountpages && $(CMAKE_COMMAND) -P CMakeFiles/podofocountpages.dir/cmake_clean.cmake
 .PHONY : tools/podofocountpages/CMakeFiles/podofocountpages.dir/clean
 
 tools/podofocountpages/CMakeFiles/podofocountpages.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofocountpages /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofocountpages /home/univ/projects/podofomemo/build/tools/podofocountpages/CMakeFiles/podofocountpages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofocountpages /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofocountpages /home/fei/proj/podofomemo/build/tools/podofocountpages/CMakeFiles/podofocountpages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofocountpages/CMakeFiles/podofocountpages.dir/depend
 

@@ -35,22 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -110,14 +110,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles /home/univ/projects/podofomemo/build/tools/podofoimpose/CMakeFiles/progress.marks
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoimpose/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles /home/fei/proj/podofomemo/build/tools/podofoimpose/CMakeFiles/progress.marks
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoimpose/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoimpose/clean
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoimpose/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoimpose/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoimpose/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoimpose/preinstall
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoimpose/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/rule:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoimpose/CMakeFiles/podofoimpose.dir/rule
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f CMakeFiles/Makefile2 tools/podofoimpose/CMakeFiles/podofoimpose.dir/rule
 .PHONY : tools/podofoimpose/CMakeFiles/podofoimpose.dir/rule
 
 # Convenience name for target.
@@ -150,7 +150,7 @@ podofoimpose: tools/podofoimpose/CMakeFiles/podofoimpose.dir/rule
 
 # fast build rule for target.
 podofoimpose/fast:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/build
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/build
 .PHONY : podofoimpose/fast
 
 impositionplan.o: impositionplan.cpp.o
@@ -158,7 +158,7 @@ impositionplan.o: impositionplan.cpp.o
 
 # target to build an object file
 impositionplan.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o
 .PHONY : impositionplan.cpp.o
 
 impositionplan.i: impositionplan.cpp.i
@@ -166,7 +166,7 @@ impositionplan.i: impositionplan.cpp.i
 
 # target to preprocess a source file
 impositionplan.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.i
 .PHONY : impositionplan.cpp.i
 
 impositionplan.s: impositionplan.cpp.s
@@ -174,7 +174,7 @@ impositionplan.s: impositionplan.cpp.s
 
 # target to generate assembly for a file
 impositionplan.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.s
 .PHONY : impositionplan.cpp.s
 
 pdftranslator.o: pdftranslator.cpp.o
@@ -182,7 +182,7 @@ pdftranslator.o: pdftranslator.cpp.o
 
 # target to build an object file
 pdftranslator.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o
 .PHONY : pdftranslator.cpp.o
 
 pdftranslator.i: pdftranslator.cpp.i
@@ -190,7 +190,7 @@ pdftranslator.i: pdftranslator.cpp.i
 
 # target to preprocess a source file
 pdftranslator.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.i
 .PHONY : pdftranslator.cpp.i
 
 pdftranslator.s: pdftranslator.cpp.s
@@ -198,7 +198,7 @@ pdftranslator.s: pdftranslator.cpp.s
 
 # target to generate assembly for a file
 pdftranslator.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.s
 .PHONY : pdftranslator.cpp.s
 
 planreader_legacy.o: planreader_legacy.cpp.o
@@ -206,7 +206,7 @@ planreader_legacy.o: planreader_legacy.cpp.o
 
 # target to build an object file
 planreader_legacy.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o
 .PHONY : planreader_legacy.cpp.o
 
 planreader_legacy.i: planreader_legacy.cpp.i
@@ -214,7 +214,7 @@ planreader_legacy.i: planreader_legacy.cpp.i
 
 # target to preprocess a source file
 planreader_legacy.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.i
 .PHONY : planreader_legacy.cpp.i
 
 planreader_legacy.s: planreader_legacy.cpp.s
@@ -222,7 +222,7 @@ planreader_legacy.s: planreader_legacy.cpp.s
 
 # target to generate assembly for a file
 planreader_legacy.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.s
 .PHONY : planreader_legacy.cpp.s
 
 podofoimpose.o: podofoimpose.cpp.o
@@ -230,7 +230,7 @@ podofoimpose.o: podofoimpose.cpp.o
 
 # target to build an object file
 podofoimpose.cpp.o:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o
 .PHONY : podofoimpose.cpp.o
 
 podofoimpose.i: podofoimpose.cpp.i
@@ -238,7 +238,7 @@ podofoimpose.i: podofoimpose.cpp.i
 
 # target to preprocess a source file
 podofoimpose.cpp.i:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.i
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.i
 .PHONY : podofoimpose.cpp.i
 
 podofoimpose.s: podofoimpose.cpp.s
@@ -246,7 +246,7 @@ podofoimpose.s: podofoimpose.cpp.s
 
 # target to generate assembly for a file
 podofoimpose.cpp.s:
-	cd /home/univ/projects/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.s
+	cd /home/fei/proj/podofomemo/build && $(MAKE) -f tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.s
 .PHONY : podofoimpose.cpp.s
 
 # Help Target
@@ -285,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

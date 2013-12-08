@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofoimpose/CMakeFiles/podofoimpose.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofoimpose/CMakeFiles/podofoimpose.dir/progress.make
 include tools/podofoimpose/CMakeFiles/podofoimpose.dir/flags.make
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o: tools/podofoimpose/CMakeFiles/podofoimpose.dir/flags.make
-tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/podofoimpose.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/podofoimpose.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/podofoimpose.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/podofoimpose.cpp
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofoimpose.dir/podofoimpose.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/podofoimpose.cpp > CMakeFiles/podofoimpose.dir/podofoimpose.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/podofoimpose.cpp > CMakeFiles/podofoimpose.dir/podofoimpose.cpp.i
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofoimpose.dir/podofoimpose.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/podofoimpose.cpp -o CMakeFiles/podofoimpose.dir/podofoimpose.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/podofoimpose.cpp -o CMakeFiles/podofoimpose.dir/podofoimpose.cpp.s
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o.requires:
 .PHONY : tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o.requires
@@ -73,18 +73,18 @@ tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o.provides: tool
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o.provides.build: tools/podofoimpose/CMakeFiles/podofoimpose.dir/podofoimpose.cpp.o
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o: tools/podofoimpose/CMakeFiles/podofoimpose.dir/flags.make
-tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/pdftranslator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
+tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/pdftranslator.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/pdftranslator.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/pdftranslator.cpp
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofoimpose.dir/pdftranslator.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/pdftranslator.cpp > CMakeFiles/podofoimpose.dir/pdftranslator.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/pdftranslator.cpp > CMakeFiles/podofoimpose.dir/pdftranslator.cpp.i
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofoimpose.dir/pdftranslator.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/pdftranslator.cpp -o CMakeFiles/podofoimpose.dir/pdftranslator.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/pdftranslator.cpp -o CMakeFiles/podofoimpose.dir/pdftranslator.cpp.s
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o.requires:
 .PHONY : tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o.requires
@@ -96,18 +96,18 @@ tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o.provides: too
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o.provides.build: tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o: tools/podofoimpose/CMakeFiles/podofoimpose.dir/flags.make
-tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/impositionplan.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_3)
+tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/impositionplan.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoimpose.dir/impositionplan.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/impositionplan.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoimpose.dir/impositionplan.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/impositionplan.cpp
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofoimpose.dir/impositionplan.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/impositionplan.cpp > CMakeFiles/podofoimpose.dir/impositionplan.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/impositionplan.cpp > CMakeFiles/podofoimpose.dir/impositionplan.cpp.i
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofoimpose.dir/impositionplan.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/impositionplan.cpp -o CMakeFiles/podofoimpose.dir/impositionplan.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/impositionplan.cpp -o CMakeFiles/podofoimpose.dir/impositionplan.cpp.s
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o.requires:
 .PHONY : tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o.requires
@@ -119,18 +119,18 @@ tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o.provides: to
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o.provides.build: tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o: tools/podofoimpose/CMakeFiles/podofoimpose.dir/flags.make
-tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/planreader_legacy.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_4)
+tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/planreader_legacy.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/planreader_legacy.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/planreader_legacy.cpp
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/planreader_legacy.cpp > CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/planreader_legacy.cpp > CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.i
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose/planreader_legacy.cpp -o CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose/planreader_legacy.cpp -o CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.s
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o.requires:
 .PHONY : tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o.requires
@@ -155,23 +155,16 @@ tools/podofoimpose/podofoimpose: tools/podofoimpose/CMakeFiles/podofoimpose.dir/
 tools/podofoimpose/podofoimpose: tools/podofoimpose/CMakeFiles/podofoimpose.dir/pdftranslator.cpp.o
 tools/podofoimpose/podofoimpose: tools/podofoimpose/CMakeFiles/podofoimpose.dir/impositionplan.cpp.o
 tools/podofoimpose/podofoimpose: tools/podofoimpose/CMakeFiles/podofoimpose.dir/planreader_legacy.cpp.o
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libz.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libz.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofoimpose/podofoimpose: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofoimpose/podofoimpose: tools/podofoimpose/CMakeFiles/podofoimpose.dir/build.make
+tools/podofoimpose/podofoimpose: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofoimpose/podofoimpose: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofoimpose/podofoimpose: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofoimpose/podofoimpose: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofoimpose/podofoimpose: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofoimpose/podofoimpose: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofoimpose/podofoimpose: tools/podofoimpose/CMakeFiles/podofoimpose.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofoimpose"
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofoimpose.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofoimpose.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/build: tools/podofoimpose/podofoimpose
@@ -184,10 +177,10 @@ tools/podofoimpose/CMakeFiles/podofoimpose.dir/requires: tools/podofoimpose/CMak
 .PHONY : tools/podofoimpose/CMakeFiles/podofoimpose.dir/requires
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofoimpose && $(CMAKE_COMMAND) -P CMakeFiles/podofoimpose.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofoimpose && $(CMAKE_COMMAND) -P CMakeFiles/podofoimpose.dir/cmake_clean.cmake
 .PHONY : tools/podofoimpose/CMakeFiles/podofoimpose.dir/clean
 
 tools/podofoimpose/CMakeFiles/podofoimpose.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofoimpose /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofoimpose /home/univ/projects/podofomemo/build/tools/podofoimpose/CMakeFiles/podofoimpose.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofoimpose /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofoimpose /home/fei/proj/podofomemo/build/tools/podofoimpose/CMakeFiles/podofoimpose.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofoimpose/CMakeFiles/podofoimpose.dir/depend
 

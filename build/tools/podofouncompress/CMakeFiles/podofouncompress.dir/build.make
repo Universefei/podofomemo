@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofouncompress/CMakeFiles/podofouncompress.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofouncompress/CMakeFiles/podofouncompress.dir/progress.make
 include tools/podofouncompress/CMakeFiles/podofouncompress.dir/flags.make
 
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.o: tools/podofouncompress/CMakeFiles/podofouncompress.dir/flags.make
-tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofouncompress/Uncompress.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofouncompress/Uncompress.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofouncompress && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofouncompress.dir/Uncompress.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofouncompress/Uncompress.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofouncompress && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofouncompress.dir/Uncompress.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofouncompress/Uncompress.cpp
 
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofouncompress.dir/Uncompress.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofouncompress && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofouncompress/Uncompress.cpp > CMakeFiles/podofouncompress.dir/Uncompress.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofouncompress && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofouncompress/Uncompress.cpp > CMakeFiles/podofouncompress.dir/Uncompress.cpp.i
 
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofouncompress.dir/Uncompress.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofouncompress && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofouncompress/Uncompress.cpp -o CMakeFiles/podofouncompress.dir/Uncompress.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofouncompress && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofouncompress/Uncompress.cpp -o CMakeFiles/podofouncompress.dir/Uncompress.cpp.s
 
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.o.requires:
 .PHONY : tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.o.requires
@@ -73,18 +73,18 @@ tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.o.provides
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.o.provides.build: tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.o
 
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/podofouncompress.cpp.o: tools/podofouncompress/CMakeFiles/podofouncompress.dir/flags.make
-tools/podofouncompress/CMakeFiles/podofouncompress.dir/podofouncompress.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofouncompress/podofouncompress.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
+tools/podofouncompress/CMakeFiles/podofouncompress.dir/podofouncompress.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofouncompress/podofouncompress.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofouncompress/CMakeFiles/podofouncompress.dir/podofouncompress.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofouncompress && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofouncompress.dir/podofouncompress.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofouncompress/podofouncompress.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofouncompress && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofouncompress.dir/podofouncompress.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofouncompress/podofouncompress.cpp
 
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/podofouncompress.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofouncompress.dir/podofouncompress.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofouncompress && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofouncompress/podofouncompress.cpp > CMakeFiles/podofouncompress.dir/podofouncompress.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofouncompress && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofouncompress/podofouncompress.cpp > CMakeFiles/podofouncompress.dir/podofouncompress.cpp.i
 
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/podofouncompress.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofouncompress.dir/podofouncompress.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofouncompress && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofouncompress/podofouncompress.cpp -o CMakeFiles/podofouncompress.dir/podofouncompress.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofouncompress && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofouncompress/podofouncompress.cpp -o CMakeFiles/podofouncompress.dir/podofouncompress.cpp.s
 
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/podofouncompress.cpp.o.requires:
 .PHONY : tools/podofouncompress/CMakeFiles/podofouncompress.dir/podofouncompress.cpp.o.requires
@@ -105,23 +105,16 @@ podofouncompress_EXTERNAL_OBJECTS =
 
 tools/podofouncompress/podofouncompress: tools/podofouncompress/CMakeFiles/podofouncompress.dir/Uncompress.cpp.o
 tools/podofouncompress/podofouncompress: tools/podofouncompress/CMakeFiles/podofouncompress.dir/podofouncompress.cpp.o
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libz.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libz.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofouncompress/podofouncompress: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofouncompress/podofouncompress: tools/podofouncompress/CMakeFiles/podofouncompress.dir/build.make
+tools/podofouncompress/podofouncompress: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofouncompress/podofouncompress: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofouncompress/podofouncompress: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofouncompress/podofouncompress: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofouncompress/podofouncompress: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofouncompress/podofouncompress: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofouncompress/podofouncompress: tools/podofouncompress/CMakeFiles/podofouncompress.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofouncompress"
-	cd /home/univ/projects/podofomemo/build/tools/podofouncompress && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofouncompress.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofouncompress && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofouncompress.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/build: tools/podofouncompress/podofouncompress
@@ -132,10 +125,10 @@ tools/podofouncompress/CMakeFiles/podofouncompress.dir/requires: tools/podofounc
 .PHONY : tools/podofouncompress/CMakeFiles/podofouncompress.dir/requires
 
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofouncompress && $(CMAKE_COMMAND) -P CMakeFiles/podofouncompress.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofouncompress && $(CMAKE_COMMAND) -P CMakeFiles/podofouncompress.dir/cmake_clean.cmake
 .PHONY : tools/podofouncompress/CMakeFiles/podofouncompress.dir/clean
 
 tools/podofouncompress/CMakeFiles/podofouncompress.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofouncompress /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofouncompress /home/univ/projects/podofomemo/build/tools/podofouncompress/CMakeFiles/podofouncompress.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofouncompress /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofouncompress /home/fei/proj/podofomemo/build/tools/podofouncompress/CMakeFiles/podofouncompress.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofouncompress/CMakeFiles/podofouncompress.dir/depend
 

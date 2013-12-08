@@ -1,8 +1,8 @@
-# Install script for directory: /home/univ/projects/podofomemo/podofoSRC/feicode/imgNuri
+# Install script for directory: /home/fei/proj/podofomemo/podofoSRC/feicode/imgNuri
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/univ/projects/podofomemo/installFile")
+  SET(CMAKE_INSTALL_PREFIX "/home/fei/proj/podofomemo/installFile")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/feicode/imgNuri"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/feicode" TYPE EXECUTABLE FILES "/home/univ/projects/podofomemo/build/feicode/imgNuri/imgNuri")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/feicode" TYPE EXECUTABLE FILES "/home/fei/proj/podofomemo/build/feicode/imgNuri/imgNuri")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/feicode/imgNuri" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/feicode/imgNuri")
     FILE(RPATH_REMOVE

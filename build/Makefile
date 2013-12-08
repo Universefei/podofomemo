@@ -35,22 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -110,9 +110,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles /home/univ/projects/podofomemo/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles /home/fei/proj/podofomemo/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/univ/projects/podofomemo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fei/proj/podofomemo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -320,19 +320,6 @@ WatermarkTest: cmake_check_build_system
 WatermarkTest/fast:
 	$(MAKE) -f test/WatermarkTest/CMakeFiles/WatermarkTest.dir/build.make test/WatermarkTest/CMakeFiles/WatermarkTest.dir/build
 .PHONY : WatermarkTest/fast
-
-#=============================================================================
-# Target rules for targets named podofo-test
-
-# Build rule for target.
-podofo-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 podofo-test
-.PHONY : podofo-test
-
-# fast build rule for target.
-podofo-test/fast:
-	$(MAKE) -f test/unit/CMakeFiles/podofo-test.dir/build.make test/unit/CMakeFiles/podofo-test.dir/build
-.PHONY : podofo-test/fast
 
 #=============================================================================
 # Target rules for targets named podofobox
@@ -607,6 +594,19 @@ test/fast:
 	$(MAKE) -f feicode/test/CMakeFiles/test.dir/build.make feicode/test/CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+#=============================================================================
+# Target rules for targets named TxPicGeo
+
+# Build rule for target.
+TxPicGeo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TxPicGeo
+.PHONY : TxPicGeo
+
+# fast build rule for target.
+TxPicGeo/fast:
+	$(MAKE) -f feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/build.make feicode/TxPicGeo/CMakeFiles/TxPicGeo.dir/build
+.PHONY : TxPicGeo/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -633,7 +633,6 @@ help:
 	@echo "... TokenizerTest"
 	@echo "... VariantTest"
 	@echo "... WatermarkTest"
-	@echo "... podofo-test"
 	@echo "... podofobox"
 	@echo "... podofocolor"
 	@echo "... podofocountpages"
@@ -655,6 +654,7 @@ help:
 	@echo "... helloworld-base14"
 	@echo "... imgNuri"
 	@echo "... test"
+	@echo "... TxPicGeo"
 .PHONY : help
 
 

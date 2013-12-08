@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/progress.make
 include tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/flags.make
 
 tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.o: tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/flags.make
-tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofotxt2pdf/podofotxt2pdf.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofotxt2pdf/podofotxt2pdf.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofotxt2pdf && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofotxt2pdf/podofotxt2pdf.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofotxt2pdf && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofotxt2pdf/podofotxt2pdf.cpp
 
 tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofotxt2pdf && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofotxt2pdf/podofotxt2pdf.cpp > CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofotxt2pdf && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofotxt2pdf/podofotxt2pdf.cpp > CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.i
 
 tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofotxt2pdf && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofotxt2pdf/podofotxt2pdf.cpp -o CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofotxt2pdf && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofotxt2pdf/podofotxt2pdf.cpp -o CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.s
 
 tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.o.requires:
 .PHONY : tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.o.requires
@@ -80,23 +80,16 @@ podofotxt2pdf_OBJECTS = \
 podofotxt2pdf_EXTERNAL_OBJECTS =
 
 tools/podofotxt2pdf/podofotxt2pdf: tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/podofotxt2pdf.cpp.o
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libz.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libz.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofotxt2pdf/podofotxt2pdf: tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/build.make
+tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofotxt2pdf/podofotxt2pdf: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofotxt2pdf/podofotxt2pdf: tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofotxt2pdf"
-	cd /home/univ/projects/podofomemo/build/tools/podofotxt2pdf && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofotxt2pdf.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofotxt2pdf && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofotxt2pdf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/build: tools/podofotxt2pdf/podofotxt2pdf
@@ -106,10 +99,10 @@ tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/requires: tools/podofotxt2pdf/C
 .PHONY : tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/requires
 
 tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofotxt2pdf && $(CMAKE_COMMAND) -P CMakeFiles/podofotxt2pdf.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofotxt2pdf && $(CMAKE_COMMAND) -P CMakeFiles/podofotxt2pdf.dir/cmake_clean.cmake
 .PHONY : tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/clean
 
 tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofotxt2pdf /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofotxt2pdf /home/univ/projects/podofomemo/build/tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofotxt2pdf /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofotxt2pdf /home/fei/proj/podofomemo/build/tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofotxt2pdf/CMakeFiles/podofotxt2pdf.dir/depend
 

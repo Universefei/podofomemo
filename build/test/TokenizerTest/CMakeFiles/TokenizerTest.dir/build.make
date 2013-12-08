@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include test/TokenizerTest/CMakeFiles/TokenizerTest.dir/depend.make
@@ -50,18 +50,18 @@ include test/TokenizerTest/CMakeFiles/TokenizerTest.dir/progress.make
 include test/TokenizerTest/CMakeFiles/TokenizerTest.dir/flags.make
 
 test/TokenizerTest/CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.o: test/TokenizerTest/CMakeFiles/TokenizerTest.dir/flags.make
-test/TokenizerTest/CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.o: /home/univ/projects/podofomemo/podofoSRC/test/TokenizerTest/TokenizerTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+test/TokenizerTest/CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.o: /home/fei/proj/podofomemo/podofoSRC/test/TokenizerTest/TokenizerTest.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/TokenizerTest/CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.o"
-	cd /home/univ/projects/podofomemo/build/test/TokenizerTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/test/TokenizerTest/TokenizerTest.cpp
+	cd /home/fei/proj/podofomemo/build/test/TokenizerTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/test/TokenizerTest/TokenizerTest.cpp
 
 test/TokenizerTest/CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.i"
-	cd /home/univ/projects/podofomemo/build/test/TokenizerTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/test/TokenizerTest/TokenizerTest.cpp > CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.i
+	cd /home/fei/proj/podofomemo/build/test/TokenizerTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/test/TokenizerTest/TokenizerTest.cpp > CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.i
 
 test/TokenizerTest/CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.s"
-	cd /home/univ/projects/podofomemo/build/test/TokenizerTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/test/TokenizerTest/TokenizerTest.cpp -o CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.s
+	cd /home/fei/proj/podofomemo/build/test/TokenizerTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/test/TokenizerTest/TokenizerTest.cpp -o CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.s
 
 test/TokenizerTest/CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.o.requires:
 .PHONY : test/TokenizerTest/CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.o.requires
@@ -80,27 +80,23 @@ TokenizerTest_OBJECTS = \
 TokenizerTest_EXTERNAL_OBJECTS =
 
 test/TokenizerTest/TokenizerTest: test/TokenizerTest/CMakeFiles/TokenizerTest.dir/TokenizerTest.cpp.o
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libz.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libcrypto.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libjpeg.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libfreetype.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libpng.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libz.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libtiff.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libz.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libcrypto.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libjpeg.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libfreetype.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libpng.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libz.so
-test/TokenizerTest/TokenizerTest: /usr/lib/i386-linux-gnu/libtiff.so
 test/TokenizerTest/TokenizerTest: test/TokenizerTest/CMakeFiles/TokenizerTest.dir/build.make
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libz.so
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libtiff.so
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libz.so
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/TokenizerTest/TokenizerTest: /usr/lib/x86_64-linux-gnu/libtiff.so
 test/TokenizerTest/TokenizerTest: test/TokenizerTest/CMakeFiles/TokenizerTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable TokenizerTest"
-	cd /home/univ/projects/podofomemo/build/test/TokenizerTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TokenizerTest.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/univ/projects/podofomemo/build/test/TokenizerTest && /usr/bin/cmake -E copy_directory /home/univ/projects/podofomemo/podofoSRC/test/TokenizerTest/objects /home/univ/projects/podofomemo/build/test/TokenizerTest/objects
+	cd /home/fei/proj/podofomemo/build/test/TokenizerTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TokenizerTest.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/test/TokenizerTest && /usr/bin/cmake -E copy_directory /home/fei/proj/podofomemo/podofoSRC/test/TokenizerTest/objects /home/fei/proj/podofomemo/build/test/TokenizerTest/objects
 
 # Rule to build all files generated by this target.
 test/TokenizerTest/CMakeFiles/TokenizerTest.dir/build: test/TokenizerTest/TokenizerTest
@@ -110,10 +106,10 @@ test/TokenizerTest/CMakeFiles/TokenizerTest.dir/requires: test/TokenizerTest/CMa
 .PHONY : test/TokenizerTest/CMakeFiles/TokenizerTest.dir/requires
 
 test/TokenizerTest/CMakeFiles/TokenizerTest.dir/clean:
-	cd /home/univ/projects/podofomemo/build/test/TokenizerTest && $(CMAKE_COMMAND) -P CMakeFiles/TokenizerTest.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/test/TokenizerTest && $(CMAKE_COMMAND) -P CMakeFiles/TokenizerTest.dir/cmake_clean.cmake
 .PHONY : test/TokenizerTest/CMakeFiles/TokenizerTest.dir/clean
 
 test/TokenizerTest/CMakeFiles/TokenizerTest.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/test/TokenizerTest /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/test/TokenizerTest /home/univ/projects/podofomemo/build/test/TokenizerTest/CMakeFiles/TokenizerTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/test/TokenizerTest /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/test/TokenizerTest /home/fei/proj/podofomemo/build/test/TokenizerTest/CMakeFiles/TokenizerTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/TokenizerTest/CMakeFiles/TokenizerTest.dir/depend
 

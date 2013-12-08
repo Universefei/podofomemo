@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofogc/CMakeFiles/podofogc.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofogc/CMakeFiles/podofogc.dir/progress.make
 include tools/podofogc/CMakeFiles/podofogc.dir/flags.make
 
 tools/podofogc/CMakeFiles/podofogc.dir/podofogc.cpp.o: tools/podofogc/CMakeFiles/podofogc.dir/flags.make
-tools/podofogc/CMakeFiles/podofogc.dir/podofogc.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofogc/podofogc.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofogc/CMakeFiles/podofogc.dir/podofogc.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofogc/podofogc.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofogc/CMakeFiles/podofogc.dir/podofogc.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofogc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofogc.dir/podofogc.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofogc/podofogc.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofogc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofogc.dir/podofogc.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofogc/podofogc.cpp
 
 tools/podofogc/CMakeFiles/podofogc.dir/podofogc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofogc.dir/podofogc.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofogc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofogc/podofogc.cpp > CMakeFiles/podofogc.dir/podofogc.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofogc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofogc/podofogc.cpp > CMakeFiles/podofogc.dir/podofogc.cpp.i
 
 tools/podofogc/CMakeFiles/podofogc.dir/podofogc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofogc.dir/podofogc.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofogc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofogc/podofogc.cpp -o CMakeFiles/podofogc.dir/podofogc.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofogc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofogc/podofogc.cpp -o CMakeFiles/podofogc.dir/podofogc.cpp.s
 
 tools/podofogc/CMakeFiles/podofogc.dir/podofogc.cpp.o.requires:
 .PHONY : tools/podofogc/CMakeFiles/podofogc.dir/podofogc.cpp.o.requires
@@ -80,23 +80,16 @@ podofogc_OBJECTS = \
 podofogc_EXTERNAL_OBJECTS =
 
 tools/podofogc/podofogc: tools/podofogc/CMakeFiles/podofogc.dir/podofogc.cpp.o
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libz.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libz.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofogc/podofogc: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofogc/podofogc: tools/podofogc/CMakeFiles/podofogc.dir/build.make
+tools/podofogc/podofogc: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofogc/podofogc: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofogc/podofogc: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofogc/podofogc: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofogc/podofogc: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofogc/podofogc: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofogc/podofogc: tools/podofogc/CMakeFiles/podofogc.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofogc"
-	cd /home/univ/projects/podofomemo/build/tools/podofogc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofogc.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofogc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofogc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofogc/CMakeFiles/podofogc.dir/build: tools/podofogc/podofogc
@@ -106,10 +99,10 @@ tools/podofogc/CMakeFiles/podofogc.dir/requires: tools/podofogc/CMakeFiles/podof
 .PHONY : tools/podofogc/CMakeFiles/podofogc.dir/requires
 
 tools/podofogc/CMakeFiles/podofogc.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofogc && $(CMAKE_COMMAND) -P CMakeFiles/podofogc.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofogc && $(CMAKE_COMMAND) -P CMakeFiles/podofogc.dir/cmake_clean.cmake
 .PHONY : tools/podofogc/CMakeFiles/podofogc.dir/clean
 
 tools/podofogc/CMakeFiles/podofogc.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofogc /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofogc /home/univ/projects/podofomemo/build/tools/podofogc/CMakeFiles/podofogc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofogc /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofogc /home/fei/proj/podofomemo/build/tools/podofogc/CMakeFiles/podofogc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofogc/CMakeFiles/podofogc.dir/depend
 

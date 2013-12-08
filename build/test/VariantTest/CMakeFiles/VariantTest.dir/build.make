@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include test/VariantTest/CMakeFiles/VariantTest.dir/depend.make
@@ -50,18 +50,18 @@ include test/VariantTest/CMakeFiles/VariantTest.dir/progress.make
 include test/VariantTest/CMakeFiles/VariantTest.dir/flags.make
 
 test/VariantTest/CMakeFiles/VariantTest.dir/VariantTest.cpp.o: test/VariantTest/CMakeFiles/VariantTest.dir/flags.make
-test/VariantTest/CMakeFiles/VariantTest.dir/VariantTest.cpp.o: /home/univ/projects/podofomemo/podofoSRC/test/VariantTest/VariantTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+test/VariantTest/CMakeFiles/VariantTest.dir/VariantTest.cpp.o: /home/fei/proj/podofomemo/podofoSRC/test/VariantTest/VariantTest.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/VariantTest/CMakeFiles/VariantTest.dir/VariantTest.cpp.o"
-	cd /home/univ/projects/podofomemo/build/test/VariantTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VariantTest.dir/VariantTest.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/test/VariantTest/VariantTest.cpp
+	cd /home/fei/proj/podofomemo/build/test/VariantTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VariantTest.dir/VariantTest.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/test/VariantTest/VariantTest.cpp
 
 test/VariantTest/CMakeFiles/VariantTest.dir/VariantTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VariantTest.dir/VariantTest.cpp.i"
-	cd /home/univ/projects/podofomemo/build/test/VariantTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/test/VariantTest/VariantTest.cpp > CMakeFiles/VariantTest.dir/VariantTest.cpp.i
+	cd /home/fei/proj/podofomemo/build/test/VariantTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/test/VariantTest/VariantTest.cpp > CMakeFiles/VariantTest.dir/VariantTest.cpp.i
 
 test/VariantTest/CMakeFiles/VariantTest.dir/VariantTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VariantTest.dir/VariantTest.cpp.s"
-	cd /home/univ/projects/podofomemo/build/test/VariantTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/test/VariantTest/VariantTest.cpp -o CMakeFiles/VariantTest.dir/VariantTest.cpp.s
+	cd /home/fei/proj/podofomemo/build/test/VariantTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/test/VariantTest/VariantTest.cpp -o CMakeFiles/VariantTest.dir/VariantTest.cpp.s
 
 test/VariantTest/CMakeFiles/VariantTest.dir/VariantTest.cpp.o.requires:
 .PHONY : test/VariantTest/CMakeFiles/VariantTest.dir/VariantTest.cpp.o.requires
@@ -80,26 +80,22 @@ VariantTest_OBJECTS = \
 VariantTest_EXTERNAL_OBJECTS =
 
 test/VariantTest/VariantTest: test/VariantTest/CMakeFiles/VariantTest.dir/VariantTest.cpp.o
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libz.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libcrypto.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libjpeg.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libfreetype.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libpng.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libz.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libtiff.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libfontconfig.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libz.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libcrypto.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libjpeg.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libfreetype.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libpng.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libz.so
-test/VariantTest/VariantTest: /usr/lib/i386-linux-gnu/libtiff.so
 test/VariantTest/VariantTest: test/VariantTest/CMakeFiles/VariantTest.dir/build.make
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libz.so
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libtiff.so
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libz.so
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libcrypto.so
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libjpeg.so
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libfreetype.so
+test/VariantTest/VariantTest: /usr/lib/x86_64-linux-gnu/libtiff.so
 test/VariantTest/VariantTest: test/VariantTest/CMakeFiles/VariantTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable VariantTest"
-	cd /home/univ/projects/podofomemo/build/test/VariantTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VariantTest.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/test/VariantTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VariantTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/VariantTest/CMakeFiles/VariantTest.dir/build: test/VariantTest/VariantTest
@@ -109,10 +105,10 @@ test/VariantTest/CMakeFiles/VariantTest.dir/requires: test/VariantTest/CMakeFile
 .PHONY : test/VariantTest/CMakeFiles/VariantTest.dir/requires
 
 test/VariantTest/CMakeFiles/VariantTest.dir/clean:
-	cd /home/univ/projects/podofomemo/build/test/VariantTest && $(CMAKE_COMMAND) -P CMakeFiles/VariantTest.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/test/VariantTest && $(CMAKE_COMMAND) -P CMakeFiles/VariantTest.dir/cmake_clean.cmake
 .PHONY : test/VariantTest/CMakeFiles/VariantTest.dir/clean
 
 test/VariantTest/CMakeFiles/VariantTest.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/test/VariantTest /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/test/VariantTest /home/univ/projects/podofomemo/build/test/VariantTest/CMakeFiles/VariantTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/test/VariantTest /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/test/VariantTest /home/fei/proj/podofomemo/build/test/VariantTest/CMakeFiles/VariantTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/VariantTest/CMakeFiles/VariantTest.dir/depend
 

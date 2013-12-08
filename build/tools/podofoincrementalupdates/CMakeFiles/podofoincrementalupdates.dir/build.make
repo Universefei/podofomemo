@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/univ/projects/podofomemo/podofoSRC
+CMAKE_SOURCE_DIR = /home/fei/proj/podofomemo/podofoSRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/univ/projects/podofomemo/build
+CMAKE_BINARY_DIR = /home/fei/proj/podofomemo/build
 
 # Include any dependencies generated for this target.
 include tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/depend.make
@@ -50,18 +50,18 @@ include tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/p
 include tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/flags.make
 
 tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.o: tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/flags.make
-tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.o: /home/univ/projects/podofomemo/podofoSRC/tools/podofoincrementalupdates/incrementalupdates.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/univ/projects/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
+tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.o: /home/fei/proj/podofomemo/podofoSRC/tools/podofoincrementalupdates/incrementalupdates.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fei/proj/podofomemo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.o"
-	cd /home/univ/projects/podofomemo/build/tools/podofoincrementalupdates && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.o -c /home/univ/projects/podofomemo/podofoSRC/tools/podofoincrementalupdates/incrementalupdates.cpp
+	cd /home/fei/proj/podofomemo/build/tools/podofoincrementalupdates && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.o -c /home/fei/proj/podofomemo/podofoSRC/tools/podofoincrementalupdates/incrementalupdates.cpp
 
 tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.i"
-	cd /home/univ/projects/podofomemo/build/tools/podofoincrementalupdates && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/univ/projects/podofomemo/podofoSRC/tools/podofoincrementalupdates/incrementalupdates.cpp > CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.i
+	cd /home/fei/proj/podofomemo/build/tools/podofoincrementalupdates && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/fei/proj/podofomemo/podofoSRC/tools/podofoincrementalupdates/incrementalupdates.cpp > CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.i
 
 tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.s"
-	cd /home/univ/projects/podofomemo/build/tools/podofoincrementalupdates && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/univ/projects/podofomemo/podofoSRC/tools/podofoincrementalupdates/incrementalupdates.cpp -o CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.s
+	cd /home/fei/proj/podofomemo/build/tools/podofoincrementalupdates && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/fei/proj/podofomemo/podofoSRC/tools/podofoincrementalupdates/incrementalupdates.cpp -o CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.s
 
 tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.o.requires:
 .PHONY : tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.o.requires
@@ -80,23 +80,16 @@ podofoincrementalupdates_OBJECTS = \
 podofoincrementalupdates_EXTERNAL_OBJECTS =
 
 tools/podofoincrementalupdates/podofoincrementalupdates: tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/incrementalupdates.cpp.o
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libfontconfig.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libz.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libz.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libtiff.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libcrypto.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libjpeg.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libfreetype.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libpng.so
-tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/i386-linux-gnu/libtiff.so
 tools/podofoincrementalupdates/podofoincrementalupdates: tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/build.make
+tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/x86_64-linux-gnu/libfontconfig.so
+tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/x86_64-linux-gnu/libz.so
+tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/x86_64-linux-gnu/libcrypto.so
+tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/x86_64-linux-gnu/libjpeg.so
+tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/x86_64-linux-gnu/libfreetype.so
+tools/podofoincrementalupdates/podofoincrementalupdates: /usr/lib/x86_64-linux-gnu/libtiff.so
 tools/podofoincrementalupdates/podofoincrementalupdates: tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable podofoincrementalupdates"
-	cd /home/univ/projects/podofomemo/build/tools/podofoincrementalupdates && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofoincrementalupdates.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/fei/proj/podofomemo/build/tools/podofoincrementalupdates && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/podofoincrementalupdates.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/build: tools/podofoincrementalupdates/podofoincrementalupdates
@@ -106,10 +99,10 @@ tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/requires:
 .PHONY : tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/requires
 
 tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/clean:
-	cd /home/univ/projects/podofomemo/build/tools/podofoincrementalupdates && $(CMAKE_COMMAND) -P CMakeFiles/podofoincrementalupdates.dir/cmake_clean.cmake
+	cd /home/fei/proj/podofomemo/build/tools/podofoincrementalupdates && $(CMAKE_COMMAND) -P CMakeFiles/podofoincrementalupdates.dir/cmake_clean.cmake
 .PHONY : tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/clean
 
 tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/depend:
-	cd /home/univ/projects/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/univ/projects/podofomemo/podofoSRC /home/univ/projects/podofomemo/podofoSRC/tools/podofoincrementalupdates /home/univ/projects/podofomemo/build /home/univ/projects/podofomemo/build/tools/podofoincrementalupdates /home/univ/projects/podofomemo/build/tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fei/proj/podofomemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fei/proj/podofomemo/podofoSRC /home/fei/proj/podofomemo/podofoSRC/tools/podofoincrementalupdates /home/fei/proj/podofomemo/build /home/fei/proj/podofomemo/build/tools/podofoincrementalupdates /home/fei/proj/podofomemo/build/tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/podofoincrementalupdates/CMakeFiles/podofoincrementalupdates.dir/depend
 
